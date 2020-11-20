@@ -11,31 +11,37 @@ from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
 #       print(t)
 
 class Client(object):
+
   def setup_batfish(self):
     bf_session.host = 'localhost'
 
   def load_snapshot(self, snapshot_dir: str, name: str):
     bf_init_snapshot(snapshot_dir, name, overwrite=True)
 
+  def get_traffic(self, snapshot: str):
+    load_questions()
+    result = bfq.reachability(headers=self.header, pathConstraints=self.path) \
+        .answer(snapshot=snapshot).frame()
+    print(result.to_csv("path.csv"))
+    # if result.
+    # result.to_csv("path.csv")
+
   def check_traffic(self, snapshot: str, reference_snapshot: str):
     # bf_set_snapshot(name)
     load_questions()
-    header = HeaderConstraints(srcIps="0.0.0.0/0", dstIps="0.0.0.0/0", ipProtocols=["tcp"])
-    #  path = PathConstraints(startLocation="/as2/", endLocation="/as3/")
-    result = bfq.differentialReachability(headers=header) \
+    result = bfq.differentialReachability(headers=self.header, pathConstraints=self.path) \
         .answer(snapshot=snapshot, reference_snapshot=reference_snapshot).frame()
-    # result = bfq.reachability(headers=header, pathConstraints=path) \
-    #     .answer(snapshot=reference_snapshot).frame()
-    result.to_csv('out.csv')
-    #  return result.count > 0
-    #  print(result.to_string())
-    # for idx, row in result.iterrows():
-    #   view_diff_frame(row)
+    result.to_csv('diff.csv')
+
+  def __init__(self):
+    self.header = HeaderConstraints(dstIps="host1", dstPorts="22")
+    self.path = PathConstraints(startLocation="/as3/")
 
 client = Client()
 client.setup_batfish()
-client.load_snapshot("/home/leo/repos/verifier/configs/origin", "origin")
-client.load_snapshot("/home/leo/repos/verifier/configs/update1", "update1")
-client.load_snapshot("/home/leo/repos/verifier/configs/update2", "update2")
+client.load_snapshot("./origin", "origin")
+client.load_snapshot("./allowed", "allowed")
+client.load_snapshot("./denied", "denied")
 #  client.check_traffic("origin", "update1")
-client.check_traffic("origin", "update2")
+client.check_traffic("origin", "allowed")
+client.get_traffic('origin')
