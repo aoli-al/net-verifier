@@ -9,4 +9,3 @@ load_questions()
 
 result = bfq.traceroute(startLocation='@enter(as2border1[GigabitEthernet2/0])',
                         headers=HeaderConstraints(dstIps='0.0.0.0/0', srcIps='0.0.0.0/0')).answer().frame()
-print(result)

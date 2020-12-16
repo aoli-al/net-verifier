@@ -9,25 +9,49 @@ class Resource(object):
         pass
 
 
-class CidrResource(Resource):
-    def __init__(self, cidr: str):
-        self.cidr = cidr
+class SrcIpResource(Resource):
+    def __init__(self, src_ip: str):
+        self.src_ip = src_ip
 
     def build_header_constraint(self, builder: HeaderConstraintBuilder):
-        builder.dstIps = self.cidr
+        builder.srcIps = self.src_ip
 
 
-class NamedResource(Resource):
-    def __init__(self, name: str):
-        self.name = name
+class DstIpResource(Resource):
+    def __init__(self, dst_ip: str):
+        self.dst_ip = dst_ip
 
     def build_header_constraint(self, builder: HeaderConstraintBuilder):
-        builder.dstIps = self.name
+        builder.dstIps = self.dst_ip
 
 
-class PathResource(Resource):
-    def __init__(self, path: str):
-        self.path = path
+class StartLocationResource(Resource):
+    def __init__(self, start_location: str):
+        self.start_location = start_location
 
     def build_path_constraint(self, builder: PathConstraintBuilder):
-        builder.forbiddenLocations = self.path
+        builder.startLocation = self.start_location
+
+
+class EndLocationResource(Resource):
+    def __init__(self, end_location: str):
+        self.end_location = end_location
+
+    def build_path_constraint(self, builder: PathConstraintBuilder):
+        builder.endLocation = self.end_location
+
+
+class TransitLocationResource(Resource):
+    def __init__(self, transit_location: str):
+        self.transit_location = transit_location
+
+    def build_path_constraint(self, builder: PathConstraintBuilder):
+        builder.transitionLocations = self.transit_location
+
+
+class ForbiddenLocationResource(Resource):
+    def __init__(self, forbidden_location: str):
+        self.forbidden_location = forbidden_location
+
+    def build_path_constraint(self, builder: PathConstraintBuilder):
+        builder.forbiddenLocations = self.forbidden_location
