@@ -1,0 +1,3 @@
+class Condition(object):
+    pass
+
