@@ -1,13 +1,12 @@
-from client import Client
+from pybatfish.question import bfq
+from pybatfish.question.question import load_questions
+from pybatfish.client.commands import bf_init_snapshot
 
+load_questions()
+bf_init_snapshot("/home/leo/repos/verifier/configs/default", "t1")
+bf_init_snapshot("/home/leo/repos/verifier/configs/test", "t2")
 
-def main():
-  client = Client()
-  client.setup_batfish()
-  client.load_snapshot("/home/leo/repos/verifier/configs/origin", "origin")
-  client.load_snapshot("/home/leo/repos/verifier/configs/update1", "update1")
-  client.check_traffic("origin", "update1")
-
-
-if __name__ == "__main__":
-  main()
+results = bfq.differentialReachability().answer(snapshot="t1", reference_snapshot="t2").frame()
+print(results.size)
+for idx, result in results.iterrows():
+    print(result.Flow)
