@@ -76,13 +76,15 @@ class FindBestOrder(object):
         result = []
         current = start
         while current:
-            prev = self.path[start]
+            prev = self.path[current]
             result.insert(0, next(iter(current.difference(prev))))
             current = prev
         return result
 
 
-# o = FindBestOrder(Path("/home/leo/repos/verifier/configs/default"),
-#                   [Path('/home/leo/repos/verifier/configs/updates/as2border1.cfg')])
-# o.find_recursive(frozenset(o.files))
-# o
+o = FindBestOrder(Path("/home/leo/repos/verifier/configs/test"),
+                  [Path('/home/leo/repos/verifier/configs/updates/as1border1.cfg'),
+                   Path('/home/leo/repos/verifier/configs/updates/as2border1.cfg')])
+start = frozenset(o.files)
+o.find_recursive(start)
+print(o.show_path(start))
