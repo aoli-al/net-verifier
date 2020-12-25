@@ -53,8 +53,10 @@ class FindBestOrder(object):
         snapshot = self.get_snapshot(path)
         goal = self.get_snapshot(self.goal)
         base = self.get_snapshot(self.base)
-        goal_diff = self.get_cache_of_diff(goal, base)
         current_diff = self.get_cache_of_diff(goal, snapshot)
+        for _, value in current_diff.iterrows():
+            print(value.Reference_Traces)
+            print(value.Snapshot_Traces)
         return current_diff.size
 
     def find_recursive(self, files: FrozenSet[Path]) -> int:
