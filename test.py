@@ -44,19 +44,21 @@ def get_traces(nodes: List[str], snapshot: str):
                     hops_str = json.dumps(convert_list_to_tuple(trace.hops))
                     traces[trace.disposition].add(hops_str)
     return traces
-traces1 = get_traces(nodes, "t1")
-traces2 = get_traces(nodes, "t2")
-for key in traces1:
-    set1 = traces1[key]
-    set2 = traces2[key]
-    result = (set1 - set2).union(set2 - set1)
-    print(result)
+# traces1 = get_traces(nodes, "t1")
+# traces2 = get_traces(nodes, "t2")
+# for key in traces1:
+#     set1 = traces1[key]
+#     set2 = traces2[key]
+#     result = (set1 - set2).union(set2 - set1)
+#     print(result)
+
+results = bfq.compareFilters().answer(snapshot="t2", reference_snapshot="t1").frame()
 
 # results = bfq.traceroute(startLocation='as2dept1', headers=HeaderConstraints()).answer(snapshot="t2").frame()
 # results = bfq.differentialReachability(
 # ).answer(snapshot="t1", reference_snapshot="t2").frame()
 # print(results.size)
-# for idx, result in results.iterrows():
-#     print(result.Flow)
-#     for trace in result.Traces:
-#         print(trace)
+for idx, result in results.iterrows():
+    print(result.Node)
+    # for trace in result.Traces:
+    #     print(trace)

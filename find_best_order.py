@@ -4,22 +4,19 @@ from pathlib import Path
 from pybatfish.client.commands import bf_init_snapshot
 from pybatfish.question import bfq
 from pybatfish.question.question import load_questions
+from functools import cmp_to_key
 import tempfile
 import shutil
 import os
 
 
-class FindBestOrder(object):
+class FindOrderBase(object):
     def __init__(self, base: Path, files: List[Path]):
-        load_questions()
         self.base = base
         self.files = files
         self.cache = {}
-        self.dp = {}
-        self.path = {}
         self.current_idx = 0
         self.snapshots = {}
-        self.diff_cache = {}
         self.tmp_folders = set()
         self.goal = self.get_or_create(frozenset(files))
 
@@ -41,6 +38,40 @@ class FindBestOrder(object):
             self.tmp_folders.add(directory)
         return self.cache[files]
 
+    def find(self) -> List[Path]:
+        return self.files
+
+
+class FindBestOrderPerCommand(FindOrderBase):
+
+    def find(self) -> List[Path]:
+        def compare(config1: Path, config2: Path):
+            snapshot1 = self.get_snapshot(self.get_or_create(frozenset([config1])))
+            snapshot2 = self.get_snapshot(self.get_or_create(frozenset([config2])))
+            base = self.get_snapshot(self.base)
+            diff1 = bfq.compareFilters().answer(snapshot=snapshot1, reference_snapshot=base).frame()
+            action = ""
+            for _, result in diff1.iterrows():
+                action = result.Line_Action
+            if action == "DENY":
+                return 1
+            diff2 = bfq.compareFilters().answer(snapshot=snapshot2, reference_snapshot=base).frame()
+            for _, result in diff2.iterrows():
+                action = result.Line_Action
+            if action == "DENY":
+                return -1
+            elif action == "PERMIT":
+                return 1
+            else:
+                return -1
+        return sorted(self.files, key=cmp_to_key(compare))
+
+
+class FindBestOrderPerFile(FindOrderBase):
+    dp = {}
+    path = {}
+    diff_cache = {}
+
     def get_cache_of_diff(self, origin: str, reference: str) -> DataFrame:
         if origin not in self.diff_cache:
             self.diff_cache[origin] = {}
@@ -54,10 +85,12 @@ class FindBestOrder(object):
         goal = self.get_snapshot(self.goal)
         base = self.get_snapshot(self.base)
         current_diff = self.get_cache_of_diff(goal, snapshot)
-        for _, value in current_diff.iterrows():
-            print(value.Reference_Traces)
-            print(value.Snapshot_Traces)
         return current_diff.size
+
+    def find(self) -> List[Path]:
+        start = frozenset(self.files)
+        self.find_recursive(start)
+        return self.show_path(start)
 
     def find_recursive(self, files: FrozenSet[Path]) -> int:
         if not files:
@@ -84,9 +117,8 @@ class FindBestOrder(object):
         return result
 
 
-o = FindBestOrder(Path("/home/leo/repos/verifier/configs/test"),
-                  [Path('/home/leo/repos/verifier/configs/updates/as1border1.cfg'),
-                   Path('/home/leo/repos/verifier/configs/updates/as2border1.cfg')])
-start = frozenset(o.files)
-o.find_recursive(start)
-print(o.show_path(start))
+load_questions()
+o = FindBestOrderPerCommand(Path("/home/leo/repos/verifier/configs/default"),
+                            [Path('/home/leo/repos/verifier/configs/updates/acls/as1border1.cfg'),
+                             Path('/home/leo/repos/verifier/configs/updates/acls/as2border1.cfg')])
+print(o.find())
