@@ -62,8 +62,20 @@ class FindBestOrderPerCommand(FindOrderBase):
                 return -1
             elif action == "PERMIT":
                 return 1
-            else:
+
+            ipsec_path_org = len(bfq.ipsecEdges().answer(snapshot=base).frame())
+            ipsec_path_update1 = len(bfq.ipsecEdges().answer(snapshot=snapshot1).frame())
+            if ipsec_path_update1 > ipsec_path_org:
+                return 1
+            elif ipsec_path_update1 < ipsec_path_org:
                 return -1
+            ipsec_path_update2 = len(bfq.ipsecEdges().answer(snapshot=snapshot2).frame())
+            if ipsec_path_update2 > ipsec_path_org:
+                return -1
+            else:
+                return 1
+            # else:
+            #     return -1
         return sorted(self.files, key=cmp_to_key(compare))
 
 
@@ -117,8 +129,13 @@ class FindBestOrderPerFile(FindOrderBase):
         return result
 
 
-load_questions()
-o = FindBestOrderPerCommand(Path("/home/leo/repos/verifier/configs/default"),
-                            [Path('/home/leo/repos/verifier/configs/updates/acls/as1border1.cfg'),
-                             Path('/home/leo/repos/verifier/configs/updates/acls/as2border1.cfg')])
-print(o.find())
+def main():
+    load_questions()
+    o = FindBestOrderPerCommand(Path("/home/leo/repos/sdn-verifier/configs/default"),
+                                [Path('/home/leo/repos/sdn-verifier/configs/updates/acls/as1border1.cfg'),
+                                 Path('/home/leo/repos/sdn-verifier/configs/updates/acls/as2border1.cfg')])
+    print(o.find())
+
+
+if __name__ == "__main__":
+    main()
