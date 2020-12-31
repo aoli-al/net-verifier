@@ -4,10 +4,12 @@ from pybatfish.question.question import load_questions
 from pybatfish.client.commands import bf_init_snapshot
 from typing import List
 import json
+from command import *
 
 load_questions()
-bf_init_snapshot("/home/leo/repos/verifier/configs/default", "t1")
-bf_init_snapshot("/home/leo/repos/verifier/configs/alternate-routes", "t2")
+bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
+bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
+
 
 def convert_list_to_tuple(obj):
     if isinstance(obj, list):
@@ -24,6 +26,7 @@ def convert_list_to_tuple(obj):
         # new_obj = type(t.__name__, t.__bases__, values)
         # return new_obj
     return obj
+
 
 nodes = []
 results = bfq.nodeProperties().answer(snapshot="t1").frame()
@@ -44,6 +47,8 @@ def get_traces(nodes: List[str], snapshot: str):
                     hops_str = json.dumps(convert_list_to_tuple(trace.hops))
                     traces[trace.disposition].add(hops_str)
     return traces
+
+
 # traces1 = get_traces(nodes, "t1")
 # traces2 = get_traces(nodes, "t2")
 # for key in traces1:
@@ -52,13 +57,17 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-results = bfq.compareFilters().answer(snapshot="t2", reference_snapshot="t1").frame()
+print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
+                NodeCommand("/as.core./", "", {"bbb"})]).compute())
+# results = bfq.compareFilters().answer(snapshot="t2", reference_snapshot="t1").frame()
+# results = bfq.nodeProperties(nodes="/.*/").answer().frame()
 
 # results = bfq.traceroute(startLocation='as2dept1', headers=HeaderConstraints()).answer(snapshot="t2").frame()
 # results = bfq.differentialReachability(
 # ).answer(snapshot="t1", reference_snapshot="t2").frame()
 # print(results.size)
-for idx, result in results.iterrows():
-    print(result.Node)
+
+# for idx, result in results.iterrows():
+#     print(result.Node)
     # for trace in result.Traces:
     #     print(trace)

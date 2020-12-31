@@ -1,5 +1,5 @@
-from action import Action
-from resource import Resource
+from action import *
+from resource import *
 from condition import Condition
 from models import HeaderConstraintBuilder, PathConstraintBuilder
 from connectors import Connector
