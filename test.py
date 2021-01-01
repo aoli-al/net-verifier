@@ -57,8 +57,11 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
-                NodeCommand("/as.core./", "", {"bbb"})]).compute())
+# print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
+#                 NodeCommand("/as.core./", "", {"bbb"})]).compute())
+
+result = bfq.layer3Edges().answer().frame()
+print(result)
 # results = bfq.compareFilters().answer(snapshot="t2", reference_snapshot="t1").frame()
 # results = bfq.nodeProperties(nodes="/.*/").answer().frame()
 
