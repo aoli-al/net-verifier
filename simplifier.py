@@ -1,13 +1,14 @@
 from pybatfish.client.commands import *
 from pybatfish.question.question import load_questions
 from pybatfish.question import bfq
-from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
+from pybatfish.datamodel.flow import PathConstraints
 from typing import List, Set
+from pathlib import Path
 
 
 class ConfigurationSimplifier(object):
-    def __init__(self, snapshot):
-        bf_init_snapshot(snapshot, "origin", overwrite=True)
+    def __init__(self, snapshot: Path):
+        bf_init_snapshot(str(snapshot), "origin", overwrite=True)
         load_questions()
         self.nodes = []
         results = bfq.nodeProperties().answer().frame()
@@ -30,9 +31,11 @@ class ConfigurationSimplifier(object):
                     for trace in result.Traces:
                         for hop in trace.hops:
                             reserved.add(hop.node)
+            if 'as1border1' in reserved:
+                print("?")
             pending_nodes.difference_update(reserved)
         return pending_nodes
 
 
-s = ConfigurationSimplifier("/home/leo/repos/verifier/configs/test")
-print(s.unreachable_switches(["as2dept1"]))
+# s = ConfigurationSimplifier("/home/leo/repos/verifier/configs/test")
+# print(s.unreachable_switches(["as2dept1"]))
