@@ -1,5 +1,6 @@
 from pybatfish.question.question import load_questions
 from pybatfish.question import bfq
+from pybatfish.datamodel.primitives import Interface
 
 
 def resolve(node_spec: str, node_property: str, snapshot: str):
@@ -11,3 +12,7 @@ def resolve(node_spec: str, node_property: str, snapshot: str):
     for node in result.Node.values:
         data.add(node)
     return data
+
+
+def interface_to_str(interface: Interface) -> str:
+    return f"{interface.hostname}:{interface.interface}"
