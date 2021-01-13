@@ -18,12 +18,14 @@ class Specification(object):
                  sensitive_nodes: Set[str],
                  topology: Topology,
                  commands: Dict[str, Set[str]],
-                 invariants: Connector):
+                 invariants: Connector,
+                 ticket: str):
         self.config_path = config_path
         self.sensitive_nodes = sensitive_nodes
         self.topology = topology
         self.commands = commands
         self.invariants = invariants
+        self.ticket = ticket
 
 
 def resolve_list(nodes: List[str], snapshot: str) -> Set[str]:
@@ -45,15 +47,17 @@ def build_specification(base: Path, affected_nodes: List[str], sensitive_nodes: 
                          sensitive_nodes,
                          topology,
                          commands,
-                         invariants)
+                         invariants,
+                         "")
 
 
 specification = build_specification(base=Path("/home/leo/repos/sdn-verifier/configs/example"),
                                     affected_nodes=['/as2core.*/'],
-                                    sensitive_nodes=[],
+                                    sensitive_nodes=['as2dist1'],
                                     allowed_command=Commands([NodeCommand("/.*border.*/", "", {"aaa"}),
                                                               NodeCommand("/.*core.*/", "", {"bbb"})]),
                                     invariants=Policy([ApplicationAction("SSH")], [SrcIpResource("as2core2")], None))
+
 load_questions()
 print(jsonpickle.encode(specification, indent=2))
 
