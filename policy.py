@@ -9,7 +9,7 @@ from typing import List
 
 # The user can do {action} for {resource} under {condition}.
 class Policy(Connector):
-    def __init__(self, action: List[Action], resource: List[Resource], condition: Condition):
+    def __init__(self, action: List[Action], resource: List[Resource], condition: Condition = None):
         self.actions = action
         self.resources = resource
         self.condition = condition

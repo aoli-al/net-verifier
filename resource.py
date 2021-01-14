@@ -17,12 +17,28 @@ class SrcIpResource(Resource):
         builder.srcIps = self.src_ip
 
 
+class SrcNodeResource(Resource):
+    def __init__(self, src_node: str):
+        self.src_node = src_node
+
+    def build_header_constraint(self, builder: HeaderConstraintBuilder):
+        builder.srcIps = self.src_node
+
+
 class DstIpResource(Resource):
     def __init__(self, dst_ip: str):
         self.dst_ip = dst_ip
 
     def build_header_constraint(self, builder: HeaderConstraintBuilder):
         builder.dstIps = self.dst_ip
+
+
+class DstNodeResource(Resource):
+    def __init__(self, dst_node: str):
+        self.dst_node = dst_node
+
+    def build_header_constraint(self, builder: HeaderConstraintBuilder):
+        builder.dstIps = self.dst_node
 
 
 class StartLocationResource(Resource):

@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List, Dict, Set
+from typing import List, Dict, Set, Any
 from pybatfish.client.commands import bf_init_snapshot
 from pybatfish.question.question import  load_questions
 from command import Commands, NodeCommand
@@ -51,14 +51,31 @@ def build_specification(base: Path, affected_nodes: List[str], sensitive_nodes: 
                          "")
 
 
-specification = build_specification(base=Path("/home/leo/repos/sdn-verifier/configs/example"),
-                                    affected_nodes=['/as2core.*/'],
-                                    sensitive_nodes=['as2dist1'],
-                                    allowed_command=Commands([NodeCommand("/.*border.*/", "", {"aaa"}),
-                                                              NodeCommand("/.*core.*/", "", {"bbb"})]),
-                                    invariants=Policy([ApplicationAction("SSH")], [SrcIpResource("as2core2")], None))
+def build_specification_from_dict(data: Dict[str, Any]):
+    return build_specification(data["base"], data["affected_nodes"], data["sensitive_nodes"],
+                               Commands([eval(command) for command in data["allowed_command"]]),
+                               eval(data["invariants"]))
+
+
+# specification = build_specification(base=Path("/home/leo/repos/sdn-verifier/configs/example"),
+#                                     affected_nodes=['/as2core.*/'],
+#                                     sensitive_nodes=['as2dist1'],
+#                                     allowed_command=Commands([NodeCommand("/.*border.*/", "", {"aaa"}),
+#                                                               NodeCommand("/.*core.*/", "", {"bbb"})]),
+#                                     invariants=Policy([ApplicationAction("SSH")], [SrcNodeResource("host1"),
+#                                                                                    DstNodeResource("as2core2")]))
+
+data = {
+    "base": "/home/leo/repos/sdn-verifier/configs/example",
+    "affected_nodes": ['/as2core.*/'],
+    "sensitive_nodes": ['as2dist1'],
+    "allowed_command": ["NodeCommand(\"/.*border.*/\", \"\", {\"up\"})",
+                        "NodeCommand(\"/.*core.*/\", \"\", {\"login\"})"],
+    "invariants": "Policy([ApplicationAction(\"SSH\")], [SrcNodeResource(\"host1\"), DstNodeResource(\"as2core2\")])"
+}
 
 load_questions()
+specification = build_specification_from_dict(data)
 print(jsonpickle.encode(specification, indent=2))
 
 # Link
