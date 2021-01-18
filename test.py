@@ -61,10 +61,14 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
+h = Harness("/home/leo/repos/sdn-verifier/configs/default")
+json.dump(h.run(), open("out.json", 'w'), indent=2)
+
+
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
 #                 NodeCommand("/as.core./", "", {"bbb"})]).compute())
-print(interfaces_from_snapshot("example"))
-print(len(interfaces_from_snapshot("example")))
+# print(interfaces_from_snapshot("example"))
+# print(len(interfaces_from_snapshot("example")))
 # print(build_policies_from_csv("/home/leo/tmp/policies.csv"))
 #
 # n = CrystalNet("t1", ["as2core1"])
