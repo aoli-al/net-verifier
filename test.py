@@ -5,6 +5,7 @@ from pybatfish.client.commands import bf_init_snapshot
 from typing import List
 import json
 from command import *
+from policy import *
 
 load_questions()
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
@@ -59,9 +60,12 @@ def get_traces(nodes: List[str], snapshot: str):
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
 #                 NodeCommand("/as.core./", "", {"bbb"})]).compute())
-
-result = bfq.layer3Edges().answer().frame()
-print(result)
+print(build_policies_from_csv("/home/leo/tmp/policies.csv"))
+# Waypoint()
+# wp = Waypoint("as3border2", "3.1.1.1/32", "as3core1")
+# print(wp.eval("", "t1"))
+# result = bfq.layer3Edges().answer().frame()
+# print(result)
 # results = bfq.compareFilters().answer(snapshot="t2", reference_snapshot="t1").frame()
 # results = bfq.nodeProperties(nodes="/.*/").answer().frame()
 

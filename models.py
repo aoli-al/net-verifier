@@ -1,4 +1,4 @@
-from pybatfish.datamodel.flow import  HeaderConstraints, PathConstraints
+from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
 
 
 class HeaderConstraintBuilder(object):
