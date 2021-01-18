@@ -6,9 +6,12 @@ from typing import List
 import json
 from command import *
 from policy import *
+from experiment import *
+from utils import *
 
 load_questions()
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
+bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
 
 
@@ -60,7 +63,15 @@ def get_traces(nodes: List[str], snapshot: str):
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
 #                 NodeCommand("/as.core./", "", {"bbb"})]).compute())
-print(build_policies_from_csv("/home/leo/tmp/policies.csv"))
+print(interfaces_from_snapshot("example"))
+print(len(interfaces_from_snapshot("example")))
+# print(build_policies_from_csv("/home/leo/tmp/policies.csv"))
+#
+# n = CrystalNet("t1", ["as2core1"])
+# print(n.get_affected_interfaces())
+#
+# n = Heimdall("t1", ["as2core1"])
+# print(n.get_affected_interfaces())
 # Waypoint()
 # wp = Waypoint("as3border2", "3.1.1.1/32", "as3core1")
 # print(wp.eval("", "t1"))

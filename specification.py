@@ -41,7 +41,7 @@ def build_specification(base: Path, affected_nodes: List[str], sensitive_nodes: 
     bf_init_snapshot(str(base), "base")
     affected_nodes = resolve_list(affected_nodes, "base")
     sensitive_nodes = resolve_list(sensitive_nodes, "base")
-    topology = build_topology(Path(base), affected_nodes, sensitive_nodes)
+    topology = build_topology("base", affected_nodes, sensitive_nodes)
     commands = allowed_command.compute()
     return Specification(base,
                          sensitive_nodes,

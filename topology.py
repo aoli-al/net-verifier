@@ -13,8 +13,8 @@ class Topology(object):
         self.links = links
 
 
-def get_reachable_interfaces(snapshot: Path, switches: Set[str]) -> Set[str]:
-    bf_init_snapshot(str(snapshot), "reachable", overwrite=True)
+def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:
+    # bf_init_snapshot(str(snapshot), "reachable", overwrite=True)
     nodes = []
     results = bfq.nodeProperties().answer().frame()
     for _, result in results.iterrows():
@@ -23,7 +23,8 @@ def get_reachable_interfaces(snapshot: Path, switches: Set[str]) -> Set[str]:
     for switch in switches:
         for node in nodes:
             results = bfq.reachability(
-                pathConstraints=PathConstraints(startLocation=switch, endLocation=node)).answer()
+                pathConstraints=PathConstraints(startLocation=switch, endLocation=node)) \
+                .answer(snapshot=snapshot)
             results = results.frame()
             for _, result in results.iterrows():
                 for trace in result.Traces:
@@ -36,15 +37,14 @@ def get_reachable_interfaces(snapshot: Path, switches: Set[str]) -> Set[str]:
     return reachable
 
 
-def build_topology(base: Path, reachable_nodes: Set[str], sensitive_nodes: Set[str]) -> Topology:
+def build_topology(base: str, reachable_nodes: Set[str], sensitive_nodes: Set[str]) -> Topology:
     reachable_interfaces = get_reachable_interfaces(base, reachable_nodes)
-    bf_init_snapshot(str(base), "topo")
     interfaces = set()
     results = bfq.interfaceProperties().answer().frame()
     for _, result in results.iterrows():
         interfaces.add(interface_to_str(result.Interface))
     links = []
-    results = bfq.layer3Edges().answer(snapshot="topo").frame()
+    results = bfq.layer3Edges().answer(snapshot=base).frame()
     for _, result in results.iterrows():
         i1 = result.Interface
         i1_str = interface_to_str(i1)
