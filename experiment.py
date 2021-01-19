@@ -6,6 +6,7 @@ from topology import build_topology
 import os
 import shutil
 import tempfile
+import json
 
 
 class Base(object):
@@ -80,6 +81,8 @@ class CrystalNet(Base):
                 affected_interfaces.append(interface_to_str(result.Interface))
             if "border" in node:
                 continue
+            if node not in edge:
+                continue
             for parent in edge[node]:
                 pending_nodes.append(parent)
         return set(affected_interfaces)
@@ -119,6 +122,8 @@ class Harness(object):
     def generate_test_case(self) -> Generator[Tuple[str, Set[str], str], None, None]:
         for interface_name in self.interfaces:
             [node, interface] = interface_name.split(":")
+            if "host" in node:
+                continue
             dir = tempfile.TemporaryDirectory()
             shutil.copytree(self.base, dir.name+"/", dirs_exist_ok=True)
             file = os.path.join(dir.name, "configs", node + ".cfg")
@@ -149,7 +154,7 @@ class Harness(object):
             print(f"Interface {interface} is down.")
             result = {
                 "interface": interface,
-                "affected_nodes": affected_nodes,
+                "affected_nodes": list(affected_nodes),
                 "solutions": []
             }
             for solution, name in self.solutions:
@@ -157,7 +162,18 @@ class Harness(object):
                 internal_nodes = s.get_internal_nodes()
                 result['solutions'].append({
                     "name": name,
-                    "internal_nodes": internal_nodes,
+                    "internal_nodes": list(internal_nodes),
                 })
             results.append(result)
         return results
+
+def process_json(path: str):
+    out = open('out.csv', 'w')
+    result = json.load(open("out.json"))
+    for case in result:
+        for solution in case['solutions']:
+            out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
+                      f"{len(solution['internal_nodes'])}, "
+                      f"{case['interface'].split(':')[0] in solution['internal_nodes']}\n")
+
+
