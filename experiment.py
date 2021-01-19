@@ -7,6 +7,7 @@ import os
 import shutil
 import tempfile
 import json
+import re
 
 
 class Base(object):
@@ -167,6 +168,7 @@ class Harness(object):
             results.append(result)
         return results
 
+
 def process_json(path: str):
     out = open('out.csv', 'w')
     result = json.load(open("out.json"))
@@ -175,5 +177,45 @@ def process_json(path: str):
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
                       f"{len(solution['internal_nodes'])}, "
                       f"{case['interface'].split(':')[0] in solution['internal_nodes']}\n")
+
+
+
+def generate_hosts(path: str):
+    host_template = {
+        "hostname": "host3",
+        "iptablesFile": "iptables/host_general.iptables",
+        "hostInterfaces": {
+            "eth0": {
+                "name": "eth0",
+                "prefix": "2.34.101.101/24",
+                "gateway": "2.34.101.3"
+            }
+        }
+    }
+    host_idx = 3
+    interface_pattern = re.compile(r"^interface (\w+\/[0-9]+)$")
+    ip_pattern = re.compile(r" ip address (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})")
+    for (dirpath, dirnames, filenames) in os.walk(os.path.join(path, "configs")):
+        for f in filenames:
+            find_ip = False
+            interface_ip = None
+            for line in open(os.path.join(dirpath, f)):
+                result = interface_pattern.match(line)
+                if result is not None:
+                    find_ip = True
+                    continue
+                if find_ip:
+                    result = ip_pattern.match(line)
+                    if result is not None:
+                        interface_ip = result.group(1)
+                        segs = interface_ip.split(".")
+                        host_template['hostname'] = f"host{host_idx}"
+                        host_template['hostInterfaces']['gateway'] = interface_ip
+                        segs[-1] = "101/24"
+                        host_template['hostInterfaces']['prefix'] = ".".join(segs)
+                        f = open(os.path.join(path, "hosts", f"host{host_idx}.json"), "w")
+                        json.dump(host_template, f)
+                    if line.strip() == "!":
+                        find_ip = False
 
 

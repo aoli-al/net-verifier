@@ -9,11 +9,22 @@ from policy import *
 from experiment import *
 from utils import *
 
+generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
 load_questions()
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
+bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
 
+results = bfq.reachability(pathConstraints=PathConstraints(startLocation="host1", endLocation="host4"))\
+    .answer(snapshot="multihosts").frame()
+for idx, result in results.iterrows():
+    print(result.Flow)
+
+# results = bfq.reachability(headers=HeaderConstraints(srcIps="host1", dstIps="host2")) \
+#     .answer(snapshot="multihosts").frame()
+# for idx, result in results.iterrows():
+#     print(result.Flow)
 
 def convert_list_to_tuple(obj):
     if isinstance(obj, list):
@@ -32,10 +43,10 @@ def convert_list_to_tuple(obj):
     return obj
 
 
-nodes = []
-results = bfq.nodeProperties().answer(snapshot="t1").frame()
-for _, result in results.iterrows():
-    nodes.append(result.Node)
+# nodes = []
+# results = bfq.nodeProperties().answer(snapshot="t1").frame()
+# for _, result in results.iterrows():
+#     nodes.append(result.Node)
 
 
 def get_traces(nodes: List[str], snapshot: str):
@@ -61,7 +72,7 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-process_json("out.json")
+# process_json("out.json")
 # h = Harness("/home/leo/repos/sdn-verifier/configs/default")
 # json.dump(h.run(), open("out.json", 'w'), indent=2)
 
