@@ -3,6 +3,7 @@ from pybatfish.question import bfq
 from utils import interface_to_str, interfaces_from_snapshot
 from pybatfish.client.commands import bf_init_snapshot
 from topology import build_topology
+from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
 import os
 import shutil
 import tempfile
@@ -114,7 +115,8 @@ class Harness(object):
     def get_affected_node(self, node: str, snapshot: str) -> Set[str]:
         affected_node = set()
         self.name_idx += 1
-        results = bfq.differentialReachability().answer(snapshot=snapshot, reference_snapshot="exp").frame()
+        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
+            .answer(snapshot=snapshot, reference_snapshot="exp").frame()
         for idx, result in results.iterrows():
             if result.Flow.ingressNode is not None and result.Flow.ingressNode != node:
                 affected_node.add(result.Flow.ingressNode)

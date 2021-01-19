@@ -17,21 +17,21 @@ bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts"
 
 result = {}
 
-for i in range(1, 41):
-    result[i] = {}
-    for j in range(1, 41):
-        if i != j:
-            results = bfq.reachability(
-                pathConstraints=PathConstraints(startLocation=f"host{i}", endLocation=f"host{j}")) \
-                .answer(snapshot="multihosts").frame()
-            if results.size > 0:
-                print(f"host{i} host{j} True")
-                result[i][j] = True
-            else:
-                print(f"host{j} host{i} False")
-                result[i][j] = False
+# for i in range(1, 42):
+#     result[i] = {}
+#     for j in range(1, 42):
+#         if i != j:
+#             results = bfq.reachability(
+#                 pathConstraints=PathConstraints(startLocation=f"host{i}", endLocation=f"host{j}")) \
+#                 .answer(snapshot="multihosts").frame()
+#             if results.size > 0:
+#                 print(f"host{i} host{j} True")
+#                 result[i][j] = True
+#             else:
+#                 print(f"host{i} host{j} False")
+#                 result[i][j] = False
 
-json.dump(result, open("matrix.json", "w"))
+# json.dump(result, open("matrix.json", "w"), indent=2)
 
 
 # results = bfq.reachability(headers=HeaderConstraints(srcIps="host1", dstIps="host2")) \
@@ -86,8 +86,8 @@ def get_traces(nodes: List[str], snapshot: str):
 #     print(result)
 
 # process_json("out.json")
-# h = Harness("/home/leo/repos/sdn-verifier/configs/default")
-# json.dump(h.run(), open("out.json", 'w'), indent=2)
+h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
+json.dump(h.run(), open("out.json", 'w'), indent=2)
 
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
