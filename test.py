@@ -9,17 +9,30 @@ from policy import *
 from experiment import *
 from utils import *
 
-generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
 load_questions()
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
 bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
 
-results = bfq.reachability(pathConstraints=PathConstraints(startLocation="host1", endLocation="host4"))\
-    .answer(snapshot="multihosts").frame()
-for idx, result in results.iterrows():
-    print(result.Flow)
+result = {}
+
+for i in range(1, 41):
+    result[i] = {}
+    for j in range(1, 41):
+        if i != j:
+            results = bfq.reachability(
+                pathConstraints=PathConstraints(startLocation=f"host{i}", endLocation=f"host{j}")) \
+                .answer(snapshot="multihosts").frame()
+            if results.size > 0:
+                print(f"host{i} host{j} True")
+                result[i][j] = True
+            else:
+                print(f"host{j} host{i} False")
+                result[i][j] = False
+
+json.dump(result, open("matrix.json", "w"))
+
 
 # results = bfq.reachability(headers=HeaderConstraints(srcIps="host1", dstIps="host2")) \
 #     .answer(snapshot="multihosts").frame()

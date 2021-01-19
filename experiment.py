@@ -179,7 +179,6 @@ def process_json(path: str):
                       f"{case['interface'].split(':')[0] in solution['internal_nodes']}\n")
 
 
-
 def generate_hosts(path: str):
     host_template = {
         "hostname": "host3",
@@ -210,11 +209,12 @@ def generate_hosts(path: str):
                         interface_ip = result.group(1)
                         segs = interface_ip.split(".")
                         host_template['hostname'] = f"host{host_idx}"
-                        host_template['hostInterfaces']['gateway'] = interface_ip
+                        host_template['hostInterfaces']['eth0']['gateway'] = interface_ip
                         segs[-1] = "101/24"
-                        host_template['hostInterfaces']['prefix'] = ".".join(segs)
-                        f = open(os.path.join(path, "hosts", f"host{host_idx}.json"), "w")
-                        json.dump(host_template, f)
+                        host_template['hostInterfaces']['eth0']['prefix'] = ".".join(segs)
+                        f = open(os.path.join(path, "hosts2", f"host{host_idx}.json"), "w")
+                        json.dump(host_template, f, indent=2)
+                        host_idx += 1
                     if line.strip() == "!":
                         find_ip = False
 
