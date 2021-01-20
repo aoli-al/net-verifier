@@ -151,9 +151,14 @@ class Harness(object):
             if len(nodes):
                 yield interface_name, nodes, snapshot
 
-    def run(self) -> List[Dict[str, Any]]:
-        results = []
+    def run(self, output_path: str):
+        results = json.load(open(output_path))
+        visited = set([result['interface'] for result in results])
         for interface, affected_nodes, snapshot in self.generate_test_case():
+            if "as3core1:GigabitEthernet0/0" in interface:
+                continue
+            if interface in visited:
+                continue
             print(f"Interface {interface} is down.")
             result = {
                 "interface": interface,
@@ -167,8 +172,9 @@ class Harness(object):
                     "name": name,
                     "internal_nodes": list(internal_nodes),
                 })
+            visited.add(interface)
             results.append(result)
-        return results
+            json.dump(results, open(output_path, "w"))
 
 
 def process_json(path: str):
@@ -177,7 +183,7 @@ def process_json(path: str):
     for case in result:
         for solution in case['solutions']:
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
-                      f"{len(solution['internal_nodes'])}, "
+                      f"{len(list(filter(lambda x: 'host' not in x, solution['internal_nodes'])))}, "
                       f"{case['interface'].split(':')[0] in solution['internal_nodes']}\n")
 
 

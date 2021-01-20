@@ -85,9 +85,9 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-# process_json("out.json")
-h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
-json.dump(h.run(), open("out.json", 'w'), indent=2)
+process_json("out.json")
+# h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
+# h.run("out.json")
 
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
