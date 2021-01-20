@@ -153,9 +153,17 @@ class Harness(object):
 
     def run(self, output_path: str):
         results = json.load(open(output_path))
+        # visited = set()
+        # rrr = []
+        # for result in results:
+        #     if result['interface'] not in visited:
+        #         visited.add(result['interface'])
+        #         rrr.append(result)
+        # json.dump(rrr, open("tmp.json", "w"), indent=2)
+        # return
         visited = set([result['interface'] for result in results])
         for interface, affected_nodes, snapshot in self.generate_test_case():
-            if "as3core1:GigabitEthernet0/0" in interface:
+            if "as2border1:GigabitEthernet2/0" in interface:
                 continue
             if interface in visited:
                 continue
@@ -174,7 +182,7 @@ class Harness(object):
                 })
             visited.add(interface)
             results.append(result)
-            json.dump(results, open(output_path, "w"))
+            json.dump(results, open(output_path, "w"), indent=2)
 
 
 def process_json(path: str):
@@ -199,31 +207,31 @@ def generate_hosts(path: str):
             }
         }
     }
+    switches = ["as2dept1", "as2dist1", "as2dist2", "as1border2", "as3border2"]
     host_idx = 3
     interface_pattern = re.compile(r"^interface (\w+\/[0-9]+)$")
     ip_pattern = re.compile(r" ip address (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})")
-    for (dirpath, dirnames, filenames) in os.walk(os.path.join(path, "configs")):
-        for f in filenames:
-            find_ip = False
-            interface_ip = None
-            for line in open(os.path.join(dirpath, f)):
-                result = interface_pattern.match(line)
+    for switch in switches:
+        find_ip = False
+        interface_ip = None
+        for line in open(os.path.join(path, "configs", switch+".cfg")):
+            result = interface_pattern.match(line)
+            if result is not None:
+                find_ip = True
+                continue
+            if find_ip:
+                result = ip_pattern.match(line)
                 if result is not None:
-                    find_ip = True
-                    continue
-                if find_ip:
-                    result = ip_pattern.match(line)
-                    if result is not None:
-                        interface_ip = result.group(1)
-                        segs = interface_ip.split(".")
-                        host_template['hostname'] = f"host{host_idx}"
-                        host_template['hostInterfaces']['eth0']['gateway'] = interface_ip
-                        segs[-1] = "101/24"
-                        host_template['hostInterfaces']['eth0']['prefix'] = ".".join(segs)
-                        f = open(os.path.join(path, "hosts2", f"host{host_idx}.json"), "w")
-                        json.dump(host_template, f, indent=2)
-                        host_idx += 1
-                    if line.strip() == "!":
-                        find_ip = False
+                    interface_ip = result.group(1)
+                    segs = interface_ip.split(".")
+                    host_template['hostname'] = f"host{host_idx}"
+                    host_template['hostInterfaces']['eth0']['gateway'] = interface_ip
+                    segs[-1] = "101/24"
+                    host_template['hostInterfaces']['eth0']['prefix'] = ".".join(segs)
+                    f = open(os.path.join(path, "hosts2", f"host{host_idx}.json"), "w")
+                    json.dump(host_template, f, indent=2)
+                    host_idx += 1
+                if line.strip() == "!":
+                    find_ip = False
 
 

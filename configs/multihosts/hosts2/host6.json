@@ -1,11 +1,11 @@
 {
-  "hostname": "host31",
+  "hostname": "host6",
   "iptablesFile": "iptables/host_general.iptables",
   "hostInterfaces": {
     "eth0": {
       "name": "eth0",
-      "prefix": "3.0.1.101/24",
-      "gateway": "3.0.1.2"
+      "prefix": "2.128.1.101/24",
+      "gateway": "2.128.1.1"
     }
   }
 }

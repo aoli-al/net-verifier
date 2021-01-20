@@ -9,11 +9,14 @@ from policy import *
 from experiment import *
 from utils import *
 
+
+# generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
+
 load_questions()
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
 
 result = {}
 
