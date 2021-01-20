@@ -10,7 +10,7 @@ from experiment import *
 from utils import *
 
 
-# generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
+generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
 
 load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
@@ -88,7 +88,7 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-#  process_json("out.json")
+# process_json("out.json")
 h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
 h.run("out.json")
 

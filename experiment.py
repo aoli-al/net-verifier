@@ -1,7 +1,7 @@
 from typing import List, Set, Tuple, Generator, Dict, Any
 from pybatfish.question import bfq
 from utils import interface_to_str, interfaces_from_snapshot
-from pybatfish.client.commands import bf_init_snapshot
+from pybatfish.client.commands import bf_init_snapshot, bf_delete_snapshot
 from topology import build_topology
 from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
 import os
@@ -115,11 +115,14 @@ class Harness(object):
     def get_affected_node(self, node: str, snapshot: str) -> Set[str]:
         affected_node = set()
         self.name_idx += 1
-        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
+        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/",
+                                                                               endLocation="/host[0-9]+/")) \
             .answer(snapshot=snapshot, reference_snapshot="exp").frame()
         for idx, result in results.iterrows():
             if result.Flow.ingressNode is not None and result.Flow.ingressNode != node:
                 affected_node.add(result.Flow.ingressNode)
+        while len(affected_node) > 2:
+            affected_node.pop()
         return affected_node
 
     def generate_test_case(self) -> Generator[Tuple[str, Set[str], str], None, None]:
@@ -163,8 +166,8 @@ class Harness(object):
         # return
         visited = set([result['interface'] for result in results])
         for interface, affected_nodes, snapshot in self.generate_test_case():
-            if "as2border1:GigabitEthernet2/0" in interface:
-                continue
+            # if "as2border1:GigabitEthernet2/0" in interface:
+            #     continue
             if interface in visited:
                 continue
             print(f"Interface {interface} is down.")
@@ -183,6 +186,7 @@ class Harness(object):
             visited.add(interface)
             results.append(result)
             json.dump(results, open(output_path, "w"), indent=2)
+            bf_delete_snapshot(snapshot)
 
 
 def process_json(path: str):
@@ -211,13 +215,15 @@ def generate_hosts(path: str):
     host_idx = 3
     interface_pattern = re.compile(r"^interface (\w+\/[0-9]+)$")
     ip_pattern = re.compile(r" ip address (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})")
+    host_map = {}
     for switch in switches:
         find_ip = False
-        interface_ip = None
+        interface_name = None
         for line in open(os.path.join(path, "configs", switch+".cfg")):
             result = interface_pattern.match(line)
             if result is not None:
                 find_ip = True
+                interface_name = result.group(1)
                 continue
             if find_ip:
                 result = ip_pattern.match(line)
@@ -230,8 +236,11 @@ def generate_hosts(path: str):
                     host_template['hostInterfaces']['eth0']['prefix'] = ".".join(segs)
                     f = open(os.path.join(path, "hosts2", f"host{host_idx}.json"), "w")
                     json.dump(host_template, f, indent=2)
+                    host_map[f'host{host_idx}'] = switch + ":" + interface_name
                     host_idx += 1
                 if line.strip() == "!":
                     find_ip = False
+    json.dump(host_map, open("host-mapping.json", "w"))
+
 
 
