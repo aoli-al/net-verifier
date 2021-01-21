@@ -1,7 +1,7 @@
 from pybatfish.question.question import load_questions
 from pybatfish.question import bfq
 from pybatfish.datamodel.primitives import Interface
-from typing import Set
+from typing import Set, List
 import os
 
 
@@ -31,20 +31,22 @@ def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
     return interfaces
 
 
-def remove_interface_in_config(config: str, node: str, interface: str):
-    file = os.path.join(config, "configs", node + ".cfg")
-    lines = []
-    skip = False
-    for line in open(file):
-        if line.strip() == "!" and skip:
-            skip = False
-            continue
-        if f"interface {interface}" in line:
-            skip = True
-            continue
-        if skip:
-            continue
-        lines.append(line)
-    with open(file, "w") as f:
-        for line in lines:
-            f.write(line)
+def remove_interface_in_config(config: str, node_and_interfaces: List[str]):
+    for node_and_interface in node_and_interfaces:
+        [node, interface] = node_and_interface.split(":")
+        file = os.path.join(config, "configs", node + ".cfg")
+        lines = []
+        skip = False
+        for line in open(file):
+            if line.strip() == "!" and skip:
+                skip = False
+                continue
+            if f"interface {interface}" in line:
+                skip = True
+                continue
+            if skip:
+                continue
+            lines.append(line)
+        with open(file, "w") as f:
+            for line in lines:
+                f.write(line)

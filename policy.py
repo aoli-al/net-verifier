@@ -8,6 +8,7 @@ from connectors import Connector
 from pybatfish.question import bfq
 from typing import List
 import csv
+import json
 
 
 # The user can do {action} for {resource} under {condition}.
@@ -47,13 +48,14 @@ class Waypoint(Connector):
         self.waypoint = waypoint
 
     def eval(self, ori_snapshot: str, new_snapshot: str) -> bool:
-        result = bfq.reachability(headers=HeaderConstraints(srcIps=self.src, dstIps=self.dst),
-                                  pathConstraints=PathConstraints(transitLocations=self.waypoint)) \
+        result = bfq.reachability(headers=HeaderConstraints(dstIps=self.dst),
+                                  pathConstraints=PathConstraints(transitLocations=self.waypoint,
+                                                                  startLocation=self.src)) \
             .answer(snapshot=new_snapshot).frame()
         return result.size > 0
 
     def __str__(self):
-        return f"Waypoint({self.src}, {self.dst}, {self.waypoint})"
+        return f"Waypoint(\"{self.src}\", \"{self.dst}\", \"{self.waypoint}\")"
 
 
 class Reachability(Connector):
@@ -68,8 +70,12 @@ class Reachability(Connector):
         return result.size > 0
 
     def __str__(self):
-        return f"Reachability({self.src}, {self.dst})"
+        return f"Reachability(\"{self.src}\", \"{self.dst}\")"
 
+
+def load_policies_from_json(path: str) -> List[Connector]:
+    policy_list = json.load(open(path))
+    return [eval(p) for p in policy_list]
 
 def build_policies_from_csv(path: str) -> List[Connector]:
     policies = []
