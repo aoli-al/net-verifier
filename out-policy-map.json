@@ -795,5 +795,944 @@
     114,
     123,
     29
+  ],
+  "as1border1:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as1border1:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border1:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dept1:Loopback0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border2:GigabitEthernet0/0": [
+    4,
+    69,
+    39,
+    137,
+    42,
+    138,
+    140,
+    81,
+    114,
+    115,
+    20,
+    21,
+    53,
+    117,
+    146,
+    57,
+    148,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as2core2:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dept1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist2:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as1border1:Loopback0": [
+    96,
+    97,
+    34,
+    98,
+    4,
+    100,
+    39,
+    113,
+    146,
+    53,
+    127,
+    31
+  ],
+  "as1border1:GigabitEthernet1/0,as2border1:GigabitEthernet1/0": [
+    74,
+    163,
+    53,
+    146
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist1:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dept1:GigabitEthernet2/0": [
+    39,
+    9,
+    42,
+    74,
+    138,
+    81,
+    114,
+    146,
+    20,
+    21,
+    53,
+    54,
+    148,
+    151,
+    123
+  ],
+  "as1border1:GigabitEthernet1/0,as1core1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist2:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3border2:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist1:Loopback0": [
+    99,
+    36,
+    6,
+    10,
+    43,
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as1border2:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border1:Loopback0": [
+    163,
+    166,
+    40,
+    74,
+    13,
+    82,
+    146,
+    53,
+    94
+  ],
+  "as1border1:GigabitEthernet1/0,as2core1:GigabitEthernet3/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3border1:Loopback0": [
+    4,
+    69,
+    39,
+    137,
+    42,
+    138,
+    140,
+    172,
+    81,
+    114,
+    115,
+    146,
+    53,
+    21,
+    117,
+    56,
+    148,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist1:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3core1:Loopback0": [
+    4,
+    69,
+    132,
+    39,
+    137,
+    42,
+    138,
+    140,
+    143,
+    81,
+    114,
+    115,
+    146,
+    53,
+    21,
+    117,
+    148,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as2core2:GigabitEthernet3/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist1:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border1:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as1core1:GigabitEthernet1/0": [
+    96,
+    97,
+    34,
+    98,
+    4,
+    100,
+    39,
+    113,
+    146,
+    53,
+    127,
+    31
+  ],
+  "as1border1:GigabitEthernet1/0,as3border1:GigabitEthernet0/0": [
+    4,
+    132,
+    137,
+    138,
+    140,
+    146,
+    148,
+    21,
+    23,
+    39,
+    42,
+    172,
+    53,
+    56,
+    69,
+    81,
+    114,
+    115,
+    117,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as2border2:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2core1:Loopback0": [
+    4,
+    135,
+    9,
+    137,
+    138,
+    140,
+    146,
+    20,
+    21,
+    148,
+    29,
+    163,
+    37,
+    39,
+    42,
+    47,
+    53,
+    57,
+    69,
+    74,
+    81,
+    103,
+    104,
+    109,
+    114,
+    115,
+    117,
+    123,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as3border2:GigabitEthernet1/0": [
+    4,
+    69,
+    39,
+    140,
+    172,
+    143,
+    81,
+    114,
+    115,
+    146,
+    53,
+    21,
+    23,
+    117,
+    148,
+    90
+  ],
+  "as1border1:GigabitEthernet1/0,as1border2:GigabitEthernet1/0": [
+    96,
+    97,
+    34,
+    98,
+    4,
+    69,
+    39,
+    171,
+    79,
+    81,
+    146,
+    53,
+    59,
+    127,
+    31
+  ],
+  "as1border1:GigabitEthernet1/0,as2core1:GigabitEthernet1/0": [
+    4,
+    137,
+    138,
+    140,
+    146,
+    20,
+    21,
+    148,
+    29,
+    39,
+    42,
+    53,
+    57,
+    69,
+    81,
+    114,
+    115,
+    117,
+    123,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as3core1:GigabitEthernet0/0": [
+    4,
+    69,
+    39,
+    140,
+    172,
+    143,
+    81,
+    114,
+    115,
+    146,
+    53,
+    21,
+    23,
+    117,
+    148,
+    90
+  ],
+  "as1border1:GigabitEthernet1/0,as2core2:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2core2:Loopback0": [
+    134,
+    146,
+    51,
+    19,
+    53,
+    87,
+    63
+  ],
+  "as1border1:GigabitEthernet1/0,as3border1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3core1:GigabitEthernet3/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3core1:GigabitEthernet1/0": [
+    4,
+    132,
+    137,
+    138,
+    140,
+    146,
+    148,
+    21,
+    23,
+    39,
+    42,
+    172,
+    53,
+    56,
+    69,
+    81,
+    114,
+    115,
+    117,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as3border2:GigabitEthernet0/0": [
+    4,
+    69,
+    39,
+    81,
+    146,
+    115,
+    148,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as1border1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dept1:GigabitEthernet3/0": [
+    163,
+    4,
+    69,
+    103,
+    137,
+    140,
+    146,
+    115,
+    147,
+    53,
+    117,
+    125,
+    57,
+    58,
+    29
+  ],
+  "as1border1:GigabitEthernet1/0,as1core1:GigabitEthernet0/0": [
+    96,
+    97,
+    34,
+    98,
+    4,
+    69,
+    39,
+    171,
+    79,
+    81,
+    146,
+    53,
+    59,
+    127,
+    31
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist2:Loopback0": [
+    133,
+    169,
+    12,
+    144,
+    146,
+    53,
+    153
+  ],
+  "as1border1:GigabitEthernet1/0,as1border1:GigabitEthernet0/0": [
+    96,
+    97,
+    34,
+    98,
+    4,
+    100,
+    39,
+    113,
+    146,
+    53,
+    127,
+    31
+  ],
+  "as1border1:GigabitEthernet1/0,as2core1:GigabitEthernet0/0": [
+    74,
+    163,
+    53,
+    146
+  ],
+  "as1border1:GigabitEthernet1/0,as1border2:GigabitEthernet0/0": [
+    4,
+    69,
+    39,
+    81,
+    146,
+    115,
+    148,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist2:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2core2:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border2:Loopback0": [
+    4,
+    137,
+    138,
+    140,
+    146,
+    20,
+    21,
+    148,
+    29,
+    39,
+    42,
+    53,
+    57,
+    69,
+    81,
+    114,
+    115,
+    117,
+    123,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as3border1:GigabitEthernet1/0": [
+    4,
+    69,
+    39,
+    137,
+    42,
+    138,
+    140,
+    81,
+    114,
+    115,
+    20,
+    21,
+    53,
+    117,
+    146,
+    57,
+    148,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as1core1:Loopback0": [
+    4,
+    69,
+    39,
+    171,
+    81,
+    113,
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2core1:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2core1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border2:GigabitEthernet2/0": [
+    4,
+    137,
+    138,
+    140,
+    146,
+    20,
+    21,
+    148,
+    29,
+    39,
+    42,
+    53,
+    57,
+    69,
+    81,
+    114,
+    115,
+    117,
+    123,
+    125
+  ],
+  "as1border1:GigabitEthernet1/0,as1border2:GigabitEthernet2/0": [
+    96,
+    98,
+    79,
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3border2:Loopback0": [
+    4,
+    69,
+    39,
+    140,
+    81,
+    114,
+    115,
+    146,
+    53,
+    21,
+    23,
+    117,
+    148,
+    90
+  ],
+  "as1border1:GigabitEthernet1/0,as2core2:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist2:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2border2:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as1border2:Loopback0": [
+    97,
+    4,
+    69,
+    39,
+    81,
+    146,
+    53,
+    59,
+    127
+  ],
+  "as1border1:GigabitEthernet1/0,as2dist1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dept1:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as2dept1:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3core1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as1border1:GigabitEthernet1/0,as3core1:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2border1:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2dept1:Loopback0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2border2:GigabitEthernet0/0": [
+    4,
+    69,
+    39,
+    137,
+    42,
+    138,
+    140,
+    81,
+    114,
+    115,
+    20,
+    21,
+    53,
+    117,
+    146,
+    57,
+    148,
+    125
+  ],
+  "as2border1:GigabitEthernet0/0,as2core2:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2border1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2dept1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2dist2:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as1border1:Loopback0": [
+    96,
+    97,
+    34,
+    98,
+    4,
+    100,
+    39,
+    113,
+    146,
+    53,
+    127,
+    31
+  ],
+  "as2border1:GigabitEthernet0/0,as2border1:GigabitEthernet1/0": [
+    74,
+    163,
+    53,
+    146
+  ],
+  "as2border1:GigabitEthernet0/0,as2dist1:GigabitEthernet1/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2dept1:GigabitEthernet2/0": [
+    39,
+    9,
+    42,
+    74,
+    138,
+    81,
+    114,
+    146,
+    20,
+    21,
+    53,
+    54,
+    148,
+    151,
+    123
+  ],
+  "as2border1:GigabitEthernet0/0,as1core1:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as2dist2:GigabitEthernet2/0": [
+    146,
+    53
+  ],
+  "as2border1:GigabitEthernet0/0,as3border2:Ethernet0/0": [
+    146,
+    53
+  ],
+  "as2core2:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as2core2:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as3core1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as2dist2:GigabitEthernet1/0": [],
+  "as2core2:Ethernet0/0,as1border2:Loopback0": [
+    97,
+    146,
+    53,
+    59,
+    127
+  ],
+  "as2core2:Ethernet0/0,as2dist1:GigabitEthernet2/0": [],
+  "as2core2:Ethernet0/0,as2core1:GigabitEthernet0/0": [
+    163,
+    4,
+    69,
+    39,
+    74,
+    81,
+    146,
+    115,
+    148,
+    53
+  ],
+  "as2core2:Ethernet0/0,as1border1:GigabitEthernet0/0": [
+    96,
+    97,
+    34,
+    98,
+    100,
+    113,
+    146,
+    53,
+    127,
+    31
+  ],
+  "as2core2:Ethernet0/0,as3core1:Loopback0": [
+    132,
+    137,
+    42,
+    138,
+    140,
+    143,
+    114,
+    125
+  ],
+  "as2core2:Ethernet0/0,as3border2:GigabitEthernet0/0": [],
+  "as2core2:Ethernet0/0,as2core2:GigabitEthernet3/0": [],
+  "as2core2:Ethernet0/0,as3border1:GigabitEthernet0/0": [
+    132,
+    137,
+    138,
+    140,
+    172,
+    114,
+    23,
+    56
+  ],
+  "as2core2:Ethernet0/0,as1border2:GigabitEthernet0/0": [],
+  "as2core2:Ethernet0/0,as2dept1:GigabitEthernet2/0": [
+    39,
+    9,
+    42,
+    74,
+    138,
+    81,
+    114,
+    20,
+    21,
+    53,
+    54,
+    148,
+    151,
+    123
+  ],
+  "as2core2:Ethernet0/0,as3core1:GigabitEthernet3/0": [],
+  "as2core2:Ethernet0/0,as2border1:GigabitEthernet2/0": [],
+  "as2core2:Ethernet0/0,as2dist2:Loopback0": [
+    133,
+    169,
+    12,
+    144,
+    153
+  ],
+  "as2core2:Ethernet0/0,as2core1:GigabitEthernet1/0": [
+    137,
+    42,
+    138,
+    140,
+    114,
+    20,
+    21,
+    117,
+    125,
+    57,
+    123,
+    29
+  ],
+  "as2core2:Ethernet0/0,as2dist2:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as2border1:Loopback0": [
+    163,
+    166,
+    40,
+    74,
+    13,
+    82,
+    146,
+    53,
+    94
+  ],
+  "as2core2:Ethernet0/0,as2core1:GigabitEthernet3/0": [],
+  "as2core2:Ethernet0/0,as3core1:GigabitEthernet1/0": [
+    132,
+    137,
+    138,
+    140,
+    172,
+    114,
+    23,
+    56
+  ],
+  "as2core2:Ethernet0/0,as2border2:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as3core1:GigabitEthernet2/0": [],
+  "as2core2:Ethernet0/0,as2core2:GigabitEthernet1/0": [],
+  "as2core2:Ethernet0/0,as2dept1:GigabitEthernet1/0": [],
+  "as2core2:Ethernet0/0,as2core1:GigabitEthernet2/0": [],
+  "as2core2:Ethernet0/0,as1border1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as1core1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as2dept1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as1border2:GigabitEthernet2/0": [
+    96,
+    98,
+    79
+  ],
+  "as2core2:Ethernet0/0,as2border1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as1core1:GigabitEthernet1/0": [
+    96,
+    97,
+    34,
+    98,
+    100,
+    113,
+    146,
+    53,
+    127,
+    31
+  ],
+  "as2core2:Ethernet0/0,as2core2:GigabitEthernet2/0": [],
+  "as2core2:Ethernet0/0,as3border1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as2dept1:Loopback0": [],
+  "as2core2:Ethernet0/0,as2dist1:GigabitEthernet0/0": [],
+  "as2core2:Ethernet0/0,as2border2:GigabitEthernet0/0": [
+    137,
+    114,
+    140,
+    138
+  ],
+  "as2core2:Ethernet0/0,as2dist1:GigabitEthernet1/0": [],
+  "as2core2:Ethernet0/0,as2border2:Loopback0": [
+    137,
+    138,
+    140,
+    114,
+    123,
+    29
+  ],
+  "as2core2:Ethernet0/0,as2border1:GigabitEthernet1/0": [
+    163,
+    4,
+    69,
+    39,
+    74,
+    81,
+    146,
+    115,
+    148,
+    53
+  ],
+  "as2core2:Ethernet0/0,as2dist1:Loopback0": [
+    99,
+    36,
+    6,
+    10,
+    43
+  ],
+  "as2core2:Ethernet0/0,as2border1:GigabitEthernet0/0": [
+    146,
+    53
+  ],
+  "as2core2:Ethernet0/0,as2dept1:GigabitEthernet0/0": [],
+  "as2core2:Ethernet0/0,as2core2:Loopback0": [
+    134,
+    51,
+    19,
+    87,
+    63
+  ],
+  "as2core2:Ethernet0/0,as1border2:GigabitEthernet1/0": [
+    96,
+    97,
+    34,
+    98,
+    171,
+    79,
+    146,
+    53,
+    59,
+    127,
+    31
+  ],
+  "as2core2:Ethernet0/0,as2dist1:Ethernet0/0": [],
+  "as2core2:Ethernet0/0,as3border1:GigabitEthernet1/0": [
+    137,
+    114,
+    140,
+    138
   ]
 }
