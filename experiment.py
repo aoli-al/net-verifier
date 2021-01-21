@@ -273,7 +273,7 @@ def process_json(snapshot: str, in_file: str):
     out = open(in_file.split(".")[0] + ".csv", 'w')
     output_policy_map = json.load(open("out-policy-map.json"))
     out.write("interface removed, # affected nodes, solution, # reachable nodes, interface included, "
-              "# interface exposed\n")
+              "# interface exposed, # violated policies\n")
     result = json.load(open(in_file))
     for case in result:
         for solution in case['solutions']:
@@ -282,15 +282,18 @@ def process_json(snapshot: str, in_file: str):
                 if "host" in node:
                     continue
                 exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
+            violated_policies = set()
             for name_and_interface in exposed_interfaces:
                 i1 = case['interface']
                 i2 = name_and_interface
-                if f"{i1},{i2}":
-                    pass
+                if f"{i1},{i2}" in output_policy_map:
+                    violated_policies.update(output_policy_map[f"{i1},{i2}"])
+                else:
+                    violated_policies.update(output_policy_map[f"{i2},{i1}"])
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
                       f"{len(list(filter(lambda x: 'host' not in x, solution['internal_nodes'])))}, "
                       f"{case['interface'].split(':')[0] in solution['internal_nodes']}, "
-                      f"{len(exposed_interfaces)}\n")
+                      f"{len(exposed_interfaces)}, {len(violated_policies)}\n")
 
 
 def remove_links(path: str):
