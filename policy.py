@@ -62,7 +62,8 @@ class Reachability(Connector):
         self.dst = dst
 
     def eval(self, ori_snapshot: str, new_snapshot: str) -> bool:
-        result = bfq.reachability(headers=HeaderConstraints(srcIps=self.src, dstIps=self.dst)) \
+        result = bfq.reachability(headers=HeaderConstraints(dstIps=self.dst),
+                                  pathConstraints=PathConstraints(startLocation=self.src)) \
             .answer(snapshot=new_snapshot).frame()
         return result.size > 0
 
@@ -70,8 +71,8 @@ class Reachability(Connector):
         return f"Reachability({self.src}, {self.dst})"
 
 
-def build_policies_from_csv(path: str) -> Connector:
-    current = None
+def build_policies_from_csv(path: str) -> List[Connector]:
+    policies = []
     with open(path) as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
@@ -80,6 +81,8 @@ def build_policies_from_csv(path: str) -> Connector:
             dst = row['Destinations'].split(' ')[1][1:-1]
             dst_node = row['Destinations'].split(' ')[0].split(":")[0]
             specifics = row['specifics']
+            if "HOLDSNOT" in row["Status"]:
+                continue
             if "Reachability" in row['type']:
                 policy = Reachability(src, dst)
             elif "Waypoint" in row['type'] and dst_node != specifics and src != specifics:
@@ -88,9 +91,6 @@ def build_policies_from_csv(path: str) -> Connector:
                 policy = Not(Reachability(src, dst))
             if policy is None:
                 continue
-            if current is None:
-                current = policy
-            else:
-                current = And(policy, current)
-    return current
+            policies.append(policy)
+    return policies
 

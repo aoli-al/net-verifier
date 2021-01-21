@@ -2,6 +2,7 @@ from pybatfish.question.question import load_questions
 from pybatfish.question import bfq
 from pybatfish.datamodel.primitives import Interface
 from typing import Set
+import os
 
 
 def resolve(node_spec: str, node_property: str, snapshot: str):
@@ -21,7 +22,29 @@ def interface_to_str(interface: Interface) -> str:
 
 def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
     interfaces = set()
-    results = bfq.interfaceProperties(nodes=nodes).answer(snapshot=snapshot).frame()
+    if nodes:
+        results = bfq.interfaceProperties(nodes=nodes).answer(snapshot=snapshot).frame()
+    else:
+        results = bfq.interfaceProperties().answer(snapshot=snapshot).frame()
     for _, result in results.iterrows():
         interfaces.add(interface_to_str(result.Interface))
     return interfaces
+
+
+def remove_interface_in_config(config: str, node: str, interface: str):
+    file = os.path.join(config, "configs", node + ".cfg")
+    lines = []
+    skip = False
+    for line in open(file):
+        if line.strip() == "!" and skip:
+            skip = False
+            continue
+        if f"interface {interface}" in line:
+            skip = True
+            continue
+        if skip:
+            continue
+        lines.append(line)
+    with open(file, "w") as f:
+        for line in lines:
+            f.write(line)

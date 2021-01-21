@@ -15,11 +15,16 @@ load_questions()
 # process_json("multihosts", "out-2-random-selected-nodes.json")
 # process_json("multihosts", "out-complete-list-affected-nodes.json")
 # generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
-remove_links("/home/leo/repos/sdn-verifier/configs/multihosts")
+# remove_links("/home/leo/repos/sdn-verifier/configs/multihosts")
 
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
+v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts", "out-complete-list-affected-nodes.json",
+                    "/home/leo/repos/sdn-verifier/configs/multihosts/policies.csv")
+v.run()
+
+
 
 result = {}
 

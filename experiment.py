@@ -1,9 +1,10 @@
 from typing import List, Set, Tuple, Generator, Dict, Any
 from pybatfish.question import bfq
-from utils import interface_to_str, interfaces_from_snapshot
+from utils import interface_to_str, interfaces_from_snapshot, remove_interface_in_config
 from pybatfish.client.commands import bf_init_snapshot, bf_delete_snapshot
 from topology import build_topology
 from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
+from policy import *
 import os
 import shutil
 import tempfile
@@ -127,26 +128,11 @@ class Harness(object):
     def generate_test_case(self) -> Generator[Tuple[str, Set[str], str], None, None]:
         for interface_name in self.interfaces:
             [node, interface] = interface_name.split(":")
-            if "host" in node:
+            if "host" in interface_name:
                 continue
             dir = tempfile.TemporaryDirectory()
             shutil.copytree(self.base, dir.name+"/", dirs_exist_ok=True)
-            file = os.path.join(dir.name, "configs", node + ".cfg")
-            lines = []
-            skip = False
-            for line in open(file):
-                if line.strip() == "!" and skip:
-                    skip = False
-                    continue
-                if f"interface {interface}" in line:
-                    skip = True
-                    continue
-                if skip:
-                    continue
-                lines.append(line)
-            with open(file, "w") as f:
-                for line in lines:
-                    f.write(line)
+            remove_interface_in_config(dir.name, node, interface)
             snapshot = f"exp_{self.name_idx}"
             bf_init_snapshot(dir.name, f"exp_{self.name_idx}")
             nodes = self.get_affected_node(node, snapshot)
@@ -186,6 +172,79 @@ class Harness(object):
             results.append(result)
             json.dump(results, open(output_path, "w"), indent=2)
             bf_delete_snapshot(snapshot)
+
+
+class VerifyInvariant(object):
+
+    def __init__(self, base: str, in_file: str, policies: str):
+        self.base = base
+        policies = build_policies_from_csv(policies)
+        bf_init_snapshot(self.base, "base_verify")
+        self.policies = []
+        for policy in policies:
+            if policy.eval("", "base_verify"):
+                self.policies.append(policy)
+        json.dump([str(p) for p in self.policies], open("policies.json", "w"))
+        self.in_file = in_file
+        self.name_idx = 0
+
+    def new_snapshot_name(self, config_path: str):
+        self.name_idx += 1
+        name = f"verify_exp_{self.name_idx}"
+        bf_init_snapshot(config_path, name)
+        return name
+
+    def get_violated_policies(self, snapshot: str) -> List[int]:
+        violated_policies = set()
+        for i in range(len(self.policies)):
+            if not self.policies[i].eval("", snapshot):
+                violated_policies.add(i)
+        return list(violated_policies)
+
+
+    def run(self):
+        interfaces = interfaces_from_snapshot("base_verify")
+        sanity_check = self.get_violated_policies("base_verify")
+        assert len(sanity_check) == 0
+        interface_map = {}
+        for node_and_interface in interfaces:
+            [node, _] = node_and_interface.split(":")
+            if node not in interface_map:
+                interface_map[node] = set()
+            interface_map[node].add(node_and_interface)
+
+        result = json.load(open(self.in_file))
+        output_policy_map = {}
+        for case in result:
+            [node, interface] = case['interface'].split(':')
+            case_base = tempfile.TemporaryDirectory()
+            shutil.copytree(self.base, case_base.name + "/", dirs_exist_ok=True)
+            remove_interface_in_config(case_base.name, node, interface)
+            case_base_snapshot = self.new_snapshot_name(case_base.name)
+            case_violated_policies = self.get_violated_policies(case_base_snapshot)
+            vulnerable_interfaces = set()
+            for solution in case['solutions']:
+                for n in solution['internal_nodes']:
+                    if "host" in n:
+                        continue
+                    vulnerable_interfaces.update(interface_map[n])
+            #         for node_and_interface in interfaces_from_snapshot("base_verify", node):
+            #             vulnerable_interfaces.add(node_and_interface)
+            policy_map = {
+                "case_violated_policies": case_violated_policies
+            }
+            for node_and_interface in vulnerable_interfaces:
+                [node, interface] = node_and_interface.split(":")
+                dir = tempfile.TemporaryDirectory()
+                shutil.copytree(case_base.name, dir.name + "/", dirs_exist_ok=True)
+                remove_interface_in_config(dir.name, node, interface)
+                snapshot = self.new_snapshot_name(dir.name)
+                violated_policies = self.get_violated_policies(snapshot)
+                policy_map[node_and_interface] = violated_policies
+                bf_delete_snapshot(snapshot)
+            output_policy_map[case['interface']] = policy_map
+            json.dump(output_policy_map, open("out-policy-map.json", "w"))
+            bf_delete_snapshot(case_base_snapshot)
 
 
 def process_json(snapshot: str, in_file: str):
