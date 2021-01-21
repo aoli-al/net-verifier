@@ -201,7 +201,6 @@ class VerifyInvariant(object):
                 violated_policies.add(i)
         return list(violated_policies)
 
-
     def run(self):
         interfaces = interfaces_from_snapshot("base_verify")
         sanity_check = self.get_violated_policies("base_verify")
@@ -249,19 +248,26 @@ class VerifyInvariant(object):
 
 def process_json(snapshot: str, in_file: str):
     out = open(in_file.split(".")[0] + ".csv", 'w')
+    output_policy_map = json.load(open("out-policy-map.json"))
     out.write("interface removed, # affected nodes, solution, # reachable nodes, interface included, "
               "# interface exposed\n")
     result = json.load(open(in_file))
     for case in result:
         for solution in case['solutions']:
-            exposed_interfaces = 0
+            exposed_interfaces = set()
             for node in solution['internal_nodes']:
                 if "host" in node:
                     continue
-                exposed_interfaces += len(interfaces_from_snapshot(snapshot, node))
+                exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
+            for name_and_interface in exposed_interfaces:
+                i1 = case['interface']
+                i2 = name_and_interface
+                if f"{i1},{i2}":
+                    pass
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
                       f"{len(list(filter(lambda x: 'host' not in x, solution['internal_nodes'])))}, "
-                      f"{case['interface'].split(':')[0] in solution['internal_nodes']}, {exposed_interfaces}\n")
+                      f"{case['interface'].split(':')[0] in solution['internal_nodes']}, "
+                      f"{len(exposed_interfaces)}\n")
 
 
 def remove_links(path: str):
