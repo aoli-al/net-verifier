@@ -1,7 +1,7 @@
 from pybatfish.question import bfq
 from pybatfish.datamodel import HeaderConstraints, PathConstraints, Hop
 from pybatfish.question.question import load_questions
-from pybatfish.client.commands import bf_init_snapshot
+from pybatfish.client.commands import bf_init_snapshot, bf_set_network
 from typing import List
 import json
 from command import *
@@ -9,6 +9,8 @@ from policy import *
 from experiment import *
 from utils import *
 
+
+bf_set_network("network")
 
 load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
