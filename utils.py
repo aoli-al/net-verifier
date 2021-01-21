@@ -19,9 +19,9 @@ def interface_to_str(interface: Interface) -> str:
     return f"{interface.hostname}:{interface.interface}"
 
 
-def interfaces_from_snapshot(snapshot: str) -> Set[str]:
+def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
     interfaces = set()
-    results = bfq.interfaceProperties().answer(snapshot=snapshot).frame()
+    results = bfq.interfaceProperties(nodes=nodes).answer(snapshot=snapshot).frame()
     for _, result in results.iterrows():
         interfaces.add(interface_to_str(result.Interface))
     return interfaces

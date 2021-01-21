@@ -10,13 +10,16 @@ from experiment import *
 from utils import *
 
 
-generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
-
 load_questions()
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
+# process_json("multihosts", "out-2-random-selected-nodes.json")
+# process_json("multihosts", "out-complete-list-affected-nodes.json")
+# generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
+remove_links("/home/leo/repos/sdn-verifier/configs/multihosts")
+
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
-# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
 
 result = {}
 
@@ -88,9 +91,8 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-# process_json("out.json")
-h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
-h.run("out.json")
+# h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
+# h.run("out.json")
 
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),

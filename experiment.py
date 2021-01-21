@@ -115,8 +115,7 @@ class Harness(object):
     def get_affected_node(self, node: str, snapshot: str) -> Set[str]:
         affected_node = set()
         self.name_idx += 1
-        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/",
-                                                                               endLocation="/host[0-9]+/")) \
+        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
             .answer(snapshot=snapshot, reference_snapshot="exp").frame()
         for idx, result in results.iterrows():
             if result.Flow.ingressNode is not None and result.Flow.ingressNode != node:
@@ -189,14 +188,32 @@ class Harness(object):
             bf_delete_snapshot(snapshot)
 
 
-def process_json(path: str):
-    out = open('out.csv', 'w')
-    result = json.load(open("out.json"))
+def process_json(snapshot: str, in_file: str):
+    out = open(in_file.split(".")[0] + ".csv", 'w')
+    out.write("interface removed, # affected nodes, solution, # reachable nodes, interface included, "
+              "# interface exposed\n")
+    result = json.load(open(in_file))
     for case in result:
         for solution in case['solutions']:
+            exposed_interfaces = 0
+            for node in solution['internal_nodes']:
+                if "host" in node:
+                    continue
+                exposed_interfaces += len(interfaces_from_snapshot(snapshot, node))
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
                       f"{len(list(filter(lambda x: 'host' not in x, solution['internal_nodes'])))}, "
-                      f"{case['interface'].split(':')[0] in solution['internal_nodes']}\n")
+                      f"{case['interface'].split(':')[0] in solution['internal_nodes']}, {exposed_interfaces}\n")
+
+
+def remove_links(path: str):
+    bf_init_snapshot(path, 'remove_links')
+    results = bfq.reachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
+        .answer(snapshot='remove_links').frame()
+    for idx, result in results.iterrows():
+        if result.TraceCount <= 1:
+            continue
+        for trace in result.Traces:
+            print(trace)
 
 
 def generate_hosts(path: str):
