@@ -178,13 +178,14 @@ class VerifyInvariant(object):
 
     def __init__(self, base: str, in_file: str, policies: str):
         self.base = base
-        policies = build_policies_from_csv(policies)
+        # policies = build_policies_from_csv(policies)
         bf_init_snapshot(self.base, "base_verify")
-        self.policies = []
-        for policy in policies:
-            if policy.eval("", "base_verify"):
-                self.policies.append(policy)
-        json.dump([str(p) for p in self.policies], open("policies.json", "w"))
+        # self.policies = []
+        self.policies = load_policies_from_json("policies.json")
+        # for policy in policies:
+        #     if policy.eval("", "base_verify"):
+        #         self.policies.append(policy)
+        # json.dump([str(p) for p in self.policies], open("policies.json", "w"))
         self.in_file = in_file
         self.name_idx = 0
 
@@ -201,49 +202,71 @@ class VerifyInvariant(object):
                 violated_policies.add(i)
         return list(violated_policies)
 
-    def run(self):
-        interfaces = interfaces_from_snapshot("base_verify")
-        sanity_check = self.get_violated_policies("base_verify")
-        assert len(sanity_check) == 0
-        interface_map = {}
-        for node_and_interface in interfaces:
-            [node, _] = node_and_interface.split(":")
-            if node not in interface_map:
-                interface_map[node] = set()
-            interface_map[node].add(node_and_interface)
+    def check_interfaces(self, node_and_interfaces: [str]) -> List[int]:
+        case_base = tempfile.TemporaryDirectory()
+        shutil.copytree(self.base, case_base.name + "/", dirs_exist_ok=True)
+        remove_interface_in_config(case_base.name, node_and_interfaces)
+        case_base_snapshot = self.new_snapshot_name(case_base.name)
+        violated_policies = self.get_violated_policies(case_base_snapshot)
+        bf_delete_snapshot(case_base_snapshot)
+        return violated_policies
 
-        result = json.load(open(self.in_file))
-        output_policy_map = {}
-        for case in result:
-            [node, interface] = case['interface'].split(':')
-            case_base = tempfile.TemporaryDirectory()
-            shutil.copytree(self.base, case_base.name + "/", dirs_exist_ok=True)
-            remove_interface_in_config(case_base.name, node, interface)
-            case_base_snapshot = self.new_snapshot_name(case_base.name)
-            case_violated_policies = self.get_violated_policies(case_base_snapshot)
-            vulnerable_interfaces = set()
-            for solution in case['solutions']:
-                for n in solution['internal_nodes']:
-                    if "host" in n:
-                        continue
-                    vulnerable_interfaces.update(interface_map[n])
-            #         for node_and_interface in interfaces_from_snapshot("base_verify", node):
-            #             vulnerable_interfaces.add(node_and_interface)
-            policy_map = {
-                "case_violated_policies": case_violated_policies
-            }
-            for node_and_interface in vulnerable_interfaces:
-                [node, interface] = node_and_interface.split(":")
-                dir = tempfile.TemporaryDirectory()
-                shutil.copytree(case_base.name, dir.name + "/", dirs_exist_ok=True)
-                remove_interface_in_config(dir.name, node, interface)
-                snapshot = self.new_snapshot_name(dir.name)
-                violated_policies = self.get_violated_policies(snapshot)
-                policy_map[node_and_interface] = violated_policies
-                bf_delete_snapshot(snapshot)
-            output_policy_map[case['interface']] = policy_map
-            json.dump(output_policy_map, open("out-policy-map.json", "w"))
-            bf_delete_snapshot(case_base_snapshot)
+    def run(self):
+        output_policy_map = json.load(open("out-policy-map.json"))
+        interfaces = list(interfaces_from_snapshot("base_verify"))
+        for i in range(len(interfaces)):
+            i1 = interfaces[i]
+            if "host" in i1:
+                continue
+            if interfaces[i] not in output_policy_map:
+                output_policy_map[interfaces[i]] = self.check_interfaces([interfaces[i]])
+            for j in range(i, len(interfaces)):
+                i2 = interfaces[j]
+                if "host" in i2:
+                    continue
+                if f"{i1},{i2}" not in output_policy_map or f"{i2},{i1}" not in output_policy_map:
+                    output_policy_map[f"{i1},{i2}"] = self.check_interfaces([i1, i2])
+                json.dump(output_policy_map, open("out-policy-map.json", "w"), indent=2)
+
+
+        # sanity_check = self.get_violated_policies("base_verify")
+        # assert len(sanity_check) == 0
+        # interface_map = {}
+        # for node_and_interface in interfaces:
+        #     [node, _] = node_and_interface.split(":")
+        #     if node not in interface_map:
+        #         interface_map[node] = set()
+        #     interface_map[node].add(node_and_interface)
+        #
+        # result = json.load(open(self.in_file))
+        # for case in result:
+        #     [node, interface] = case['interface'].split(':')
+        #     case_base = tempfile.TemporaryDirectory()
+        #     shutil.copytree(self.base, case_base.name + "/", dirs_exist_ok=True)
+        #     remove_interface_in_config(case_base.name, node, interface)
+        #     vulnerable_interfaces = set()
+        #     for solution in case['solutions']:
+        #         for n in solution['internal_nodes']:
+        #             if "host" in n:
+        #                 continue
+        #             vulnerable_interfaces.update(interface_map[n])
+        #     #         for node_and_interface in interfaces_from_snapshot("base_verify", node):
+        #     #             vulnerable_interfaces.add(node_and_interface)
+        #     policy_map = {
+        #         "case_violated_policies": case_violated_policies
+        #     }
+        #     for node_and_interface in vulnerable_interfaces:
+        #         [node, interface] = node_and_interface.split(":")
+        #         dir = tempfile.TemporaryDirectory()
+        #         shutil.copytree(case_base.name, dir.name + "/", dirs_exist_ok=True)
+        #         remove_interface_in_config(dir.name, node, interface)
+        #         snapshot = self.new_snapshot_name(dir.name)
+        #         violated_policies = self.get_violated_policies(snapshot)
+        #         policy_map[node_and_interface] = violated_policies
+        #         bf_delete_snapshot(snapshot)
+        #     output_policy_map[case['interface']] = policy_map
+        #     json.dump(output_policy_map, open("out-policy-map.json", "w"))
+        #     bf_delete_snapshot(case_base_snapshot)
 
 
 def process_json(snapshot: str, in_file: str):
