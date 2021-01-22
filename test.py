@@ -8,9 +8,9 @@ from command import *
 from policy import *
 from experiment import *
 from utils import *
+import json
+import sys
 
-
-bf_set_network("network")
 
 load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
