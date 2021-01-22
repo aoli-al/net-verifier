@@ -1,9 +1,10 @@
 from typing import List, Set, Tuple, Generator, Dict, Any
-from pybatfish.question import bfq
+from pybatfish.question import bfq, load_questions
 from utils import interface_to_str, interfaces_from_snapshot, remove_interface_in_config
 from pybatfish.client.commands import bf_init_snapshot, bf_delete_snapshot
 from topology import build_topology
 from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
+import subprocess
 from policy import *
 import os
 import shutil
@@ -189,6 +190,11 @@ class VerifyInvariant(object):
         self.in_file = in_file
         self.name_idx = 0
 
+    # need to do this periodically to free memory...
+    def reset(self):
+        subprocess.call(["docker", "restart", "batfish"])
+        load_questions()
+
     def new_snapshot_name(self, config_path: str):
         self.name_idx += 1
         name = f"verify_exp_{self.name_idx}"
@@ -218,13 +224,16 @@ class VerifyInvariant(object):
             i1 = interfaces[i]
             if "host" in i1:
                 continue
+            self.reset()
             if interfaces[i] not in output_policy_map:
                 output_policy_map[interfaces[i]] = self.check_interfaces([interfaces[i]])
             for j in range(i, len(interfaces)):
                 i2 = interfaces[j]
                 if "host" in i2:
                     continue
-                if f"{i1},{i2}" not in output_policy_map or f"{i2},{i1}" not in output_policy_map:
+                if i1 == i2:
+                    continue
+                if f"{i1},{i2}" not in output_policy_map and f"{i2},{i1}" not in output_policy_map:
                     output_policy_map[f"{i1},{i2}"] = self.check_interfaces([i1, i2])
                 json.dump(output_policy_map, open("out-policy-map.json", "w"), indent=2)
 
