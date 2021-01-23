@@ -158,17 +158,17 @@ class Harness(object):
             # if "as2border1:GigabitEthernet2/0" in interface:
             #     continue
             print(f"Interface {interface} is down.")
-            result = {
-                "interface": interface,
-                "affected_nodes": list(affected_nodes),
-                "solutions": {}
-            }
+            if interface not in results:
+                results[interface] = {
+                    "interface": interface,
+                    "affected_nodes": list(affected_nodes),
+                    "solutions": {}
+                }
             for solution, name in self.solutions:
                 if name not in results[interface]['solutions']:
                     s = solution(snapshot, list(affected_nodes))
                     internal_nodes = s.get_internal_nodes()
-                    result['solutions'][name] = list(internal_nodes)
-            results[interface] = result
+                    results[interface]['solutions'][name] = list(internal_nodes)
             json.dump(results, open(output_path, "w"), indent=2)
             bf_delete_snapshot(snapshot)
 
