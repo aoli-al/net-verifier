@@ -11,10 +11,11 @@ from utils import *
 import json
 import sys
 
-convert_csv("out-2-random-selected-nodes.csv")
-convert_csv("out-complete-list-affected-nodes.csv")
+load_questions()
+# convert_csv("out-2-random-selected-nodes.csv")
+# convert_csv("out-complete-list-affected-nodes.csv")
 
-sys.exit(0)
+# sys.exit(0)
 
 # load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
@@ -32,7 +33,7 @@ sys.exit(0)
 
 
 
-result = {}
+# result = {}
 
 # for i in range(1, 42):
 #     result[i] = {}
@@ -102,8 +103,9 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-# h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
-# h.run("out.json")
+h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
+h.run("out-2-random-selected-nodes.json")
+h.run("out-complete-list-affected-nodes.json")
 
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),

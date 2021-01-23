@@ -11,6 +11,7 @@ import shutil
 import tempfile
 import json
 import re
+import sys
 
 
 class Base(object):
@@ -126,17 +127,20 @@ class Harness(object):
             affected_node.pop()
         return affected_node
 
-    def generate_test_case(self) -> Generator[Tuple[str, Set[str], str], None, None]:
+    def generate_test_case(self, prev_data: Dict[str, Any]) -> Generator[Tuple[str, Set[str], str], None, None]:
         for interface_name in self.interfaces:
-            [node, interface] = interface_name.split(":")
+            [node, _] = interface_name.split(":")
             if "host" in interface_name:
                 continue
             dir = tempfile.TemporaryDirectory()
             shutil.copytree(self.base, dir.name+"/", dirs_exist_ok=True)
-            remove_interface_in_config(dir.name, node, interface)
+            remove_interface_in_config(dir.name, [interface_name])
             snapshot = f"exp_{self.name_idx}"
             bf_init_snapshot(dir.name, f"exp_{self.name_idx}")
-            nodes = self.get_affected_node(node, snapshot)
+            if interface_name in prev_data:
+                nodes = prev_data[interface_name]['affected_nodes']
+            else:
+                nodes = self.get_affected_node(node, snapshot)
             if len(nodes):
                 yield interface_name, nodes, snapshot
 
@@ -150,27 +154,21 @@ class Harness(object):
         #         rrr.append(result)
         # json.dump(rrr, open("tmp.json", "w"), indent=2)
         # return
-        visited = set([result['interface'] for result in results])
-        for interface, affected_nodes, snapshot in self.generate_test_case():
+        for interface, affected_nodes, snapshot in self.generate_test_case(results):
             # if "as2border1:GigabitEthernet2/0" in interface:
             #     continue
-            if interface in visited:
-                continue
             print(f"Interface {interface} is down.")
             result = {
                 "interface": interface,
                 "affected_nodes": list(affected_nodes),
-                "solutions": []
+                "solutions": {}
             }
             for solution, name in self.solutions:
-                s = solution(snapshot, list(affected_nodes))
-                internal_nodes = s.get_internal_nodes()
-                result['solutions'].append({
-                    "name": name,
-                    "internal_nodes": list(internal_nodes),
-                })
-            visited.add(interface)
-            results.append(result)
+                if name not in results[interface]['solutions']:
+                    s = solution(snapshot, list(affected_nodes))
+                    internal_nodes = s.get_internal_nodes()
+                    result['solutions'][name] = list(internal_nodes)
+            results[interface] = result
             json.dump(results, open(output_path, "w"), indent=2)
             bf_delete_snapshot(snapshot)
 
