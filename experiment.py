@@ -291,10 +291,13 @@ def process_json(snapshot: str, in_file: str):
                 if "host" in node:
                     continue
                 exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
+            i1 = case['interface']
             violated_policies = set()
+            ori_violated_policies = set(output_policy_map[i1])
             for name_and_interface in exposed_interfaces:
-                i1 = case['interface']
                 i2 = name_and_interface
+                if i1 == i2:
+                    continue
                 if f"{i1},{i2}" in output_policy_map:
                     violated_policies.update(output_policy_map[f"{i1},{i2}"])
                 else:
@@ -302,7 +305,7 @@ def process_json(snapshot: str, in_file: str):
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
                       f"{len(list(filter(lambda x: 'host' not in x, solution['internal_nodes'])))}, "
                       f"{case['interface'].split(':')[0] in solution['internal_nodes']}, "
-                      f"{len(exposed_interfaces)}, {len(violated_policies)}\n")
+                      f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
 
 
 def remove_links(path: str):
@@ -360,4 +363,28 @@ def generate_hosts(path: str):
     json.dump(host_map, open("host-mapping.json", "w"))
 
 
+def convert_csv(path: str):
+    result = csv.DictReader(open(path), delimiter=",")
+    data = {}
+    for field in result:
+        interface = {}
+        for key in field:
+            if key in ["interface removed", "solution"]:
+                continue
+            if key not in data:
+                data[key] = {}
+            if field['interface removed'] not in data[key]:
+                data[key][field['interface removed']] = {}
+            data[key][field['interface removed']][field[' solution']] = field[key]
+    for key in data:
+        w = csv.DictWriter(open(f"{key.strip()}-{path}", "w"),
+                           fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall"])
+        w.writeheader()
+        for interface in data[key]:
+            d = {
+                "interface removed": interface
+            }
+            for solution in data[key][interface]:
+                d[solution.strip()] = data[key][interface][solution]
+            w.writerow(d)
 

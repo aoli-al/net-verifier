@@ -1,7 +1,7 @@
 from pybatfish.question.question import load_questions
 from pybatfish.question import bfq
 from pybatfish.datamodel.primitives import Interface
-from typing import Set, List
+from typing import Set, List, Dict
 import os
 
 
@@ -19,6 +19,9 @@ def resolve(node_spec: str, node_property: str, snapshot: str):
 def interface_to_str(interface: Interface) -> str:
     return f"{interface.hostname}:{interface.interface}"
 
+def interface_map(snapshot: str) -> Dict[str, Set[str]]:
+    for node_and_interface in interfaces_from_snapshot(snapshot):
+        pass
 
 def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
     interfaces = set()
@@ -50,3 +53,5 @@ def remove_interface_in_config(config: str, node_and_interfaces: List[str]):
         with open(file, "w") as f:
             for line in lines:
                 f.write(line)
+
+

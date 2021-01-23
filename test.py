@@ -11,8 +11,12 @@ from utils import *
 import json
 import sys
 
+convert_csv("out-2-random-selected-nodes.csv")
+convert_csv("out-complete-list-affected-nodes.csv")
 
-load_questions()
+sys.exit(0)
+
+# load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
 # process_json("multihosts", "out-2-random-selected-nodes.json")
 # process_json("multihosts", "out-complete-list-affected-nodes.json")
@@ -22,9 +26,9 @@ load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
-v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts", "out-complete-list-affected-nodes.json",
-                    "/home/leo/repos/sdn-verifier/configs/multihosts/policies.csv")
-v.run()
+# v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts", "out-complete-list-affected-nodes.json",
+#                     "/home/leo/repos/sdn-verifier/configs/multihosts/policies.csv")
+# v.run()
 
 
 
