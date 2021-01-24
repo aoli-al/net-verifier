@@ -326,7 +326,7 @@ def process_json(snapshot: str, in_file: str):
                     violated_policies.update(output_policy_map[f"{i2},{i1}"])
             out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution_name}, "
                       f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
-                      f"{case['interface'].split(':')[0] in solution}, "
+                      f"{1 if case['interface'].split(':')[0] in solution else 0}, "
                       f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
 
 
