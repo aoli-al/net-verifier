@@ -1,51 +1,51 @@
-interface removed,base,empty,neighbor,crystal-net,heimdall,heimdall_interface
-as2dist2:Loopback0, True, False, True, True, True, False
-as2dist1:GigabitEthernet0/0, True, False, True, True, True, False
-as2border1:GigabitEthernet1/0, True, False, False, True, True, False
-as1core1:GigabitEthernet0/0, True, False, False, False, True, False
-as2border1:GigabitEthernet2/0, True, False, False, True, True, False
-as2border2:GigabitEthernet2/0, True, False, False, True, True, False
-as2core2:Loopback0, True, False, True, True, True, False
-as1border1:Loopback0, True, False, False, True, True, False
-as2dist1:GigabitEthernet1/0, True, False, True, True, True, False
-as3core1:GigabitEthernet1/0, True, False, True, True, True, False
-as2dist2:GigabitEthernet2/0, True, False, True, True, True, False
-as1border1:GigabitEthernet0/0, True, False, False, False, False, False
-as2core2:GigabitEthernet1/0, True, False, True, True, True, False
-as3core1:Loopback0, True, False, True, True, True, False
-as2border2:GigabitEthernet0/0, True, False, False, True, True, False
-as1border2:GigabitEthernet0/0, True, False, True, True, True, False
-as2dept1:GigabitEthernet2/0, True, False, True, True, True, False
-as2dist2:GigabitEthernet0/0, True, False, True, True, True, False
-as3border1:Loopback0, True, False, False, True, True, False
-as2core2:GigabitEthernet3/0, True, False, True, True, True, False
-as1border2:GigabitEthernet2/0, True, False, True, True, True, False
-as2core1:Loopback0, True, False, True, True, True, False
-as2core2:GigabitEthernet2/0, True, False, True, True, True, False
-as3border1:GigabitEthernet0/0, True, False, False, False, False, False
-as2core1:GigabitEthernet2/0, True, False, True, True, True, False
-as2dept1:GigabitEthernet3/0, True, False, True, True, True, False
-as3border1:GigabitEthernet1/0, True, False, False, True, True, False
-as2dept1:GigabitEthernet1/0, True, False, True, True, True, False
-as2border1:GigabitEthernet0/0, True, False, False, True, True, False
-as2dist1:GigabitEthernet2/0, True, False, True, True, True, False
-as2dept1:Loopback0, True, False, True, True, True, False
-as1core1:GigabitEthernet1/0, True, False, True, True, True, False
-as3border2:Loopback0, True, False, True, True, True, False
-as2core1:GigabitEthernet1/0, True, False, True, True, True, False
-as2core2:GigabitEthernet0/0, True, False, True, True, True, False
-as1border2:Loopback0, True, False, True, True, True, False
-as2border1:Loopback0, True, False, False, True, True, False
-as2border2:GigabitEthernet1/0, True, False, False, True, True, False
-as2dist2:GigabitEthernet1/0, True, False, True, True, True, False
-as3border2:GigabitEthernet1/0, True, False, True, True, True, False
-as2core1:GigabitEthernet3/0, True, False, True, True, True, False
-as3core1:GigabitEthernet0/0, True, False, False, False, True, False
-as3border2:GigabitEthernet0/0, True, False, True, True, True, False
-as2dist1:Loopback0, True, False, True, True, True, False
-as2dept1:GigabitEthernet0/0, True, False, True, True, True, False
-as2border2:Loopback0, True, False, False, True, True, False
-as2core1:GigabitEthernet0/0, True, False, True, True, True, False
-as1border1:GigabitEthernet1/0, True, False, False, True, True, False
-as1core1:Loopback0, True, False, True, True, True, False
-as1border2:GigabitEthernet1/0, True, False, True, True, True, False
+interface removed,base,empty,neighbor,crystal-net,heimdall,heimdall_interface,heimdall_end_nodes
+as2dist2:Loopback0, True, False, True, True, True, False, True
+as2dist1:GigabitEthernet0/0, True, False, True, True, True, False, True
+as2border1:GigabitEthernet1/0, True, False, False, True, True, False, True
+as1core1:GigabitEthernet0/0, True, False, False, False, True, False, True
+as2border1:GigabitEthernet2/0, True, False, False, True, True, False, True
+as2border2:GigabitEthernet2/0, True, False, False, True, True, False, True
+as2core2:Loopback0, True, False, True, True, True, False, True
+as1border1:Loopback0, True, False, False, True, True, False, True
+as2dist1:GigabitEthernet1/0, True, False, True, True, True, False, True
+as3core1:GigabitEthernet1/0, True, False, True, True, True, False, True
+as2dist2:GigabitEthernet2/0, True, False, True, True, True, False, True
+as1border1:GigabitEthernet0/0, True, False, False, False, False, False, False
+as2core2:GigabitEthernet1/0, True, False, True, True, True, False, True
+as3core1:Loopback0, True, False, True, True, True, False, True
+as2border2:GigabitEthernet0/0, True, False, False, True, True, False, True
+as1border2:GigabitEthernet0/0, True, False, True, True, True, False, True
+as2dept1:GigabitEthernet2/0, True, False, True, True, True, False, True
+as2dist2:GigabitEthernet0/0, True, False, True, True, True, False, True
+as3border1:Loopback0, True, False, False, True, True, False, True
+as2core2:GigabitEthernet3/0, True, False, True, True, True, False, True
+as1border2:GigabitEthernet2/0, True, False, True, True, True, False, True
+as2core1:Loopback0, True, False, True, True, True, False, True
+as2core2:GigabitEthernet2/0, True, False, True, True, True, False, True
+as3border1:GigabitEthernet0/0, True, False, False, False, False, False, False
+as2core1:GigabitEthernet2/0, True, False, True, True, True, False, True
+as2dept1:GigabitEthernet3/0, True, False, True, True, True, False, True
+as3border1:GigabitEthernet1/0, True, False, False, True, True, False, True
+as2dept1:GigabitEthernet1/0, True, False, True, True, True, False, True
+as2border1:GigabitEthernet0/0, True, False, False, True, True, False, True
+as2dist1:GigabitEthernet2/0, True, False, True, True, True, False, True
+as2dept1:Loopback0, True, False, True, True, True, False, True
+as1core1:GigabitEthernet1/0, True, False, True, True, True, False, True
+as3border2:Loopback0, True, False, True, True, True, False, True
+as2core1:GigabitEthernet1/0, True, False, True, True, True, False, True
+as2core2:GigabitEthernet0/0, True, False, True, True, True, False, True
+as1border2:Loopback0, True, False, True, True, True, False, True
+as2border1:Loopback0, True, False, False, True, True, False, True
+as2border2:GigabitEthernet1/0, True, False, False, True, True, False, True
+as2dist2:GigabitEthernet1/0, True, False, True, True, True, False, True
+as3border2:GigabitEthernet1/0, True, False, True, True, True, False, True
+as2core1:GigabitEthernet3/0, True, False, True, True, True, False, True
+as3core1:GigabitEthernet0/0, True, False, False, False, True, False, True
+as3border2:GigabitEthernet0/0, True, False, True, True, True, False, True
+as2dist1:Loopback0, True, False, True, True, True, False, True
+as2dept1:GigabitEthernet0/0, True, False, True, True, True, False, True
+as2border2:Loopback0, True, False, False, True, True, False, True
+as2core1:GigabitEthernet0/0, True, False, True, True, True, False, True
+as1border1:GigabitEthernet1/0, True, False, False, True, True, False, True
+as1core1:Loopback0, True, False, True, True, True, False, True
+as1border2:GigabitEthernet1/0, True, False, True, True, True, False, True

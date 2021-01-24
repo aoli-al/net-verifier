@@ -109,6 +109,11 @@ class HeimdallEndNodes(Base):
         return get_reachable_nodes(self.snapshot, set(self.affected_nodes))
 
 
+class HeimdallNodeIntersect(Base):
+    def get_internal_nodes(self) -> Set[str]:
+        return get_reachable_nodes_intersect(self.snapshot, set(self.affected_nodes))
+
+
 class HeimdallInterface(Base):
     def get_internal_nodes(self) -> Set[str]:
         return self.get_internal_interfaces()
@@ -126,7 +131,8 @@ class Harness(object):
         (CrystalNet, "crystal-net"),
         (Heimdall, "heimdall"),
         (HeimdallInterface, "heimdall_interface"),
-        (HeimdallEndNodes, "heimdall_end_nodes")
+        (HeimdallEndNodes, "heimdall_end_nodes"),
+        (HeimdallNodeIntersect, "heimdall_intersect")
     ]
 
     def __init__(self, base: str):
@@ -324,7 +330,6 @@ def process_json(snapshot: str, in_file: str):
                       f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
                       f"{case['interface'].split(':')[0] in solution}, "
                       f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
-        print(s2.difference(s1))
 
 
 def remove_links(path: str):
@@ -398,7 +403,7 @@ def convert_csv(path: str):
     for key in data:
         w = csv.DictWriter(open(f"{key.strip()}-{path}", "w"),
                            fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall",
-                                       "heimdall_interface"])
+                                       "heimdall_interface", "heimdall_end_nodes"])
         w.writeheader()
         for interface in data[key]:
             d = {

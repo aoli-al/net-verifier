@@ -18,9 +18,9 @@ load_questions()
 # sys.exit(0)
 
 # load_questions()
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
-process_json("multihosts", "out-2-random-selected-nodes.json")
-process_json("multihosts", "out-complete-list-affected-nodes.json")
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
+# process_json("multihosts", "out-2-random-selected-nodes.json")
+# process_json("multihosts", "out-complete-list-affected-nodes.json")
 # generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
 # remove_links("/home/leo/repos/sdn-verifier/configs/multihosts")
 

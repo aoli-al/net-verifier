@@ -32,9 +32,7 @@ def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
         caches = json.load(open(cache_path))
     else:
         caches = {}
-    interfaces = set()
-
-    if len(caches) == 0
+    if len(caches) == 0:
         results = bfq.interfaceProperties().answer(snapshot=snapshot).frame()
         for _, result in results.iterrows():
             if result.Interface.hostname not in caches:

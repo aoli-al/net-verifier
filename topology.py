@@ -13,6 +13,28 @@ class Topology(object):
         self.links = links
 
 
+def get_reachable_nodes_intersect(snapshot: str, switches: Set[str]) -> Set[str]:
+    nodes = []
+    results = bfq.nodeProperties().answer().frame()
+    for _, result in results.iterrows():
+        nodes.append(result.Node)
+    reachable = None
+    for switch in switches:
+        current_nodes = set()
+        for node in nodes:
+            results = bfq.reachability(
+                pathConstraints=PathConstraints(startLocation=switch, endLocation=node)) \
+                .answer(snapshot=snapshot)
+            results = results.frame()
+            if results.size > 0:
+                current_nodes.add(node)
+        if reachable is None:
+            reachable = current_nodes
+        else:
+            reachable.intersection_update(current_nodes)
+    return reachable
+
+
 def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:
     nodes = []
     results = bfq.nodeProperties().answer().frame()
