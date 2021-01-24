@@ -6,6 +6,7 @@ as2dist1:GigabitEthernet2/0, 2, crystal-net, 6, False, 33, 48
 as2dist1:GigabitEthernet2/0, 2, heimdall, 13, True, 65, 70
 as2dist1:GigabitEthernet2/0, 2, heimdall_interface, 33, False, 32, 45
 as2dist1:GigabitEthernet2/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2dist1:GigabitEthernet2/0, 2, heimdall_intersect, 13, True, 65, 70
 as2core2:Loopback0, 2, base, 13, True, 65, 65
 as2core2:Loopback0, 2, empty, 0, False, 0, 0
 as2core2:Loopback0, 2, neighbor, 3, True, 17, 33
@@ -13,6 +14,7 @@ as2core2:Loopback0, 2, crystal-net, 7, True, 38, 48
 as2core2:Loopback0, 2, heimdall, 13, True, 65, 65
 as2core2:Loopback0, 2, heimdall_interface, 35, False, 34, 45
 as2core2:Loopback0, 2, heimdall_end_nodes, 13, True, 65, 65
+as2core2:Loopback0, 2, heimdall_intersect, 13, True, 65, 65
 as2dist2:GigabitEthernet2/0, 2, base, 13, True, 65, 70
 as2dist2:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as2dist2:GigabitEthernet2/0, 2, neighbor, 3, True, 17, 38
@@ -20,6 +22,7 @@ as2dist2:GigabitEthernet2/0, 2, crystal-net, 7, True, 38, 53
 as2dist2:GigabitEthernet2/0, 2, heimdall, 13, True, 65, 70
 as2dist2:GigabitEthernet2/0, 2, heimdall_interface, 34, False, 33, 45
 as2dist2:GigabitEthernet2/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2dist2:GigabitEthernet2/0, 2, heimdall_intersect, 1, False, 6, 28
 as3border2:GigabitEthernet1/0, 2, base, 13, True, 65, 64
 as3border2:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as3border2:GigabitEthernet1/0, 2, neighbor, 2, False, 11, 21
@@ -27,6 +30,7 @@ as3border2:GigabitEthernet1/0, 2, crystal-net, 3, False, 15, 23
 as3border2:GigabitEthernet1/0, 2, heimdall, 11, True, 56, 64
 as3border2:GigabitEthernet1/0, 2, heimdall_interface, 24, False, 23, 30
 as3border2:GigabitEthernet1/0, 2, heimdall_end_nodes, 7, True, 34, 44
+as3border2:GigabitEthernet1/0, 2, heimdall_intersect, 0, False, 0, 0
 as2dept1:GigabitEthernet1/0, 2, base, 13, True, 65, 70
 as2dept1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2dept1:GigabitEthernet1/0, 2, neighbor, 3, True, 17, 38
@@ -34,6 +38,7 @@ as2dept1:GigabitEthernet1/0, 2, crystal-net, 7, True, 38, 53
 as2dept1:GigabitEthernet1/0, 2, heimdall, 13, True, 65, 70
 as2dept1:GigabitEthernet1/0, 2, heimdall_interface, 34, False, 33, 45
 as2dept1:GigabitEthernet1/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2dept1:GigabitEthernet1/0, 2, heimdall_intersect, 8, True, 38, 50
 as2core1:GigabitEthernet0/0, 2, base, 13, True, 65, 60
 as2core1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2core1:GigabitEthernet0/0, 2, neighbor, 2, False, 9, 17
@@ -41,6 +46,7 @@ as2core1:GigabitEthernet0/0, 2, crystal-net, 2, False, 9, 17
 as2core1:GigabitEthernet0/0, 2, heimdall, 7, False, 32, 36
 as2core1:GigabitEthernet0/0, 2, heimdall_interface, 13, False, 13, 25
 as2core1:GigabitEthernet0/0, 2, heimdall_end_nodes, 7, False, 32, 36
+as2core1:GigabitEthernet0/0, 2, heimdall_intersect, 7, False, 32, 36
 as2core1:Loopback0, 2, base, 13, True, 65, 41
 as2core1:Loopback0, 2, empty, 0, False, 0, 0
 as2core1:Loopback0, 2, neighbor, 2, False, 9, 13
@@ -48,6 +54,7 @@ as2core1:Loopback0, 2, crystal-net, 2, False, 9, 13
 as2core1:Loopback0, 2, heimdall, 7, False, 32, 22
 as2core1:Loopback0, 2, heimdall_interface, 13, False, 13, 17
 as2core1:Loopback0, 2, heimdall_end_nodes, 7, False, 32, 22
+as2core1:Loopback0, 2, heimdall_intersect, 7, False, 32, 22
 as2core1:GigabitEthernet3/0, 2, base, 13, True, 65, 70
 as2core1:GigabitEthernet3/0, 2, empty, 0, False, 0, 0
 as2core1:GigabitEthernet3/0, 2, neighbor, 3, False, 17, 41
@@ -55,6 +62,7 @@ as2core1:GigabitEthernet3/0, 2, crystal-net, 7, True, 38, 53
 as2core1:GigabitEthernet3/0, 2, heimdall, 7, True, 38, 53
 as2core1:GigabitEthernet3/0, 2, heimdall_interface, 21, False, 21, 37
 as2core1:GigabitEthernet3/0, 2, heimdall_end_nodes, 7, True, 38, 53
+as2core1:GigabitEthernet3/0, 2, heimdall_intersect, 7, True, 38, 53
 as3border1:Loopback0, 2, base, 13, True, 65, 64
 as3border1:Loopback0, 2, empty, 0, False, 0, 0
 as3border1:Loopback0, 2, neighbor, 3, False, 15, 21
@@ -62,6 +70,7 @@ as3border1:Loopback0, 2, crystal-net, 4, True, 19, 23
 as3border1:Loopback0, 2, heimdall, 13, True, 65, 64
 as3border1:Loopback0, 2, heimdall_interface, 28, False, 27, 35
 as3border1:Loopback0, 2, heimdall_end_nodes, 8, True, 38, 39
+as3border1:Loopback0, 2, heimdall_intersect, 8, True, 38, 39
 as2dept1:GigabitEthernet2/0, 2, base, 13, True, 65, 56
 as2dept1:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as2dept1:GigabitEthernet2/0, 2, neighbor, 2, False, 9, 15
@@ -69,6 +78,7 @@ as2dept1:GigabitEthernet2/0, 2, crystal-net, 2, False, 9, 15
 as2dept1:GigabitEthernet2/0, 2, heimdall, 12, True, 60, 56
 as2dept1:GigabitEthernet2/0, 2, heimdall_interface, 27, False, 26, 31
 as2dept1:GigabitEthernet2/0, 2, heimdall_end_nodes, 8, True, 38, 36
+as2dept1:GigabitEthernet2/0, 2, heimdall_intersect, 8, True, 38, 36
 as1core1:GigabitEthernet0/0, 2, base, 13, True, 65, 59
 as1core1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as1core1:GigabitEthernet0/0, 2, neighbor, 2, False, 9, 10
@@ -76,6 +86,7 @@ as1core1:GigabitEthernet0/0, 2, crystal-net, 2, False, 9, 10
 as1core1:GigabitEthernet0/0, 2, heimdall, 10, False, 52, 52
 as1core1:GigabitEthernet0/0, 2, heimdall_interface, 25, False, 24, 32
 as1core1:GigabitEthernet0/0, 2, heimdall_end_nodes, 5, False, 25, 32
+as1core1:GigabitEthernet0/0, 2, heimdall_intersect, 5, False, 25, 32
 as2border2:Loopback0, 2, base, 13, True, 65, 64
 as2border2:Loopback0, 2, empty, 0, False, 0, 0
 as2border2:Loopback0, 2, neighbor, 4, False, 21, 22
@@ -83,6 +94,7 @@ as2border2:Loopback0, 2, crystal-net, 6, True, 30, 32
 as2border2:Loopback0, 2, heimdall, 13, True, 65, 64
 as2border2:Loopback0, 2, heimdall_interface, 37, False, 36, 39
 as2border2:Loopback0, 2, heimdall_end_nodes, 13, True, 65, 64
+as2border2:Loopback0, 2, heimdall_intersect, 5, True, 24, 33
 as1border2:GigabitEthernet0/0, 2, base, 13, True, 65, 70
 as1border2:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as1border2:GigabitEthernet0/0, 2, neighbor, 3, True, 15, 27
@@ -90,6 +102,7 @@ as1border2:GigabitEthernet0/0, 2, crystal-net, 4, True, 19, 29
 as1border2:GigabitEthernet0/0, 2, heimdall, 13, True, 65, 70
 as1border2:GigabitEthernet0/0, 2, heimdall_interface, 33, False, 32, 45
 as1border2:GigabitEthernet0/0, 2, heimdall_end_nodes, 9, True, 43, 50
+as1border2:GigabitEthernet0/0, 2, heimdall_intersect, 1, False, 6, 28
 as3border1:GigabitEthernet0/0, 2, base, 13, True, 65, 62
 as3border1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as3border1:GigabitEthernet0/0, 2, neighbor, 4, False, 21, 16
@@ -97,6 +110,7 @@ as3border1:GigabitEthernet0/0, 2, crystal-net, 7, False, 37, 42
 as3border1:GigabitEthernet0/0, 2, heimdall, 12, False, 61, 62
 as3border1:GigabitEthernet0/0, 2, heimdall_interface, 34, False, 33, 37
 as3border1:GigabitEthernet0/0, 2, heimdall_end_nodes, 12, False, 61, 62
+as3border1:GigabitEthernet0/0, 2, heimdall_intersect, 4, False, 19, 35
 as2core2:GigabitEthernet1/0, 2, base, 13, True, 65, 70
 as2core2:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2core2:GigabitEthernet1/0, 2, neighbor, 3, True, 17, 38
@@ -104,6 +118,7 @@ as2core2:GigabitEthernet1/0, 2, crystal-net, 7, True, 38, 53
 as2core2:GigabitEthernet1/0, 2, heimdall, 13, True, 65, 70
 as2core2:GigabitEthernet1/0, 2, heimdall_interface, 33, False, 32, 54
 as2core2:GigabitEthernet1/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2core2:GigabitEthernet1/0, 2, heimdall_intersect, 13, True, 65, 70
 as3core1:GigabitEthernet1/0, 2, base, 13, True, 65, 62
 as3core1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as3core1:GigabitEthernet1/0, 2, neighbor, 2, False, 9, 19
@@ -111,6 +126,7 @@ as3core1:GigabitEthernet1/0, 2, crystal-net, 2, False, 9, 19
 as3core1:GigabitEthernet1/0, 2, heimdall, 11, True, 56, 62
 as3core1:GigabitEthernet1/0, 2, heimdall_interface, 25, False, 24, 32
 as3core1:GigabitEthernet1/0, 2, heimdall_end_nodes, 7, True, 34, 42
+as3core1:GigabitEthernet1/0, 2, heimdall_intersect, 7, True, 34, 42
 as2core2:GigabitEthernet2/0, 2, base, 13, True, 65, 70
 as2core2:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as2core2:GigabitEthernet2/0, 2, neighbor, 2, False, 11, 37
@@ -118,6 +134,7 @@ as2core2:GigabitEthernet2/0, 2, crystal-net, 7, True, 38, 53
 as2core2:GigabitEthernet2/0, 2, heimdall, 13, True, 65, 70
 as2core2:GigabitEthernet2/0, 2, heimdall_interface, 33, False, 33, 54
 as2core2:GigabitEthernet2/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2core2:GigabitEthernet2/0, 2, heimdall_intersect, 13, True, 65, 70
 as2dist2:GigabitEthernet1/0, 2, base, 13, True, 65, 70
 as2dist2:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2dist2:GigabitEthernet1/0, 2, neighbor, 3, True, 17, 41
@@ -125,6 +142,7 @@ as2dist2:GigabitEthernet1/0, 2, crystal-net, 7, True, 38, 53
 as2dist2:GigabitEthernet1/0, 2, heimdall, 7, True, 38, 53
 as2dist2:GigabitEthernet1/0, 2, heimdall_interface, 21, False, 21, 37
 as2dist2:GigabitEthernet1/0, 2, heimdall_end_nodes, 7, True, 38, 53
+as2dist2:GigabitEthernet1/0, 2, heimdall_intersect, 7, True, 38, 53
 as2border2:GigabitEthernet0/0, 2, base, 13, True, 65, 66
 as2border2:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2border2:GigabitEthernet0/0, 2, neighbor, 4, False, 21, 22
@@ -132,6 +150,7 @@ as2border2:GigabitEthernet0/0, 2, crystal-net, 8, True, 41, 46
 as2border2:GigabitEthernet0/0, 2, heimdall, 13, True, 65, 66
 as2border2:GigabitEthernet0/0, 2, heimdall_interface, 36, False, 35, 41
 as2border2:GigabitEthernet0/0, 2, heimdall_end_nodes, 13, True, 65, 66
+as2border2:GigabitEthernet0/0, 2, heimdall_intersect, 4, False, 19, 35
 as2core1:GigabitEthernet2/0, 2, base, 13, True, 65, 70
 as2core1:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as2core1:GigabitEthernet2/0, 2, neighbor, 3, False, 17, 45
@@ -139,6 +158,7 @@ as2core1:GigabitEthernet2/0, 2, crystal-net, 7, True, 38, 53
 as2core1:GigabitEthernet2/0, 2, heimdall, 13, True, 65, 70
 as2core1:GigabitEthernet2/0, 2, heimdall_interface, 34, False, 33, 54
 as2core1:GigabitEthernet2/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2core1:GigabitEthernet2/0, 2, heimdall_intersect, 13, True, 65, 70
 as2border1:GigabitEthernet2/0, 2, base, 13, True, 65, 70
 as2border1:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as2border1:GigabitEthernet2/0, 2, neighbor, 3, False, 17, 38
@@ -146,6 +166,7 @@ as2border1:GigabitEthernet2/0, 2, crystal-net, 7, True, 38, 53
 as2border1:GigabitEthernet2/0, 2, heimdall, 13, True, 65, 70
 as2border1:GigabitEthernet2/0, 2, heimdall_interface, 33, False, 32, 54
 as2border1:GigabitEthernet2/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2border1:GigabitEthernet2/0, 2, heimdall_intersect, 13, True, 65, 70
 as2border2:GigabitEthernet2/0, 2, base, 13, True, 65, 58
 as2border2:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as2border2:GigabitEthernet2/0, 2, neighbor, 4, False, 21, 19
@@ -153,6 +174,7 @@ as2border2:GigabitEthernet2/0, 2, crystal-net, 6, True, 30, 29
 as2border2:GigabitEthernet2/0, 2, heimdall, 13, True, 65, 58
 as2border2:GigabitEthernet2/0, 2, heimdall_interface, 35, False, 34, 38
 as2border2:GigabitEthernet2/0, 2, heimdall_end_nodes, 13, True, 65, 58
+as2border2:GigabitEthernet2/0, 2, heimdall_intersect, 4, True, 18, 24
 as2dept1:GigabitEthernet0/0, 2, base, 13, True, 65, 70
 as2dept1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2dept1:GigabitEthernet0/0, 2, neighbor, 1, True, 6, 28
@@ -160,6 +182,7 @@ as2dept1:GigabitEthernet0/0, 2, crystal-net, 6, True, 33, 48
 as2dept1:GigabitEthernet0/0, 2, heimdall, 12, True, 60, 65
 as2dept1:GigabitEthernet0/0, 2, heimdall_interface, 25, False, 24, 45
 as2dept1:GigabitEthernet0/0, 2, heimdall_end_nodes, 8, True, 38, 50
+as2dept1:GigabitEthernet0/0, 2, heimdall_intersect, 8, True, 38, 50
 as1border2:Loopback0, 2, base, 13, True, 65, 65
 as1border2:Loopback0, 2, empty, 0, False, 0, 0
 as1border2:Loopback0, 2, neighbor, 2, True, 9, 16
@@ -167,6 +190,7 @@ as1border2:Loopback0, 2, crystal-net, 2, True, 9, 16
 as1border2:Loopback0, 2, heimdall, 13, True, 65, 65
 as1border2:Loopback0, 2, heimdall_interface, 30, False, 29, 40
 as1border2:Loopback0, 2, heimdall_end_nodes, 8, True, 38, 45
+as1border2:Loopback0, 2, heimdall_intersect, 8, True, 38, 45
 as1core1:GigabitEthernet1/0, 2, base, 13, True, 65, 60
 as1core1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as1core1:GigabitEthernet1/0, 2, neighbor, 2, False, 9, 15
@@ -174,6 +198,7 @@ as1core1:GigabitEthernet1/0, 2, crystal-net, 2, False, 9, 15
 as1core1:GigabitEthernet1/0, 2, heimdall, 11, True, 56, 55
 as1core1:GigabitEthernet1/0, 2, heimdall_interface, 26, False, 25, 35
 as1core1:GigabitEthernet1/0, 2, heimdall_end_nodes, 6, True, 29, 35
+as1core1:GigabitEthernet1/0, 2, heimdall_intersect, 6, True, 29, 35
 as3border2:Loopback0, 2, base, 13, True, 65, 66
 as3border2:Loopback0, 2, empty, 0, False, 0, 0
 as3border2:Loopback0, 2, neighbor, 3, True, 15, 23
@@ -181,6 +206,7 @@ as3border2:Loopback0, 2, crystal-net, 4, True, 19, 25
 as3border2:Loopback0, 2, heimdall, 13, True, 65, 66
 as3border2:Loopback0, 2, heimdall_interface, 28, False, 27, 37
 as3border2:Loopback0, 2, heimdall_end_nodes, 8, True, 38, 41
+as3border2:Loopback0, 2, heimdall_intersect, 8, True, 38, 41
 as2border1:Loopback0, 2, base, 13, True, 65, 61
 as2border1:Loopback0, 2, empty, 0, False, 0, 0
 as2border1:Loopback0, 2, neighbor, 2, False, 9, 23
@@ -188,6 +214,7 @@ as2border1:Loopback0, 2, crystal-net, 2, False, 9, 23
 as2border1:Loopback0, 2, heimdall, 13, True, 65, 61
 as2border1:Loopback0, 2, heimdall_interface, 30, False, 29, 41
 as2border1:Loopback0, 2, heimdall_end_nodes, 8, True, 38, 41
+as2border1:Loopback0, 2, heimdall_intersect, 8, True, 38, 41
 as1border2:GigabitEthernet2/0, 2, base, 13, True, 65, 67
 as1border2:GigabitEthernet2/0, 2, empty, 0, False, 0, 0
 as1border2:GigabitEthernet2/0, 2, neighbor, 2, True, 9, 14
@@ -195,6 +222,7 @@ as1border2:GigabitEthernet2/0, 2, crystal-net, 2, True, 9, 14
 as1border2:GigabitEthernet2/0, 2, heimdall, 12, True, 60, 67
 as1border2:GigabitEthernet2/0, 2, heimdall_interface, 26, False, 25, 35
 as1border2:GigabitEthernet2/0, 2, heimdall_end_nodes, 8, True, 38, 47
+as1border2:GigabitEthernet2/0, 2, heimdall_intersect, 0, False, 0, 0
 as1border1:Loopback0, 2, base, 13, True, 65, 60
 as1border1:Loopback0, 2, empty, 0, False, 0, 0
 as1border1:Loopback0, 2, neighbor, 2, False, 9, 15
@@ -202,6 +230,7 @@ as1border1:Loopback0, 2, crystal-net, 2, False, 9, 15
 as1border1:Loopback0, 2, heimdall, 12, True, 60, 55
 as1border1:Loopback0, 2, heimdall_interface, 28, False, 27, 35
 as1border1:Loopback0, 2, heimdall_end_nodes, 7, True, 33, 35
+as1border1:Loopback0, 2, heimdall_intersect, 7, True, 33, 35
 as2dist1:GigabitEthernet1/0, 2, base, 13, True, 65, 70
 as2dist1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2dist1:GigabitEthernet1/0, 2, neighbor, 3, False, 17, 38
@@ -209,6 +238,7 @@ as2dist1:GigabitEthernet1/0, 2, crystal-net, 7, True, 38, 53
 as2dist1:GigabitEthernet1/0, 2, heimdall, 13, True, 65, 70
 as2dist1:GigabitEthernet1/0, 2, heimdall_interface, 34, False, 33, 54
 as2dist1:GigabitEthernet1/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2dist1:GigabitEthernet1/0, 2, heimdall_intersect, 13, True, 65, 70
 as2dist2:GigabitEthernet0/0, 2, base, 13, True, 65, 70
 as2dist2:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2dist2:GigabitEthernet0/0, 2, neighbor, 3, True, 17, 41
@@ -216,6 +246,7 @@ as2dist2:GigabitEthernet0/0, 2, crystal-net, 7, True, 38, 53
 as2dist2:GigabitEthernet0/0, 2, heimdall, 13, True, 65, 70
 as2dist2:GigabitEthernet0/0, 2, heimdall_interface, 33, False, 33, 54
 as2dist2:GigabitEthernet0/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2dist2:GigabitEthernet0/0, 2, heimdall_intersect, 1, False, 6, 5
 as2dist1:Loopback0, 2, base, 13, True, 65, 65
 as2dist1:Loopback0, 2, empty, 0, False, 0, 0
 as2dist1:Loopback0, 2, neighbor, 3, False, 17, 38
@@ -223,6 +254,7 @@ as2dist1:Loopback0, 2, crystal-net, 7, True, 38, 48
 as2dist1:Loopback0, 2, heimdall, 13, True, 65, 65
 as2dist1:Loopback0, 2, heimdall_interface, 35, False, 34, 45
 as2dist1:Loopback0, 2, heimdall_end_nodes, 13, True, 65, 65
+as2dist1:Loopback0, 2, heimdall_intersect, 13, True, 65, 65
 as2core2:GigabitEthernet3/0, 2, base, 13, True, 65, 70
 as2core2:GigabitEthernet3/0, 2, empty, 0, False, 0, 0
 as2core2:GigabitEthernet3/0, 2, neighbor, 3, True, 17, 38
@@ -230,6 +262,7 @@ as2core2:GigabitEthernet3/0, 2, crystal-net, 7, True, 38, 53
 as2core2:GigabitEthernet3/0, 2, heimdall, 13, True, 65, 70
 as2core2:GigabitEthernet3/0, 2, heimdall_interface, 34, False, 33, 54
 as2core2:GigabitEthernet3/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2core2:GigabitEthernet3/0, 2, heimdall_intersect, 13, True, 65, 70
 as1border1:GigabitEthernet1/0, 2, base, 13, True, 65, 68
 as1border1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as1border1:GigabitEthernet1/0, 2, neighbor, 2, False, 9, 23
@@ -237,6 +270,7 @@ as1border1:GigabitEthernet1/0, 2, crystal-net, 2, False, 9, 23
 as1border1:GigabitEthernet1/0, 2, heimdall, 12, True, 60, 63
 as1border1:GigabitEthernet1/0, 2, heimdall_interface, 28, False, 27, 43
 as1border1:GigabitEthernet1/0, 2, heimdall_end_nodes, 7, True, 33, 43
+as1border1:GigabitEthernet1/0, 2, heimdall_intersect, 7, True, 33, 43
 as3border2:GigabitEthernet0/0, 2, base, 13, True, 65, 70
 as3border2:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as3border2:GigabitEthernet0/0, 2, neighbor, 3, True, 15, 27
@@ -244,6 +278,7 @@ as3border2:GigabitEthernet0/0, 2, crystal-net, 4, True, 19, 29
 as3border2:GigabitEthernet0/0, 2, heimdall, 13, True, 65, 70
 as3border2:GigabitEthernet0/0, 2, heimdall_interface, 33, False, 32, 45
 as3border2:GigabitEthernet0/0, 2, heimdall_end_nodes, 9, True, 43, 50
+as3border2:GigabitEthernet0/0, 2, heimdall_intersect, 1, False, 6, 28
 as2dist2:Loopback0, 2, base, 13, True, 65, 65
 as2dist2:Loopback0, 2, empty, 0, False, 0, 0
 as2dist2:Loopback0, 2, neighbor, 3, True, 17, 33
@@ -251,6 +286,7 @@ as2dist2:Loopback0, 2, crystal-net, 7, True, 38, 48
 as2dist2:Loopback0, 2, heimdall, 7, True, 38, 48
 as2dist2:Loopback0, 2, heimdall_interface, 22, False, 22, 28
 as2dist2:Loopback0, 2, heimdall_end_nodes, 7, True, 38, 48
+as2dist2:Loopback0, 2, heimdall_intersect, 7, True, 38, 48
 as3border1:GigabitEthernet1/0, 2, base, 13, True, 65, 66
 as3border1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as3border1:GigabitEthernet1/0, 2, neighbor, 4, False, 21, 22
@@ -258,6 +294,7 @@ as3border1:GigabitEthernet1/0, 2, crystal-net, 8, True, 41, 46
 as3border1:GigabitEthernet1/0, 2, heimdall, 13, True, 65, 66
 as3border1:GigabitEthernet1/0, 2, heimdall_interface, 35, False, 34, 41
 as3border1:GigabitEthernet1/0, 2, heimdall_end_nodes, 13, True, 65, 66
+as3border1:GigabitEthernet1/0, 2, heimdall_intersect, 4, False, 19, 35
 as2dept1:Loopback0, 2, base, 13, True, 65, 70
 as2dept1:Loopback0, 2, empty, 0, False, 0, 0
 as2dept1:Loopback0, 2, neighbor, 1, True, 6, 28
@@ -265,6 +302,7 @@ as2dept1:Loopback0, 2, crystal-net, 7, True, 38, 53
 as2dept1:Loopback0, 2, heimdall, 13, True, 65, 70
 as2dept1:Loopback0, 2, heimdall_interface, 31, False, 30, 45
 as2dept1:Loopback0, 2, heimdall_end_nodes, 9, True, 43, 55
+as2dept1:Loopback0, 2, heimdall_intersect, 9, True, 43, 55
 as2border1:GigabitEthernet1/0, 2, base, 13, True, 65, 60
 as2border1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2border1:GigabitEthernet1/0, 2, neighbor, 2, False, 9, 17
@@ -272,6 +310,7 @@ as2border1:GigabitEthernet1/0, 2, crystal-net, 2, False, 9, 17
 as2border1:GigabitEthernet1/0, 2, heimdall, 7, True, 32, 36
 as2border1:GigabitEthernet1/0, 2, heimdall_interface, 13, False, 13, 25
 as2border1:GigabitEthernet1/0, 2, heimdall_end_nodes, 7, True, 32, 36
+as2border1:GigabitEthernet1/0, 2, heimdall_intersect, 7, True, 32, 36
 as3core1:Loopback0, 2, base, 13, True, 65, 62
 as3core1:Loopback0, 2, empty, 0, False, 0, 0
 as3core1:Loopback0, 2, neighbor, 3, True, 15, 19
@@ -279,6 +318,7 @@ as3core1:Loopback0, 2, crystal-net, 4, True, 19, 21
 as3core1:Loopback0, 2, heimdall, 13, True, 65, 62
 as3core1:Loopback0, 2, heimdall_interface, 28, False, 27, 33
 as3core1:Loopback0, 2, heimdall_end_nodes, 8, True, 38, 37
+as3core1:Loopback0, 2, heimdall_intersect, 8, True, 38, 37
 as1border2:GigabitEthernet1/0, 2, base, 13, True, 65, 59
 as1border2:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as1border2:GigabitEthernet1/0, 2, neighbor, 3, True, 15, 16
@@ -286,6 +326,7 @@ as1border2:GigabitEthernet1/0, 2, crystal-net, 4, True, 19, 18
 as1border2:GigabitEthernet1/0, 2, heimdall, 10, True, 52, 52
 as1border2:GigabitEthernet1/0, 2, heimdall_interface, 24, False, 23, 32
 as1border2:GigabitEthernet1/0, 2, heimdall_end_nodes, 6, True, 30, 32
+as1border2:GigabitEthernet1/0, 2, heimdall_intersect, 5, True, 25, 32
 as2border1:GigabitEthernet0/0, 2, base, 13, True, 65, 68
 as2border1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2border1:GigabitEthernet0/0, 2, neighbor, 2, False, 9, 23
@@ -293,6 +334,7 @@ as2border1:GigabitEthernet0/0, 2, crystal-net, 2, False, 9, 23
 as2border1:GigabitEthernet0/0, 2, heimdall, 12, False, 60, 63
 as2border1:GigabitEthernet0/0, 2, heimdall_interface, 28, False, 27, 43
 as2border1:GigabitEthernet0/0, 2, heimdall_end_nodes, 7, False, 33, 43
+as2border1:GigabitEthernet0/0, 2, heimdall_intersect, 7, False, 33, 43
 as2dist1:GigabitEthernet0/0, 2, base, 13, True, 65, 70
 as2dist1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2dist1:GigabitEthernet0/0, 2, neighbor, 3, True, 17, 41
@@ -300,6 +342,7 @@ as2dist1:GigabitEthernet0/0, 2, crystal-net, 7, True, 38, 53
 as2dist1:GigabitEthernet0/0, 2, heimdall, 7, True, 38, 53
 as2dist1:GigabitEthernet0/0, 2, heimdall_interface, 20, False, 20, 37
 as2dist1:GigabitEthernet0/0, 2, heimdall_end_nodes, 7, True, 38, 53
+as2dist1:GigabitEthernet0/0, 2, heimdall_intersect, 7, True, 38, 53
 as3core1:GigabitEthernet0/0, 2, base, 13, True, 65, 64
 as3core1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as3core1:GigabitEthernet0/0, 2, neighbor, 2, False, 9, 15
@@ -307,6 +350,7 @@ as3core1:GigabitEthernet0/0, 2, crystal-net, 2, False, 9, 15
 as3core1:GigabitEthernet0/0, 2, heimdall, 10, False, 50, 62
 as3core1:GigabitEthernet0/0, 2, heimdall_interface, 24, False, 23, 30
 as3core1:GigabitEthernet0/0, 2, heimdall_end_nodes, 6, False, 28, 42
+as3core1:GigabitEthernet0/0, 2, heimdall_intersect, 6, False, 28, 42
 as2core1:GigabitEthernet1/0, 2, base, 13, True, 65, 58
 as2core1:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2core1:GigabitEthernet1/0, 2, neighbor, 4, False, 21, 19
@@ -314,6 +358,7 @@ as2core1:GigabitEthernet1/0, 2, crystal-net, 6, False, 30, 29
 as2core1:GigabitEthernet1/0, 2, heimdall, 13, True, 65, 58
 as2core1:GigabitEthernet1/0, 2, heimdall_interface, 35, False, 34, 38
 as2core1:GigabitEthernet1/0, 2, heimdall_end_nodes, 13, True, 65, 58
+as2core1:GigabitEthernet1/0, 2, heimdall_intersect, 4, False, 18, 24
 as1border1:GigabitEthernet0/0, 2, base, 13, True, 65, 60
 as1border1:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as1border1:GigabitEthernet0/0, 2, neighbor, 2, False, 9, 15
@@ -321,6 +366,7 @@ as1border1:GigabitEthernet0/0, 2, crystal-net, 2, False, 9, 15
 as1border1:GigabitEthernet0/0, 2, heimdall, 11, False, 56, 55
 as1border1:GigabitEthernet0/0, 2, heimdall_interface, 27, False, 26, 35
 as1border1:GigabitEthernet0/0, 2, heimdall_end_nodes, 6, False, 29, 35
+as1border1:GigabitEthernet0/0, 2, heimdall_intersect, 6, False, 29, 35
 as2dept1:GigabitEthernet3/0, 2, base, 13, True, 65, 56
 as2dept1:GigabitEthernet3/0, 2, empty, 0, False, 0, 0
 as2dept1:GigabitEthernet3/0, 2, neighbor, 2, False, 9, 15
@@ -328,6 +374,7 @@ as2dept1:GigabitEthernet3/0, 2, crystal-net, 2, False, 9, 15
 as2dept1:GigabitEthernet3/0, 2, heimdall, 12, True, 60, 56
 as2dept1:GigabitEthernet3/0, 2, heimdall_interface, 27, False, 26, 31
 as2dept1:GigabitEthernet3/0, 2, heimdall_end_nodes, 8, True, 38, 36
+as2dept1:GigabitEthernet3/0, 2, heimdall_intersect, 8, True, 38, 36
 as2border2:GigabitEthernet1/0, 2, base, 13, True, 65, 70
 as2border2:GigabitEthernet1/0, 2, empty, 0, False, 0, 0
 as2border2:GigabitEthernet1/0, 2, neighbor, 3, False, 17, 38
@@ -335,6 +382,7 @@ as2border2:GigabitEthernet1/0, 2, crystal-net, 7, True, 38, 53
 as2border2:GigabitEthernet1/0, 2, heimdall, 13, True, 65, 70
 as2border2:GigabitEthernet1/0, 2, heimdall_interface, 33, False, 32, 50
 as2border2:GigabitEthernet1/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2border2:GigabitEthernet1/0, 2, heimdall_intersect, 13, True, 65, 70
 as2core2:GigabitEthernet0/0, 2, base, 13, True, 65, 70
 as2core2:GigabitEthernet0/0, 2, empty, 0, False, 0, 0
 as2core2:GigabitEthernet0/0, 2, neighbor, 3, True, 17, 38
@@ -342,6 +390,7 @@ as2core2:GigabitEthernet0/0, 2, crystal-net, 7, True, 38, 53
 as2core2:GigabitEthernet0/0, 2, heimdall, 13, True, 65, 70
 as2core2:GigabitEthernet0/0, 2, heimdall_interface, 33, False, 32, 50
 as2core2:GigabitEthernet0/0, 2, heimdall_end_nodes, 13, True, 65, 70
+as2core2:GigabitEthernet0/0, 2, heimdall_intersect, 13, True, 65, 70
 as1core1:Loopback0, 2, base, 13, True, 65, 64
 as1core1:Loopback0, 2, empty, 0, False, 0, 0
 as1core1:Loopback0, 2, neighbor, 2, False, 9, 18
@@ -349,3 +398,4 @@ as1core1:Loopback0, 2, crystal-net, 2, False, 9, 18
 as1core1:Loopback0, 2, heimdall, 13, True, 65, 64
 as1core1:Loopback0, 2, heimdall_interface, 30, False, 29, 39
 as1core1:Loopback0, 2, heimdall_end_nodes, 8, True, 38, 44
+as1core1:Loopback0, 2, heimdall_intersect, 8, True, 38, 44

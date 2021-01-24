@@ -18,21 +18,18 @@ def get_reachable_nodes_intersect(snapshot: str, switches: Set[str]) -> Set[str]
     results = bfq.nodeProperties().answer().frame()
     for _, result in results.iterrows():
         nodes.append(result.Node)
-    reachable = None
+    reachable = {}
     for switch in switches:
-        current_nodes = set()
         for node in nodes:
             results = bfq.reachability(
                 pathConstraints=PathConstraints(startLocation=switch, endLocation=node)) \
                 .answer(snapshot=snapshot)
             results = results.frame()
             if results.size > 0:
-                current_nodes.add(node)
-        if reachable is None:
-            reachable = current_nodes
-        else:
-            reachable.intersection_update(current_nodes)
-    return reachable
+                if node not in reachable:
+                    reachable[node] = 0
+                reachable[node] += 1
+    return set(map(lambda it: it[0], filter(lambda elem: elem[1] > 1, reachable.items())))
 
 
 def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:

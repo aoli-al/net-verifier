@@ -12,15 +12,14 @@ import json
 import sys
 
 load_questions()
-# convert_csv("out-2-random-selected-nodes.csv")
-# convert_csv("out-complete-list-affected-nodes.csv")
-#
-# sys.exit(0)
+bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
+process_json("multihosts", "out-2-random-selected-nodes.json")
+process_json("multihosts", "out-complete-list-affected-nodes.json")
+convert_csv("out-2-random-selected-nodes.csv")
+convert_csv("out-complete-list-affected-nodes.csv")
+sys.exit(0)
 
 # load_questions()
-# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
-# process_json("multihosts", "out-2-random-selected-nodes.json")
-# process_json("multihosts", "out-complete-list-affected-nodes.json")
 # generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
 # remove_links("/home/leo/repos/sdn-verifier/configs/multihosts")
 

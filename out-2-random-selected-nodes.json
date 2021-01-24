@@ -158,6 +158,32 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -526,6 +552,9 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "as2dept1"
       ]
     }
   },
@@ -650,7 +679,8 @@
         "host13",
         "as1border1",
         "host14"
-      ]
+      ],
+      "heimdall_intersect": []
     }
   },
   "as2dept1:GigabitEthernet1/0": {
@@ -821,6 +851,23 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "host3",
+        "as3border2",
+        "as2dist1",
+        "as3border1",
+        "as1border1"
       ]
     }
   },
@@ -923,6 +970,19 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "as1border2",
+        "as2border1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -1025,6 +1085,19 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "as1border2",
+        "as2border1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -1164,6 +1237,26 @@
         "as2border1",
         "as2dist1",
         "host8"
+      ],
+      "heimdall_intersect": [
+        "host8",
+        "host9",
+        "as2border2",
+        "as2core2",
+        "host2",
+        "host6",
+        "host10",
+        "as2core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "as2dept1",
+        "host3",
+        "host12",
+        "as2dist2",
+        "as2dist1",
+        "host7",
+        "host11"
       ]
     }
   },
@@ -1294,6 +1387,21 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host16",
+        "as2border2",
+        "host17",
+        "host14",
+        "as3core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1"
       ]
     }
   },
@@ -1416,6 +1524,20 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "as1border2",
+        "as2border1",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -1543,6 +1665,21 @@
         "host2",
         "host13",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "host15"
       ]
     }
   },
@@ -1720,6 +1857,16 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "as2border2",
+        "host14",
+        "host5",
+        "as1core1",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as1border1"
       ]
     }
   },
@@ -1865,6 +2012,11 @@
         "host2",
         "host13",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host1",
+        "as2dept1",
+        "host5"
       ]
     }
   },
@@ -2039,6 +2191,15 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host14",
+        "host5",
+        "as1core1",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as1border1"
       ]
     }
   },
@@ -2209,6 +2370,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -2333,6 +2522,21 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -2502,6 +2706,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -2641,6 +2873,26 @@
         "as2border1",
         "as2dist1",
         "host8"
+      ],
+      "heimdall_intersect": [
+        "host8",
+        "host9",
+        "as2border2",
+        "as2core2",
+        "host2",
+        "host6",
+        "host10",
+        "as2core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "as2dept1",
+        "host3",
+        "host12",
+        "as2dist2",
+        "as2dist1",
+        "host7",
+        "host11"
       ]
     }
   },
@@ -2820,6 +3072,15 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host14",
+        "host5",
+        "as1core1",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as1border1"
       ]
     }
   },
@@ -2991,6 +3252,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as1core1",
+        "as2core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -3161,6 +3450,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -3336,6 +3653,13 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "as2border2",
+        "host14",
+        "as1core1",
+        "as1border2",
+        "as1border1"
       ]
     }
   },
@@ -3470,6 +3794,22 @@
         "host2",
         "as1border1",
         "host12"
+      ],
+      "heimdall_intersect": [
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "as1core1",
+        "as2dist2",
+        "host1",
+        "as1border2",
+        "host4",
+        "as2dept1",
+        "host12",
+        "as3border2",
+        "as3border1",
+        "as1border1"
       ]
     }
   },
@@ -3608,6 +3948,24 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "as1border2",
+        "host1",
+        "as2border1",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -3738,6 +4096,22 @@
         "host2",
         "host13",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "host15"
       ]
     }
   },
@@ -3868,6 +4242,21 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host16",
+        "as2border2",
+        "host17",
+        "host14",
+        "as3core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1"
       ]
     }
   },
@@ -4006,6 +4395,24 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2border1",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -4127,7 +4534,8 @@
         "host13",
         "as1border1",
         "host14"
-      ]
+      ],
+      "heimdall_intersect": []
     }
   },
   "as1border1:Loopback0": {
@@ -4261,6 +4669,23 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -4432,6 +4857,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -4599,6 +5052,10 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host10",
+        "as2core2"
       ]
     }
   },
@@ -4771,6 +5228,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -4942,6 +5427,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -5076,6 +5589,23 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -5221,6 +5751,11 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host1",
+        "as2dept1",
+        "host5"
       ]
     }
   },
@@ -5362,6 +5897,26 @@
         "as2border1",
         "as2dist1",
         "host8"
+      ],
+      "heimdall_intersect": [
+        "host8",
+        "host9",
+        "as2border2",
+        "as2core2",
+        "host2",
+        "host6",
+        "host10",
+        "as2core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "as2dept1",
+        "host3",
+        "host12",
+        "as2dist2",
+        "as2dist1",
+        "host7",
+        "host11"
       ]
     }
   },
@@ -5540,6 +6095,15 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host14",
+        "host5",
+        "as1core1",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as1border1"
       ]
     }
   },
@@ -5690,6 +6254,25 @@
         "as1border2",
         "as2dist1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "as1core1",
+        "host1",
+        "as1border2",
+        "as3border2",
+        "host4",
+        "as2dept1",
+        "host3",
+        "host12",
+        "as2dist2",
+        "as2dist1",
+        "as3border1",
+        "as1border1"
       ]
     }
   },
@@ -5792,6 +6375,19 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "as1border2",
+        "as2border1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -5922,6 +6518,21 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host16",
+        "as2border2",
+        "host17",
+        "host14",
+        "as3core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1"
       ]
     }
   },
@@ -6049,6 +6660,20 @@
         "as3core1",
         "host2",
         "host13"
+      ],
+      "heimdall_intersect": [
+        "host16",
+        "host6",
+        "host2",
+        "host17",
+        "as3core1",
+        "host13",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1"
       ]
     }
   },
@@ -6183,6 +6808,23 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -6321,6 +6963,26 @@
         "as2border1",
         "as2dist1",
         "host8"
+      ],
+      "heimdall_intersect": [
+        "host8",
+        "host9",
+        "as2border2",
+        "host2",
+        "as2core2",
+        "host6",
+        "host10",
+        "as2core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "host4",
+        "as2dept1",
+        "host12",
+        "as2dist2",
+        "as2dist1",
+        "host7",
+        "host11"
       ]
     }
   },
@@ -6442,6 +7104,20 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "host13",
+        "host5",
+        "as1core1",
+        "host1",
+        "as2border1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -6617,6 +7293,13 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "as2border2",
+        "host14",
+        "as1core1",
+        "as1border2",
+        "as1border1"
       ]
     }
   },
@@ -6748,6 +7431,22 @@
         "host2",
         "host13",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "host15"
       ]
     }
   },
@@ -6876,6 +7575,22 @@
         "host13",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   },
@@ -7046,6 +7761,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -7216,6 +7959,34 @@
         "as2dist1",
         "host8",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host9",
+        "host6",
+        "as2core2",
+        "host14",
+        "as2dept1",
+        "as3border2",
+        "as2dist1",
+        "host7",
+        "host8",
+        "as2border2",
+        "as3core1",
+        "as2border1",
+        "as2dist2",
+        "host2",
+        "host17",
+        "host12",
+        "as3border1",
+        "as2core1",
+        "as1core1",
+        "host5",
+        "host1",
+        "as1border2",
+        "host3",
+        "host10",
+        "as1border1",
+        "host11"
       ]
     }
   },
@@ -7354,6 +8125,24 @@
         "host2",
         "as1border1",
         "host14"
+      ],
+      "heimdall_intersect": [
+        "host6",
+        "host2",
+        "host17",
+        "host14",
+        "as3core1",
+        "host13",
+        "as1core1",
+        "host5",
+        "host1",
+        "as2border1",
+        "as1border2",
+        "as2dept1",
+        "as3border2",
+        "as3border1",
+        "as1border1",
+        "host15"
       ]
     }
   }

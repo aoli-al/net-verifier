@@ -252,8 +252,6 @@ class VerifyInvariant(object):
                 if f"{i1},{i2}" not in output_policy_map and f"{i2},{i1}" not in output_policy_map:
                     output_policy_map[f"{i1},{i2}"] = self.check_interfaces([i1, i2])
                 json.dump(output_policy_map, open("out-policy-map.json", "w"), indent=2)
-
-
         # sanity_check = self.get_violated_policies("base_verify")
         # assert len(sanity_check) == 0
         # interface_map = {}
@@ -403,7 +401,7 @@ def convert_csv(path: str):
     for key in data:
         w = csv.DictWriter(open(f"{key.strip()}-{path}", "w"),
                            fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall",
-                                       "heimdall_interface", "heimdall_end_nodes"])
+                                       "heimdall_interface", "heimdall_end_nodes", "heimdall_intersect"])
         w.writeheader()
         for interface in data[key]:
             d = {
