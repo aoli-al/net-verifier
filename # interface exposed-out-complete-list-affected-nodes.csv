@@ -1,51 +1,51 @@
-interface removed,base,empty,neighbor,crystal-net,heimdall
-as2dist2:Loopback0, 65, 0, 28, 38, 65
-as2dist1:GigabitEthernet0/0, 65, 0, 23, 38, 38
-as2border1:GigabitEthernet1/0, 65, 0, 41, 55, 65
-as1core1:GigabitEthernet0/0, 65, 0, 43, 57, 65
-as2border1:GigabitEthernet2/0, 65, 0, 28, 38, 65
-as2border2:GigabitEthernet2/0, 65, 0, 43, 57, 65
-as2core2:Loopback0, 65, 0, 28, 38, 65
-as1border1:Loopback0, 65, 0, 41, 55, 65
-as2dist1:GigabitEthernet1/0, 65, 0, 28, 38, 65
-as3core1:GigabitEthernet1/0, 65, 0, 47, 61, 65
-as2dist2:GigabitEthernet2/0, 65, 0, 28, 38, 65
-as1border1:GigabitEthernet0/0, 65, 0, 41, 51, 61
-as2core2:GigabitEthernet1/0, 65, 0, 28, 38, 65
-as3core1:Loopback0, 65, 0, 15, 19, 65
-as2border2:GigabitEthernet0/0, 65, 0, 43, 57, 65
-as1border2:GigabitEthernet0/0, 65, 0, 19, 27, 65
-as2dept1:GigabitEthernet2/0, 65, 0, 47, 65, 65
-as2dist2:GigabitEthernet0/0, 65, 0, 28, 38, 65
-as3border1:Loopback0, 65, 0, 15, 19, 65
-as2core2:GigabitEthernet3/0, 65, 0, 28, 38, 65
-as1border2:GigabitEthernet2/0, 65, 0, 13, 17, 60
-as2core1:Loopback0, 65, 0, 47, 65, 65
-as2core2:GigabitEthernet2/0, 65, 0, 28, 38, 65
-as3border1:GigabitEthernet0/0, 65, 0, 43, 53, 61
-as2core1:GigabitEthernet2/0, 65, 0, 28, 38, 65
-as2dept1:GigabitEthernet3/0, 65, 0, 47, 65, 65
-as3border1:GigabitEthernet1/0, 65, 0, 43, 57, 65
-as2dept1:GigabitEthernet1/0, 65, 0, 28, 38, 65
-as2border1:GigabitEthernet0/0, 65, 0, 41, 55, 65
-as2dist1:GigabitEthernet2/0, 65, 0, 28, 38, 65
-as2dept1:Loopback0, 65, 0, 16, 38, 65
-as1core1:GigabitEthernet1/0, 65, 0, 47, 61, 65
-as3border2:Loopback0, 65, 0, 15, 19, 65
-as2core1:GigabitEthernet1/0, 65, 0, 43, 57, 65
-as2core2:GigabitEthernet0/0, 65, 0, 28, 38, 65
-as1border2:Loopback0, 65, 0, 13, 17, 65
-as2border1:Loopback0, 65, 0, 41, 55, 65
-as2border2:GigabitEthernet1/0, 65, 0, 28, 38, 65
-as2dist2:GigabitEthernet1/0, 65, 0, 23, 38, 38
-as3border2:GigabitEthernet1/0, 65, 0, 19, 27, 56
-as2core1:GigabitEthernet3/0, 65, 0, 28, 38, 65
-as3core1:GigabitEthernet0/0, 65, 0, 41, 55, 65
-as3border2:GigabitEthernet0/0, 65, 0, 19, 27, 65
-as2dist1:Loopback0, 65, 0, 28, 38, 65
-as2dept1:GigabitEthernet0/0, 65, 0, 28, 38, 65
-as2border2:Loopback0, 65, 0, 43, 57, 65
-as2core1:GigabitEthernet0/0, 65, 0, 41, 55, 65
-as1border1:GigabitEthernet1/0, 65, 0, 41, 55, 65
-as1core1:Loopback0, 65, 0, 13, 17, 65
-as1border2:GigabitEthernet1/0, 65, 0, 19, 27, 56
+interface removed,base,empty,neighbor,crystal-net,heimdall,heimdall_interface
+as2dist2:Loopback0, 65, 0, 28, 38, 65, 34
+as2dist1:GigabitEthernet0/0, 65, 0, 23, 38, 38, 20
+as2border1:GigabitEthernet1/0, 65, 0, 41, 55, 65, 35
+as1core1:GigabitEthernet0/0, 65, 0, 43, 57, 65, 36
+as2border1:GigabitEthernet2/0, 65, 0, 28, 38, 65, 32
+as2border2:GigabitEthernet2/0, 65, 0, 43, 57, 65, 34
+as2core2:Loopback0, 65, 0, 28, 38, 65, 34
+as1border1:Loopback0, 65, 0, 41, 55, 65, 37
+as2dist1:GigabitEthernet1/0, 65, 0, 28, 38, 65, 33
+as3core1:GigabitEthernet1/0, 65, 0, 47, 61, 65, 36
+as2dist2:GigabitEthernet2/0, 65, 0, 28, 38, 65, 33
+as1border1:GigabitEthernet0/0, 65, 0, 41, 51, 61, 34
+as2core2:GigabitEthernet1/0, 65, 0, 28, 38, 65, 32
+as3core1:Loopback0, 65, 0, 15, 19, 65, 27
+as2border2:GigabitEthernet0/0, 65, 0, 43, 57, 65, 35
+as1border2:GigabitEthernet0/0, 65, 0, 19, 27, 65, 32
+as2dept1:GigabitEthernet2/0, 65, 0, 47, 65, 65, 36
+as2dist2:GigabitEthernet0/0, 65, 0, 28, 38, 65, 33
+as3border1:Loopback0, 65, 0, 15, 19, 65, 27
+as2core2:GigabitEthernet3/0, 65, 0, 28, 38, 65, 33
+as1border2:GigabitEthernet2/0, 65, 0, 13, 17, 60, 25
+as2core1:Loopback0, 65, 0, 47, 65, 65, 37
+as2core2:GigabitEthernet2/0, 65, 0, 28, 38, 65, 33
+as3border1:GigabitEthernet0/0, 65, 0, 43, 53, 61, 33
+as2core1:GigabitEthernet2/0, 65, 0, 28, 38, 65, 33
+as2dept1:GigabitEthernet3/0, 65, 0, 47, 65, 65, 36
+as3border1:GigabitEthernet1/0, 65, 0, 43, 57, 65, 34
+as2dept1:GigabitEthernet1/0, 65, 0, 28, 38, 65, 33
+as2border1:GigabitEthernet0/0, 65, 0, 41, 55, 65, 36
+as2dist1:GigabitEthernet2/0, 65, 0, 28, 38, 65, 33
+as2dept1:Loopback0, 65, 0, 16, 38, 65, 30
+as1core1:GigabitEthernet1/0, 65, 0, 47, 61, 65, 36
+as3border2:Loopback0, 65, 0, 15, 19, 65, 27
+as2core1:GigabitEthernet1/0, 65, 0, 43, 57, 65, 34
+as2core2:GigabitEthernet0/0, 65, 0, 28, 38, 65, 32
+as1border2:Loopback0, 65, 0, 13, 17, 65, 29
+as2border1:Loopback0, 65, 0, 41, 55, 65, 37
+as2border2:GigabitEthernet1/0, 65, 0, 28, 38, 65, 32
+as2dist2:GigabitEthernet1/0, 65, 0, 23, 38, 38, 21
+as3border2:GigabitEthernet1/0, 65, 0, 19, 27, 56, 23
+as2core1:GigabitEthernet3/0, 65, 0, 28, 38, 65, 33
+as3core1:GigabitEthernet0/0, 65, 0, 41, 55, 65, 36
+as3border2:GigabitEthernet0/0, 65, 0, 19, 27, 65, 32
+as2dist1:Loopback0, 65, 0, 28, 38, 65, 34
+as2dept1:GigabitEthernet0/0, 65, 0, 28, 38, 65, 33
+as2border2:Loopback0, 65, 0, 43, 57, 65, 36
+as2core1:GigabitEthernet0/0, 65, 0, 41, 55, 65, 35
+as1border1:GigabitEthernet1/0, 65, 0, 41, 55, 65, 35
+as1core1:Loopback0, 65, 0, 13, 17, 65, 29
+as1border2:GigabitEthernet1/0, 65, 0, 19, 27, 56, 24

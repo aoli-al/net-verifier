@@ -2,7 +2,7 @@ from typing import List, Set, Tuple, Generator, Dict, Any
 from pybatfish.question import bfq, load_questions
 from utils import interface_to_str, interfaces_from_snapshot, remove_interface_in_config
 from pybatfish.client.commands import bf_init_snapshot, bf_delete_snapshot
-from topology import build_topology
+from topology import *
 from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
 import subprocess
 from policy import *
@@ -12,6 +12,11 @@ import tempfile
 import json
 import re
 import sys
+
+
+def reset():
+    subprocess.call(["docker", "restart", "batfish"])
+    load_questions()
 
 
 class Base(object):
@@ -99,14 +104,29 @@ class Heimdall(Base):
         return t.reachable_nodes
 
 
-class Harness(object):
+class HeimdallEndNodes(Base):
+    def get_internal_nodes(self) -> Set[str]:
+        return get_reachable_nodes(self.snapshot, set(self.affected_nodes))
 
+
+class HeimdallInterface(Base):
+    def get_internal_nodes(self) -> Set[str]:
+        return self.get_internal_interfaces()
+
+    def get_internal_interfaces(self) -> Set[str]:
+        t = build_topology(self.snapshot, set(self.affected_nodes), set())
+        return t.reachable_nodes
+
+
+class Harness(object):
     solutions = [
         (Base, "base"),
         (Empty, "empty"),
         (Neighbor, "neighbor"),
         (CrystalNet, "crystal-net"),
-        (Heimdall, "heimdall")
+        (Heimdall, "heimdall"),
+        (HeimdallInterface, "heimdall_interface"),
+        (HeimdallEndNodes, "heimdall_end_nodes")
     ]
 
     def __init__(self, base: str):
@@ -146,14 +166,7 @@ class Harness(object):
 
     def run(self, output_path: str):
         results = json.load(open(output_path))
-        # visited = set()
-        # rrr = []
-        # for result in results:
-        #     if result['interface'] not in visited:
-        #         visited.add(result['interface'])
-        #         rrr.append(result)
-        # json.dump(rrr, open("tmp.json", "w"), indent=2)
-        # return
+        idx = 0
         for interface, affected_nodes, snapshot in self.generate_test_case(results):
             # if "as2border1:GigabitEthernet2/0" in interface:
             #     continue
@@ -171,6 +184,10 @@ class Harness(object):
                     results[interface]['solutions'][name] = list(internal_nodes)
             json.dump(results, open(output_path, "w"), indent=2)
             bf_delete_snapshot(snapshot)
+            idx += 1
+            if idx == 15:
+                idx = 0
+                reset()
 
 
 class VerifyInvariant(object):
@@ -187,11 +204,6 @@ class VerifyInvariant(object):
         # json.dump([str(p) for p in self.policies], open("policies.json", "w"))
         self.in_file = in_file
         self.name_idx = 0
-
-    # need to do this periodically to free memory...
-    def reset(self):
-        subprocess.call(["docker", "restart", "batfish"])
-        load_questions()
 
     def new_snapshot_name(self, config_path: str):
         self.name_idx += 1
@@ -222,7 +234,7 @@ class VerifyInvariant(object):
             i1 = interfaces[i]
             if "host" in i1:
                 continue
-            self.reset()
+            reset()
             if interfaces[i] not in output_policy_map:
                 output_policy_map[interfaces[i]] = self.check_interfaces([interfaces[i]])
             for j in range(i, len(interfaces)):
@@ -282,14 +294,22 @@ def process_json(snapshot: str, in_file: str):
     out.write("interface removed, # affected nodes, solution, # reachable nodes, interface included, "
               "# interface exposed, # violated policies\n")
     result = json.load(open(in_file))
-    for case in result:
-        for solution in case['solutions']:
+    for (i1, case) in result.items():
+        for (solution_name, solution) in case['solutions'].items():
             exposed_interfaces = set()
-            for node in solution['internal_nodes']:
+            for node in solution:
                 if "host" in node:
                     continue
-                exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
-            i1 = case['interface']
+                if "None" in node:
+                    continue
+                if solution_name == "heimdall_interface":
+                    exposed_interfaces.add(node)
+                else:
+                    exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
+            if "heimdall_interface" == solution_name:
+                s1 = exposed_interfaces
+            elif "heimdall" == solution_name:
+                s2 = exposed_interfaces
             violated_policies = set()
             ori_violated_policies = set(output_policy_map[i1])
             for name_and_interface in exposed_interfaces:
@@ -300,10 +320,11 @@ def process_json(snapshot: str, in_file: str):
                     violated_policies.update(output_policy_map[f"{i1},{i2}"])
                 else:
                     violated_policies.update(output_policy_map[f"{i2},{i1}"])
-            out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution['name']}, "
-                      f"{len(list(filter(lambda x: 'host' not in x, solution['internal_nodes'])))}, "
-                      f"{case['interface'].split(':')[0] in solution['internal_nodes']}, "
+            out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution_name}, "
+                      f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
+                      f"{case['interface'].split(':')[0] in solution}, "
                       f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
+        print(s2.difference(s1))
 
 
 def remove_links(path: str):
@@ -376,7 +397,8 @@ def convert_csv(path: str):
             data[key][field['interface removed']][field[' solution']] = field[key]
     for key in data:
         w = csv.DictWriter(open(f"{key.strip()}-{path}", "w"),
-                           fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall"])
+                           fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall",
+                                       "heimdall_interface"])
         w.writeheader()
         for interface in data[key]:
             d = {

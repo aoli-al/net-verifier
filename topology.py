@@ -13,6 +13,23 @@ class Topology(object):
         self.links = links
 
 
+def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:
+    nodes = []
+    results = bfq.nodeProperties().answer().frame()
+    for _, result in results.iterrows():
+        nodes.append(result.Node)
+    reachable = set()
+    for switch in switches:
+        for node in nodes:
+            results = bfq.reachability(
+                pathConstraints=PathConstraints(startLocation=switch, endLocation=node)) \
+                .answer(snapshot=snapshot)
+            results = results.frame()
+            if results.size > 0:
+                reachable.add(node)
+    return reachable
+
+
 def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:
     # bf_init_snapshot(str(snapshot), "reachable", overwrite=True)
     nodes = []
