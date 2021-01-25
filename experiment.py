@@ -1,4 +1,4 @@
-from typing import List, Set, Tuple, Generator, Dict, Any
+from typing import List, Set, Tuple, Generator, Dict, Any, Callable
 from pybatfish.question import bfq, load_questions
 from utils import interface_to_str, interfaces_from_snapshot, remove_interface_in_config
 from pybatfish.client.commands import bf_init_snapshot, bf_delete_snapshot
@@ -132,8 +132,13 @@ class Harness(object):
         (Heimdall, "heimdall"),
         (HeimdallInterface, "heimdall_interface"),
         (HeimdallEndNodes, "heimdall_end_nodes"),
-        (HeimdallNodeIntersect, "heimdall_intersect")
+        (HeimdallNodeIntersect, "heimdall_intersect4")
     ]
+
+    generation_types = {
+        "complete": lambda x: x,
+        "random-2": lambda x: x[0:2] if len(x) > 2 else x
+    }
 
     def __init__(self, base: str):
         self.base = base
@@ -141,7 +146,7 @@ class Harness(object):
         self.interfaces = interfaces_from_snapshot("exp")
         self.name_idx = 0
 
-    def get_affected_node(self, node: str, snapshot: str) -> Set[str]:
+    def get_affected_node(self, node: str, snapshot: str, generator: Callable[[List[str]], List[str]]) -> Set[str]:
         affected_node = set()
         self.name_idx += 1
         results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
@@ -149,48 +154,47 @@ class Harness(object):
         for idx, result in results.iterrows():
             if result.Flow.ingressNode is not None and result.Flow.ingressNode != node:
                 affected_node.add(result.Flow.ingressNode)
-        while len(affected_node) > 2:
-            affected_node.pop()
-        return affected_node
+        return set(generator(list(affected_node)))
 
-    def generate_test_case(self, prev_data: Dict[str, Any]) -> Generator[Tuple[str, Set[str], str], None, None]:
+    def generate_test_case(self, prev_data: Dict[str, Any]) -> Generator[Tuple[str, Set[str], str, str], None, None]:
         for interface_name in self.interfaces:
-            [node, _] = interface_name.split(":")
-            if "host" in interface_name:
-                continue
-            dir = tempfile.TemporaryDirectory()
-            shutil.copytree(self.base, dir.name+"/", dirs_exist_ok=True)
-            remove_interface_in_config(dir.name, [interface_name])
-            snapshot = f"exp_{self.name_idx}"
-            bf_init_snapshot(dir.name, f"exp_{self.name_idx}")
-            if interface_name in prev_data:
-                nodes = prev_data[interface_name]['affected_nodes']
-            else:
-                nodes = self.get_affected_node(node, snapshot)
-            if len(nodes):
-                yield interface_name, nodes, snapshot
+            for gname, generator in self.generation_types.items():
+                [node, _] = interface_name.split(":")
+                if "host" in interface_name:
+                    continue
+                dir = tempfile.TemporaryDirectory()
+                shutil.copytree(self.base, dir.name+"/", dirs_exist_ok=True)
+                remove_interface_in_config(dir.name, [interface_name])
+                snapshot = f"exp_{self.name_idx}"
+                bf_init_snapshot(dir.name, f"exp_{self.name_idx}")
+                if interface_name in prev_data and gname in prev_data[interface_name]:
+                    nodes = prev_data[interface_name][gname]['affected_nodes']
+                else:
+                    nodes = self.get_affected_node(node, snapshot, generator)
+                if len(nodes):
+                    yield interface_name, nodes, snapshot, gname
 
-    def run(self, output_path: str):
+    def run(self):
+        output_path = os.path.join(self.base, "raw.json")
         results = json.load(open(output_path))
         idx = 0
-        for interface, affected_nodes, snapshot in self.generate_test_case(results):
-            # if "as2border1:GigabitEthernet2/0" in interface:
-            #     continue
+        for interface, affected_nodes, snapshot, selection_type in self.generate_test_case(results):
             print(f"Interface {interface} is down.")
             if interface not in results:
-                results[interface] = {
-                    "interface": interface,
+                results[interface] = {}
+            if selection_type not in results[interface]:
+                results[interface][selection_type] = {
                     "affected_nodes": list(affected_nodes),
                     "solutions": {}
                 }
             for solution, name in self.solutions:
-                if name not in results[interface]['solutions']:
+                if name not in results[interface][selection_type]['solutions']:
                     s = solution(snapshot, list(affected_nodes))
                     internal_nodes = s.get_internal_nodes()
-                    results[interface]['solutions'][name] = list(internal_nodes)
+                    results[interface][selection_type]['solutions'][name] = list(internal_nodes)
             json.dump(results, open(output_path, "w"), indent=2)
             bf_delete_snapshot(snapshot)
-            idx += 1
+            idx += 10
             if idx == 15:
                 idx = 0
                 reset()
@@ -295,50 +299,77 @@ class VerifyInvariant(object):
 def process_json(snapshot: str, in_file: str):
     out = open(in_file.split(".")[0] + ".csv", 'w')
     output_policy_map = json.load(open("out-policy-map.json"))
-    out.write("interface removed, # affected nodes, solution, # reachable nodes, interface included, "
+    out.write("interface removed, generator,"
+              "# affected nodes, solution, # reachable nodes, interface included, "
               "# interface exposed, # violated policies\n")
     result = json.load(open(in_file))
-    for (i1, case) in result.items():
-        for (solution_name, solution) in case['solutions'].items():
-            exposed_interfaces = set()
-            for node in solution:
-                if "host" in node:
-                    continue
-                if "None" in node:
-                    continue
-                if solution_name == "heimdall_interface":
-                    exposed_interfaces.add(node)
-                else:
-                    exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
-            if "heimdall_interface" == solution_name:
-                s1 = exposed_interfaces
-            elif "heimdall" == solution_name:
-                s2 = exposed_interfaces
-            violated_policies = set()
-            ori_violated_policies = set(output_policy_map[i1])
-            for name_and_interface in exposed_interfaces:
-                i2 = name_and_interface
-                if i1 == i2:
-                    continue
-                if f"{i1},{i2}" in output_policy_map:
-                    violated_policies.update(output_policy_map[f"{i1},{i2}"])
-                else:
-                    violated_policies.update(output_policy_map[f"{i2},{i1}"])
-            out.write(f"{case['interface']}, {len(case['affected_nodes'])}, {solution_name}, "
-                      f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
-                      f"{1 if case['interface'].split(':')[0] in solution else 0}, "
-                      f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
+    for (i1, generators) in result.items():
+        for (gname, case) in generators.items():
+            for (solution_name, solution) in case['solutions'].items():
+                exposed_interfaces = set()
+                for node in solution:
+                    if "host" in node:
+                        continue
+                    if "None" in node:
+                        continue
+                    if solution_name == "heimdall_interface":
+                        exposed_interfaces.add(node)
+                    else:
+                        exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
+                if "heimdall_interface" == solution_name:
+                    s1 = exposed_interfaces
+                elif "heimdall" == solution_name:
+                    s2 = exposed_interfaces
+                violated_policies = set()
+                ori_violated_policies = set(output_policy_map[i1])
+                for name_and_interface in exposed_interfaces:
+                    i2 = name_and_interface
+                    if i1 == i2:
+                        continue
+                    if f"{i1},{i2}" in output_policy_map:
+                        violated_policies.update(output_policy_map[f"{i1},{i2}"])
+                    else:
+                        violated_policies.update(output_policy_map[f"{i2},{i1}"])
+                out.write(f"{i1}, {gname},"
+                          f"{len(case['affected_nodes'])}, {solution_name}, "
+                          f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
+                          f"{1 if i1.split(':')[0] in solution else 0}, "
+                          f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
 
 
 def remove_links(path: str):
     bf_init_snapshot(path, 'remove_links')
-    results = bfq.reachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
+    results = bfq.reachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/"))\
         .answer(snapshot='remove_links').frame()
+    removable_interfaces = set()
     for idx, result in results.iterrows():
         if result.TraceCount <= 1:
             continue
+        visited_interfaces = {}
         for trace in result.Traces:
-            print(trace)
+            if trace.disposition == "NO_ROUTE":
+                continue
+            for hop in trace.hops:
+                node = hop.node
+                if "host" in node:
+                    continue
+                for step in hop.steps:
+                    interface = None
+                    if hasattr(step.detail, "inputInterface"):
+                        interface = step.detail.inputInterface
+                    elif hasattr(step.detail, "outputInterface"):
+                        interface = step.detail.outputInterface
+                    if interface is not None:
+                        iname = f"{node}:{interface}"
+                        if iname not in visited_interfaces:
+                            visited_interfaces[iname] = 0
+                        visited_interfaces[iname] += 1
+        interfaces = list(filter(lambda it: it[1] > 1, visited_interfaces.items()))
+        if len(interfaces) > 0:
+            removable_interfaces.add(interfaces[0][0])
+    print(removable_interfaces)
+    remove_interface_in_config(path, list(removable_interfaces))
+
 
 
 def generate_hosts(path: str):
@@ -391,23 +422,27 @@ def convert_csv(path: str):
     for field in result:
         interface = {}
         for key in field:
-            if key in ["interface removed", "solution"]:
+            if key in ["interface removed", " solution", " generator"]:
                 continue
             if key not in data:
                 data[key] = {}
-            if field['interface removed'] not in data[key]:
-                data[key][field['interface removed']] = {}
-            data[key][field['interface removed']][field[' solution']] = field[key]
+            if field[' generator'] not in data[key]:
+                data[key][field[' generator']] = {}
+            if field['interface removed'] not in data[key][field[' generator']]:
+                data[key][field[' generator']][field['interface removed']] = {}
+            data[key][field[' generator']][field['interface removed']][field[' solution']] = field[key]
     for key in data:
-        w = csv.DictWriter(open(f"{key.strip()}-{path}", "w"),
-                           fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall",
-                                       "heimdall_interface", "heimdall_end_nodes", "heimdall_intersect"])
-        w.writeheader()
-        for interface in data[key]:
-            d = {
-                "interface removed": interface
-            }
-            for solution in data[key][interface]:
-                d[solution.strip()] = data[key][interface][solution]
-            w.writerow(d)
+        for generator in data[key]:
+            w = csv.DictWriter(open(f"{os.path.dirname(path)}/{key.strip()}-{generator.strip()}-{os.path.basename(path)}", "w"),
+                               fieldnames=["interface removed", "base", "empty", "neighbor", "crystal-net", "heimdall",
+                                           "heimdall_interface", "heimdall_end_nodes", "heimdall_intersect", "heimdall_intersect2",
+                                           "heimdall_intersect3", "heimdall_intersect4"])
+            w.writeheader()
+            for interface in data[key][generator]:
+                d = {
+                    "interface removed": interface
+                }
+                for solution in data[key][generator][interface]:
+                    d[solution.strip()] = data[key][generator][interface][solution]
+                w.writerow(d)
 

@@ -27,18 +27,18 @@ def interface_map(snapshot: str) -> Dict[str, Set[str]]:
 
 
 def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
-    cache_path = os.path.join("cache", "interface_from_snapshot_" + snapshot)
-    if os.path.exists(cache_path):
-        caches = json.load(open(cache_path))
-    else:
-        caches = {}
+    # cache_path = os.path.join("cache", "interface_from_snapshot_" + snapshot)
+    # if os.path.exists(cache_path):
+    #     caches = json.load(open(cache_path))
+    # else:
+    caches = {}
     if len(caches) == 0:
         results = bfq.interfaceProperties().answer(snapshot=snapshot).frame()
         for _, result in results.iterrows():
             if result.Interface.hostname not in caches:
                 caches[result.Interface.hostname] = []
             caches[result.Interface.hostname].append(interface_to_str(result.Interface))
-    json.dump(caches, open(cache_path, "w"))
+    # json.dump(caches, open(cache_path, "w"))
     if nodes:
         return set(caches[nodes])
     else:

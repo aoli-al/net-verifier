@@ -1,0 +1,24 @@
+interface removed,base,empty,neighbor,crystal-net,heimdall,heimdall_interface,heimdall_end_nodes,heimdall_intersect,heimdall_intersect2,heimdall_intersect3,heimdall_intersect4
+as1core1:GigabitEthernet1/0, 56, 0, 21, 23, 25, 23, 25,,,, 25
+as1core1:GigabitEthernet0/0, 55, 0, 16, 18, 20, 18, 20,,,, 20
+as3core1:GigabitEthernet0/0, 60, 0, 19, 21, 28, 21, 28,,,, 28
+as1border1:GigabitEthernet1/0, 64, 0, 23, 23, 33, 31, 33,,,, 33
+as3border1:GigabitEthernet0/0, 58, 0, 19, 19, 25, 23, 25,,,, 25
+as2core1:GigabitEthernet2/0, 66, 0, 0, 0, 0, 0, 0,,,, 0
+as3border2:Loopback0, 62, 0, 23, 25, 33, 29, 33,,,, 33
+as3border1:Loopback0, 60, 0, 21, 23, 31, 27, 31,,,, 31
+as3border2:GigabitEthernet0/0, 66, 0, 27, 29, 44, 35, 44,,,, 44
+as1border2:Loopback0, 61, 0, 20, 22, 37, 28, 37,,,, 37
+as3border2:GigabitEthernet1/0, 60, 0, 21, 23, 34, 21, 34,,,, 34
+as1border2:GigabitEthernet1/0, 55, 0, 16, 18, 20, 18, 20,,,, 20
+as1border1:Loopback0, 56, 0, 15, 17, 25, 21, 25,,,, 25
+as2core1:GigabitEthernet3/0, 66, 0, 0, 0, 0, 0, 0,,,, 0
+as1border1:GigabitEthernet0/0, 56, 0, 15, 15, 23, 21, 23,,,, 23
+as3core1:GigabitEthernet1/0, 58, 0, 19, 19, 32, 25, 32,,,, 32
+as1border2:GigabitEthernet2/0, 63, 0, 18, 18, 35, 20, 35,,,, 35
+as2core2:GigabitEthernet2/0, 66, 0, 0, 0, 0, 0, 0,,,, 0
+as3border1:GigabitEthernet1/0, 62, 0, 25, 25, 31, 29, 31,,,, 31
+as3core1:Loopback0, 58, 0, 19, 21, 29, 25, 29,,,, 29
+as2core2:GigabitEthernet3/0, 66, 0, 0, 0, 0, 0, 0,,,, 0
+as1core1:Loopback0, 60, 0, 19, 21, 36, 27, 36,,,, 36
+as1border2:GigabitEthernet0/0, 66, 0, 14, 16, 18, 16, 18,,,, 18

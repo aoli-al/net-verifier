@@ -16,31 +16,33 @@ import sys
 
 load_questions()
 
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
-interfaces = list(interfaces_from_snapshot("multihosts"))
-idx = 0
-visited = set()
-for i in range(len(interfaces)):
-    i1 = interfaces[i]
-    if "host" in i1:
-        continue
-    visited.add(i1)
-    for j in range(i, len(interfaces)):
-        i2 = interfaces[j]
-        if "host" in i2:
-            continue
-        if i1 == i2:
-            continue
-        if f"{i1},{i2}" not in visited and f"{i2},{i1}" not in visited:
-            visited.add(f"{i1},{i2}")
-
-print(len(visited))
-
-f = json.load(open("out-policy-map.json"))
-print(len(set(f.keys())))
-
-
-s = set()
-for key in f.keys():
-    s.add(",".join(sorted(key.split(","))))
-print(len(s))
+bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/reduced-links", "reduced-links")
+# process_json("reduced-links", "configs/reduced-links/raw.json")
+convert_csv("configs/reduced-links/raw.csv")
+# interfaces = list(interfaces_from_snapshot("multihosts"))
+# idx = 0
+# visited = set()
+# for i in range(len(interfaces)):
+#     i1 = interfaces[i]
+#     if "host" in i1:
+#         continue
+#     visited.add(i1)
+#     for j in range(i, len(interfaces)):
+#         i2 = interfaces[j]
+#         if "host" in i2:
+#             continue
+#         if i1 == i2:
+#             continue
+#         if f"{i1},{i2}" not in visited and f"{i2},{i1}" not in visited:
+#             visited.add(f"{i1},{i2}")
+#
+# print(len(visited))
+#
+# f = json.load(open("out-policy-map.json"))
+# print(len(set(f.keys())))
+#
+#
+# s = set()
+# for key in f.keys():
+#     s.add(",".join(sorted(key.split(","))))
+# print(len(s))

@@ -12,12 +12,12 @@ import json
 import sys
 
 load_questions()
-bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
-process_json("multihosts", "out-2-random-selected-nodes.json")
+
 process_json("multihosts", "out-complete-list-affected-nodes.json")
-convert_csv("out-2-random-selected-nodes.csv")
-convert_csv("out-complete-list-affected-nodes.csv")
-sys.exit(0)
+process_json("multihosts", "out-2-random-selected-nodes.json")
+# convert_csv("out-2-random-selected-nodes.csv")
+# convert_csv("out-complete-list-affected-nodes.csv")
+# sys.exit(0)
 
 # load_questions()
 # generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
@@ -102,9 +102,8 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-h = Harness("/home/leo/repos/sdn-verifier/configs/multihosts")
-h.run("out-2-random-selected-nodes.json")
-h.run("out-complete-list-affected-nodes.json")
+h = Harness("/home/leo/repos/sdn-verifier/configs/reduced-links")
+h.run()
 
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),

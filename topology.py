@@ -29,7 +29,7 @@ def get_reachable_nodes_intersect(snapshot: str, switches: Set[str]) -> Set[str]
                 if node not in reachable:
                     reachable[node] = 0
                 reachable[node] += 1
-    return set(map(lambda it: it[0], filter(lambda elem: elem[1] > 1, reachable.items())))
+    return set(map(lambda it: it[0], filter(lambda elem: elem[1] >= len(switches) // 3, reachable.items())))
 
 
 def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:

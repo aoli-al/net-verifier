@@ -1,0 +1,12 @@
+[
+    "as2dist2:GigabitEthernet1/0",
+    "as2dist1:GigabitEthernet1/0",
+    "as2dist2:GigabitEthernet0/0",
+    "as2dept1:GigabitEthernet3/0",
+    "as2dept1:GigabitEthernet2/0",
+    "as2dist1:GigabitEthernet0/0",
+    "as2dist1:GigabitEthernet2/0",
+    "as2dept1:GigabitEthernet1/0",
+    "as2dist2:GigabitEthernet2/0",
+    "as2dept1:GigabitEthernet0/0"
+]
