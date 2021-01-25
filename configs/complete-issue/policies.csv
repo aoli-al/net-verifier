@@ -1,0 +1,16 @@
+type,subnet,specifics,source,Destinations,Environments,Status,Sources
+PolicyType.Reachability,0.0.0.0,2,esw1,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,esw1,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,esw1,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,esw1,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,isp,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,pc1,123 (192.168.10.2/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,pc2,123 (192.168.20.2/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,pc3,123 (192.168.30.2/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,r1,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,r2,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,r2,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,r3,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,r3,123 (11.1.1.1/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,sw3,123 (192.168.10.0/32),9,PolicyStatus.HOLDS,123
+PolicyType.Reachability,0.0.0.0,2,sw3,123 (192.168.10.0/32),9,PolicyStatus.HOLDS,123

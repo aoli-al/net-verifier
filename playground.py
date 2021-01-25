@@ -20,7 +20,6 @@ import sys
 def batfish_client(path, snapshot):
     return check_invalid_policies("", "")
 
-load_questions()
 print(check_invalid_policies("configs/multihosts/policies.csv", "configs/multihosts"))
 sys.exit(0)
 

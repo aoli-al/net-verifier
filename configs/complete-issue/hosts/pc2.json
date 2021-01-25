@@ -1,0 +1,10 @@
+{
+	"hostname" : "pc2",
+	"hostInterfaces" : {
+		"eth0" : {
+			"name": "eth0",
+      "prefix" : "192.168.20.2/32",
+      "gateway": "192.168.20.1"
+		}
+	}
+}

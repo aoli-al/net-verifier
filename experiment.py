@@ -296,26 +296,30 @@ class VerifyInvariant(object):
         #     bf_delete_snapshot(case_base_snapshot)
 
 
-def process_json(snapshot: str, in_file: str):
+def process_json(snapshot: str):
+    bf_init_snapshot(snapshot, "process_json")
+    in_file = os.path.join(snapshot, "raw.json")
     out = open(in_file.split(".")[0] + ".csv", 'w')
     output_policy_map = json.load(open("out-policy-map.json"))
     out.write("interface removed, generator,"
               "# affected nodes, solution, # reachable nodes, interface included, "
-              "# interface exposed, # violated policies\n")
+              "# interface exposed, # violated policies, # nodes exposed\n")
     result = json.load(open(in_file))
     for (i1, generators) in result.items():
         for (gname, case) in generators.items():
             for (solution_name, solution) in case['solutions'].items():
                 exposed_interfaces = set()
+                exposed_node = set()
                 for node in solution:
                     if "host" in node:
                         continue
                     if "None" in node:
                         continue
+                    exposed_node.add(node)
                     if solution_name == "heimdall_interface":
                         exposed_interfaces.add(node)
                     else:
-                        exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
+                        exposed_interfaces.update(interfaces_from_snapshot("process_json", node))
                 if "heimdall_interface" == solution_name:
                     s1 = exposed_interfaces
                 elif "heimdall" == solution_name:
@@ -334,7 +338,9 @@ def process_json(snapshot: str, in_file: str):
                           f"{len(case['affected_nodes'])}, {solution_name}, "
                           f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
                           f"{1 if i1.split(':')[0] in solution else 0}, "
-                          f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))}\n")
+                          f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))},"
+                          f"{len(exposed_node)}\n")
+        reset()
 
 
 def remove_links(path: str):
@@ -446,3 +452,24 @@ def convert_csv(path: str):
                     d[solution.strip()] = data[key][generator][interface][solution]
                 w.writerow(d)
 
+
+def build_reachability(snapshot: str):
+    bf_init_snapshot(snapshot, "reachability")
+    out = open(os.path.join(snapshot, "policies.csv"), "w")
+    results = bfq.reachability().answer().frame()
+    out.write("type,subnet,specifics,source,Destinations,Environments,Status,Sources\n")
+    for idx, result in results.iterrows():
+        out.write(f"PolicyType.Reachability,0.0.0.0,2,"
+                  f"{result.Flow.ingressNode},123 ({result.Flow.dstIp}/32),9,PolicyStatus.HOLDS,123\n")
+
+
+def merge_two_files(snapshot1: str, snapshot2: str):
+    complete = json.load(open(snapshot1))
+    r = json.load(open(snapshot2))
+    result = {}
+    for interface in complete:
+        result[interface] = {
+            "complete": complete[interface],
+            "random-2": r[interface]
+        }
+    json.dump(result, open("raw.json", "w"))

@@ -1,0 +1,3 @@
+Static Route(0.0.0.0) from L3 switch to R1.
+Static Route(192.168.0.0) from R1 to L3 Switch.
+Redistribute Static in R1 for OSPF between R1 and R2.(Only Classfull routes redistributed)

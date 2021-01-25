@@ -13,11 +13,13 @@ import sys
 
 load_questions()
 
-process_json("multihosts", "out-complete-list-affected-nodes.json")
-process_json("multihosts", "out-2-random-selected-nodes.json")
-# convert_csv("out-2-random-selected-nodes.csv")
-# convert_csv("out-complete-list-affected-nodes.csv")
-# sys.exit(0)
+# process_json("configs/multihosts")
+convert_csv("configs/multihosts/raw.csv")
+# merge_two_files("out-complete-list-affected-nodes.json", "out-2-random-selected-nodes.json")
+# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
+# build_reachability("/home/leo/repos/sdn-verifier/configs/complete-issue")
+# print(check_invalid_policies("configs/complete-issue/policies.csv", "configs/complete-issue"))
+sys.exit(0)
 
 # load_questions()
 # generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")

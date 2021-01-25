@@ -1,0 +1,84 @@
+access-expression       Build a bridge boolean access expression
+  arp                     Set arp type (arpa, probe, snap) or timeout or log options
+  ase                     Configure ASE on an interface
+  auto                    Configure Automation
+  backup                  Modify backup parameters
+  bandwidth               Set bandwidth informational parameter
+  bfd                     BFD interface configuration commands
+  bgp-policy              Apply policy propagated by bgp community string
+  bridge-group            Transparent bridging interface parameters
+  carrier-delay           Specify delay for interface transitions
+  cdp                     CDP interface subcommands
+  clns                    CLNS interface subcommands
+  cmns                    OSI CMNS
+  crypto                  Encryption/Decryption commands
+  custom-queue-list       Assign a custom queue list to an interface
+  dampening               Enable event dampening
+  default                 Set a command to its defaults
+  delay                   Specify interface throughput delay
+  description             Interface specific description
+  dot1q                   dot1q interface configuration commands
+  duplex                  Configure duplex operation.
+  eigrp                   EIGRP interface specific commands
+  eou                     EAPoUDP Interface Configuration Commands
+  ethernet                Ethernet interface parameters
+  exit                    Exit from interface configuration mode
+  fair-queue              Enable Fair Queuing on an Interface
+  fallback-pool           Use auxiliary pool when private pool is exhausted
+  flow-sampler            Attach flow sampler to the interface
+  forwarding              forwarding commands
+  full-duplex             Configure full-duplex operational mode
+  glbp                    Gateway Load Balancing Protocol interface commands
+  h323                    Configure H323 Multimedia Proxy
+  h323-gateway            Configure H323 Gateway
+  half-duplex             Configure half-duplex and related commands
+  help                    Description of the interactive help system
+  hold-queue              Set hold queue depth
+  ip                      Interface Internet Protocol config commands
+  iphc-profile            Configure IPHC profile
+  ipv6                    IPv6 interface subcommands
+  isis                    IS-IS commands
+  iso-igrp                ISO-IGRP interface subcommands
+  keepalive               Enable keepalive
+  llc2                    LLC2 Interface Subcommands
+  load-interval           Specify interval for load calculation for an
+                          interface
+  logging                 Configure logging for interface
+  loopback                Configure internal loopback on an interface
+  mac-address             Manually set interface MAC address
+  max-reserved-bandwidth  Maximum Reservable Bandwidth on an Interface
+  mop                     DEC MOP server commands
+  mpls                    Configure MPLS interface parameters
+  mtu                     Set the interface Maximum Transmission Unit (MTU)
+  netbios                 Use a defined NETBIOS access list or enable
+                          name-caching
+  no                      Negate a command or set its defaults
+  ntp                     Configure NTP
+  pppoe                   pppoe interface subcommands
+  pppoe-client            pppoe client
+  priority-group          Assign a priority group to an interface
+  random-detect           Enable Weighted Random Early Detection (WRED) on an
+                          Interface
+  rate-limit              Rate Limit
+  rmon                    Configure Remote Monitoring on an interface
+  routing                 Per-interface routing configuration
+  service-policy          Configure QoS Service Policy
+  shutdown                Shutdown the selected interface
+  snapshot                Configure snapshot support on the interface
+  snmp                    Modify SNMP interface parameters
+  source                  Get config from another source
+  standby                 HSRP interface configuration commands
+  tarp                    TARP interface subcommands
+  timeout                 Define timeout values for this interface
+  traffic-shape           Enable Traffic Shaping on an Interface or
+                          Sub-Interface
+  transmit-interface      Assign a transmit interface to a receive-only
+                          interface
+  tx-ring-limit           Configure PA level transmit ring limit
+  vlan-id                 Process VLAN-encapsulated packets with a specific
+                          VLAN ID
+  vlan-range              Process VLAN-encapsulated packets with a range of
+                          VLAN IDs
+  vrf                     VPN Routing/Forwarding parameters on the interface
+  vrrp                    VRRP Interface configuration commands
+  xconnect                Xconnect commands

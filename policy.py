@@ -13,8 +13,6 @@ from pybatfish.client.commands import bf_session
 import csv
 import json
 
-
-
 # The user can do {action} for {resource} under {condition}.
 class Policy(Connector):
     def __init__(self, action: List[Action], resource: List[Resource], condition: Condition = None):
@@ -112,11 +110,12 @@ def check_invalid_policies(path_to_csv: str, snapshot: str) -> bool:
     global initialized
     if not initialized:
         initialized = True
-        bf_session.host = "10.81.1.21"
+        # bf_session.host = "10.81.1.21"
         load_questions()
     policies = build_policies_from_csv(path_to_csv)
     bf_init_snapshot(snapshot, "check")
     for policy in policies:
         if not policy.eval("", "check"):
-            return False
+            print(policy)
+            # return False
     return True
