@@ -7,8 +7,12 @@ from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
 from connectors import Connector
 from pybatfish.question import bfq
 from typing import List
+from pybatfish.client.commands import bf_init_snapshot
+from pybatfish.question.question import load_questions
+from pybatfish.client.commands import bf_session
 import csv
 import json
+
 
 
 # The user can do {action} for {resource} under {condition}.
@@ -77,6 +81,7 @@ def load_policies_from_json(path: str) -> List[Connector]:
     policy_list = json.load(open(path))
     return [eval(p) for p in policy_list]
 
+
 def build_policies_from_csv(path: str) -> List[Connector]:
     policies = []
     with open(path) as csvfile:
@@ -100,3 +105,18 @@ def build_policies_from_csv(path: str) -> List[Connector]:
             policies.append(policy)
     return policies
 
+
+initialized = False
+
+def check_invalid_policies(path_to_csv: str, snapshot: str) -> bool:
+    global initialized
+    if not initialized:
+        initialized = True
+        bf_session.host = "10.81.1.21"
+        load_questions()
+    policies = build_policies_from_csv(path_to_csv)
+    bf_init_snapshot(snapshot, "check")
+    for policy in policies:
+        if not policy.eval("", "check"):
+            return False
+    return True
