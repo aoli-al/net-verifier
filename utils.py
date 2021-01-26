@@ -34,7 +34,7 @@ def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
         found = True
         caches = json.load(open(cache_path))
     else:
-        bf_init_snapshot(snapshot, "interface_from_snapshot")
+        bf_init_snapshot(snapshot, "interface_from_snapshot", overwrite=True)
         caches = {}
     if len(caches) == 0:
         results = bfq.interfaceProperties().answer(snapshot="interface_from_snapshot").frame()

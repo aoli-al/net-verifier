@@ -205,7 +205,7 @@ class VerifyInvariant(object):
     def __init__(self, base: str):
         self.base = base
         self.policies = build_policies_from_csv(os.path.join(base, "policies.csv"))
-        bf_init_snapshot(self.base, "base_verify")
+        bf_init_snapshot(self.base, "base_verify", overwrite=True)
         # self.policies = []
         # for policy in policies:
         #     if policy.eval("", "base_verify"):
