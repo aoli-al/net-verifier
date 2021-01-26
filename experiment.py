@@ -483,8 +483,7 @@ def compute_issue_reachable_nodes(s1: str, s2: str):
     # results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
     #     .answer(snapshot="s1", reference_snapshot="s2").frame()
 
-    # results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
-    results = bfq.differentialReachability() \
+    results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
         .answer(snapshot="s1", reference_snapshot="s2").frame()
     affected_node = set()
     for idx, result in results.iterrows():

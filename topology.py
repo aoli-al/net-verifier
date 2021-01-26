@@ -2,7 +2,7 @@ from pathlib import Path
 from pybatfish.question import bfq
 from pybatfish.datamodel.flow import PathConstraints
 from pybatfish.client.commands import bf_init_snapshot
-from utils import interface_to_str
+from utils import interface_to_str, interfaces_from_snapshot
 from typing import Set, List, Tuple
 
 
@@ -47,6 +47,10 @@ def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:
             if results.size > 0:
                 reachable.add(node)
     return reachable
+
+def get_reachable_interfaces_endnodes(snapshot: str, switches: Set[str]) -> Set[str]:
+    nodes = get_reachable_nodes(snapshot, switches)
+    [interface for node in nodes for interface in interface]
 
 
 def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:

@@ -1,0 +1,36 @@
+{
+  "reachable": [
+    "host1",
+    "as2dist1",
+    "host6",
+    "host10",
+    "host5",
+    "host12",
+    "host3",
+    "host9",
+    "host11",
+    "as2dist2",
+    "host7",
+    "as2border2",
+    "as2core2",
+    "as2dept1",
+    "host4",
+    "as2core1",
+    "host2",
+    "host8",
+    "as2border1"
+  ],
+  "protected": [
+    "as3border1",
+    "host17",
+    "as1core1",
+    "as3core1",
+    "host16",
+    "host13",
+    "host14",
+    "as1border1",
+    "host15",
+    "as1border2",
+    "as3border2"
+  ]
+}

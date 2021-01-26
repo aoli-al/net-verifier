@@ -6,10 +6,11 @@ from command import Commands, NodeCommand
 from connectors import Connector
 from topology import build_topology, Topology
 from utils import resolve
-from policy import Policy
+from policy import *
 from action import *
 from resource import *
 import jsonpickle
+import json
 
 
 class Specification(object):
@@ -75,7 +76,7 @@ data = {
 }
 
 load_questions()
-specification = build_specification_from_dict(data)
+specification = build_specification_from_dict(json.load(open("configs/issues/working-enterprise/ospf/issue.json")))
 print(jsonpickle.encode(specification, indent=2))
 
 # Link
