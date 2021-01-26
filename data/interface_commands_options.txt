@@ -1,4 +1,3 @@
-access-expression       Build a bridge boolean access expression
   arp                     Set arp type (arpa, probe, snap) or timeout or log options
   ase                     Configure ASE on an interface
   auto                    Configure Automation
@@ -42,7 +41,6 @@ access-expression       Build a bridge boolean access expression
   keepalive               Enable keepalive
   llc2                    LLC2 Interface Subcommands
   load-interval           Specify interval for load calculation for an
-                          interface
   logging                 Configure logging for interface
   loopback                Configure internal loopback on an interface
   mac-address             Manually set interface MAC address
@@ -51,14 +49,12 @@ access-expression       Build a bridge boolean access expression
   mpls                    Configure MPLS interface parameters
   mtu                     Set the interface Maximum Transmission Unit (MTU)
   netbios                 Use a defined NETBIOS access list or enable
-                          name-caching
   no                      Negate a command or set its defaults
   ntp                     Configure NTP
   pppoe                   pppoe interface subcommands
   pppoe-client            pppoe client
   priority-group          Assign a priority group to an interface
   random-detect           Enable Weighted Random Early Detection (WRED) on an
-                          Interface
   rate-limit              Rate Limit
   rmon                    Configure Remote Monitoring on an interface
   routing                 Per-interface routing configuration
@@ -71,14 +67,10 @@ access-expression       Build a bridge boolean access expression
   tarp                    TARP interface subcommands
   timeout                 Define timeout values for this interface
   traffic-shape           Enable Traffic Shaping on an Interface or
-                          Sub-Interface
   transmit-interface      Assign a transmit interface to a receive-only
-                          interface
   tx-ring-limit           Configure PA level transmit ring limit
   vlan-id                 Process VLAN-encapsulated packets with a specific
-                          VLAN ID
   vlan-range              Process VLAN-encapsulated packets with a range of
-                          VLAN IDs
   vrf                     VPN Routing/Forwarding parameters on the interface
   vrrp                    VRRP Interface configuration commands
   xconnect                Xconnect commands

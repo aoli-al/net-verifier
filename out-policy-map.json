@@ -1,0 +1,4943 @@
+{
+  "sw3:FastEthernet1/6": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/12": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/8": [],
+  "sw3:FastEthernet1/6,esw1:Vlan10": [
+    8,
+    5
+  ],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/11": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/3": [],
+  "sw3:FastEthernet1/6,isp:Ethernet0/0": [],
+  "sw3:FastEthernet1/6,r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/6,r1:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/6": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/6": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/10": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/15": [],
+  "sw3:FastEthernet1/6,r2:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/14": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/8": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/1": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/6,r2:Ethernet0/0": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/13": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/6,r3:Ethernet0/0": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/8": [],
+  "sw3:FastEthernet1/6,r3:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/12": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/5": [],
+  "sw3:FastEthernet1/6,sw1:Vlan1": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/6": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/6,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/0": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/1": [],
+  "sw3:FastEthernet1/6,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw3:FastEthernet1/6,r1:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/6,sw3:Vlan1": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/3": [],
+  "sw3:FastEthernet1/6,r1:Ethernet0/0": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/15": [],
+  "sw3:FastEthernet1/6,r1:GigabitEthernet0/0": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/6,r3:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/2": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/3": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/12": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/7": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/14": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/10": [],
+  "sw3:FastEthernet1/6,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/10": [],
+  "sw3:FastEthernet1/6,isp:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/2": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/4": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/14": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/4": [],
+  "sw3:FastEthernet1/6,sw2:Vlan1": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/14": [],
+  "sw3:FastEthernet1/6,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/6,esw1:Vlan30": [
+    7
+  ],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/10": [],
+  "sw3:FastEthernet1/6,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/7": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/11": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/13": [],
+  "sw3:FastEthernet1/6,esw1:Vlan20": [
+    6
+  ],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/5": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/12": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/0": [],
+  "sw3:FastEthernet1/6,sw2:FastEthernet1/9": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/6,r3:GigabitEthernet1/0": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/8": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/6,sw3:FastEthernet1/9": [],
+  "sw3:FastEthernet1/6,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/6,sw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/6,isp:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/6,r2:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw3:FastEthernet1/6,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/12,esw1:Vlan10": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/11": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/3": [],
+  "sw1:FastEthernet1/12,isp:Ethernet0/0": [],
+  "sw1:FastEthernet1/12,r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/12,r1:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/6": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/15": [],
+  "sw1:FastEthernet1/12,r2:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/8": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/1": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/12,r2:Ethernet0/0": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/13": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/12,r3:Ethernet0/0": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/8": [],
+  "sw1:FastEthernet1/12,r3:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/12": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/5": [],
+  "sw1:FastEthernet1/12,sw1:Vlan1": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/12,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/12,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/12,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/12,sw3:Vlan1": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/12,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/12,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/12,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/12,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/12,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/12,sw2:Vlan1": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/12,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/12,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/12,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/12,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/12,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/12,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/12,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/12,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/12,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/12,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/12,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/12,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/8,esw1:Vlan10": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/11": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/3": [],
+  "sw1:FastEthernet1/8,isp:Ethernet0/0": [],
+  "sw1:FastEthernet1/8,r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/8,r1:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/6": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/15": [],
+  "sw1:FastEthernet1/8,r2:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/8": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/1": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/8,r2:Ethernet0/0": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/13": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/8,r3:Ethernet0/0": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/8": [],
+  "sw1:FastEthernet1/8,r3:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/12": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/5": [],
+  "sw1:FastEthernet1/8,sw1:Vlan1": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/8,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/8,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/8,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/8,sw3:Vlan1": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/8,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/8,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/8,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/8,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/8,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/8,sw2:Vlan1": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/8,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/8,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/8,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/8,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/8,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/8,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/8,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/8,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/8,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/8,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/8,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/8,esw1:FastEthernet1/5": [],
+  "esw1:Vlan10": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/11": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/3": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,isp:Ethernet0/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r2:GigabitEthernet1/0": [
+    8,
+    13,
+    12,
+    5
+  ],
+  "esw1:Vlan10,r1:GigabitEthernet3/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/6": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/6": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/10": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/15": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r2:GigabitEthernet2/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/14": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/8": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/9": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r2:Ethernet0/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/13": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/7": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r3:Ethernet0/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/8": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r3:GigabitEthernet2/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/12": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/5": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:Vlan1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/2": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/6": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/4": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r2:GigabitEthernet0/0": [
+    5,
+    8,
+    10,
+    11,
+    12,
+    13
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r1:GigabitEthernet2/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:Vlan1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/3": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r1:Ethernet0/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/9": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/4": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/15": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r1:GigabitEthernet0/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/2": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r3:GigabitEthernet3/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/2": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/3": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/12": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/7": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/14": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/10": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/10": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,isp:GigabitEthernet3/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/2": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/4": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/14": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/4": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:Vlan1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/11": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/14": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:Vlan10,esw1:Vlan30": [
+    8,
+    5,
+    7
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/10": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r3:GigabitEthernet0/0": [
+    8,
+    13,
+    12,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/7": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/5": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/11": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/15": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/13": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:Vlan20": [
+    8,
+    5,
+    6
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/7": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/5": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/12": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw2:FastEthernet1/9": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/13": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/1": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/11": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r3:GigabitEthernet1/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/8": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/13": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw3:FastEthernet1/9": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/15": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,sw1:FastEthernet1/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,isp:GigabitEthernet2/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,r2:GigabitEthernet3/0": [
+    8,
+    5
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "esw1:Vlan10,esw1:FastEthernet1/5": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/11": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/3": [],
+  "sw2:FastEthernet1/11,isp:Ethernet0/0": [],
+  "sw2:FastEthernet1/11,r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/11,r1:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/6": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/15": [],
+  "sw2:FastEthernet1/11,r2:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/8": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/1": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/11,r2:Ethernet0/0": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/13": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/11,r3:Ethernet0/0": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/8": [],
+  "sw2:FastEthernet1/11,r3:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/12": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/11,sw1:Vlan1": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/11,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/11,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/11,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/11,sw3:Vlan1": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/11,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/11,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/11,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/11,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/11,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/11,sw2:Vlan1": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/11,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/11,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/11,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/11,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/11,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/11,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/11,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/11,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/11,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/11,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/11,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/11,esw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/3": [],
+  "sw2:FastEthernet1/3,isp:Ethernet0/0": [],
+  "sw2:FastEthernet1/3,r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/3,r1:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/6": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/15": [],
+  "sw2:FastEthernet1/3,r2:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/8": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/1": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/3,r2:Ethernet0/0": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/13": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/3,r3:Ethernet0/0": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/8": [],
+  "sw2:FastEthernet1/3,r3:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/12": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/3,sw1:Vlan1": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/3,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/3,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/3,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/3,sw3:Vlan1": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/3,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/3,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/3,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/3,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/3,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/3,sw2:Vlan1": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/3,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/3,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/3,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/3,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/3,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/3,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/3,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/3,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/3,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/3,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/3,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/3,esw1:FastEthernet1/5": [],
+  "isp:Ethernet0/0": [],
+  "isp:Ethernet0/0,r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "isp:Ethernet0/0,r1:GigabitEthernet3/0": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/6": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/6": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/10": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/15": [],
+  "isp:Ethernet0/0,r2:GigabitEthernet2/0": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/14": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/8": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/1": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/9": [],
+  "isp:Ethernet0/0,r2:Ethernet0/0": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/13": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/7": [],
+  "isp:Ethernet0/0,r3:Ethernet0/0": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/8": [],
+  "isp:Ethernet0/0,r3:GigabitEthernet2/0": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/12": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/5": [],
+  "isp:Ethernet0/0,sw1:Vlan1": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/2": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/6": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/4": [],
+  "isp:Ethernet0/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "isp:Ethernet0/0,sw3:FastEthernet1/0": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/1": [],
+  "isp:Ethernet0/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "isp:Ethernet0/0,r1:GigabitEthernet2/0": [],
+  "isp:Ethernet0/0,sw3:Vlan1": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/3": [],
+  "isp:Ethernet0/0,r1:Ethernet0/0": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/9": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/4": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/15": [],
+  "isp:Ethernet0/0,r1:GigabitEthernet0/0": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/2": [],
+  "isp:Ethernet0/0,r3:GigabitEthernet3/0": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/2": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/3": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/12": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/7": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/14": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/10": [],
+  "isp:Ethernet0/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "isp:Ethernet0/0,sw3:FastEthernet1/10": [],
+  "isp:Ethernet0/0,isp:GigabitEthernet3/0": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/2": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/4": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/14": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/4": [],
+  "isp:Ethernet0/0,sw2:Vlan1": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/11": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/14": [],
+  "isp:Ethernet0/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "isp:Ethernet0/0,esw1:Vlan30": [
+    7
+  ],
+  "isp:Ethernet0/0,esw1:FastEthernet1/10": [],
+  "isp:Ethernet0/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "isp:Ethernet0/0,sw3:FastEthernet1/7": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/5": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/11": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/15": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/1": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/13": [],
+  "isp:Ethernet0/0,esw1:Vlan20": [
+    6
+  ],
+  "isp:Ethernet0/0,esw1:FastEthernet1/7": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/5": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/12": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/0": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/0": [],
+  "isp:Ethernet0/0,sw2:FastEthernet1/9": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/13": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/1": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/11": [],
+  "isp:Ethernet0/0,r3:GigabitEthernet1/0": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/8": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/13": [],
+  "isp:Ethernet0/0,sw3:FastEthernet1/9": [],
+  "isp:Ethernet0/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "isp:Ethernet0/0,sw1:FastEthernet1/15": [],
+  "isp:Ethernet0/0,sw1:FastEthernet1/0": [],
+  "isp:Ethernet0/0,isp:GigabitEthernet2/0": [],
+  "isp:Ethernet0/0,r2:GigabitEthernet3/0": [],
+  "isp:Ethernet0/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "isp:Ethernet0/0,esw1:FastEthernet1/5": [],
+  "r2:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r1:GigabitEthernet3/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/6": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/6": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/10": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/15": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r2:GigabitEthernet2/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/14": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/8": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/9": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r2:Ethernet0/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/13": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/7": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r3:Ethernet0/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/8": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r3:GigabitEthernet2/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/12": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/5": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:Vlan1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/2": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/6": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/4": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:Vlan1": [
+    8,
+    13,
+    12,
+    5
+  ],
+  "r2:GigabitEthernet1/0,r1:GigabitEthernet2/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:Vlan1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/3": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r1:Ethernet0/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/9": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/4": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/15": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r1:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/2": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r3:GigabitEthernet3/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/2": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/3": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/12": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/7": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/14": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/10": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/10": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,isp:GigabitEthernet3/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/2": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/4": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/14": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/4": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:Vlan1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/11": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/14": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:Vlan30": [
+    12,
+    13,
+    7
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/10": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/7": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/5": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/11": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/15": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/13": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:Vlan20": [
+    12,
+    13,
+    6
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/7": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/5": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/12": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw2:FastEthernet1/9": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/13": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/1": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/11": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r3:GigabitEthernet1/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/8": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/13": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw3:FastEthernet1/9": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/15": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,sw1:FastEthernet1/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,isp:GigabitEthernet2/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,r2:GigabitEthernet3/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet1/0,esw1:FastEthernet1/5": [
+    12,
+    13
+  ],
+  "r1:GigabitEthernet3/0": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/6": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/6": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/10": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/15": [],
+  "r1:GigabitEthernet3/0,r2:GigabitEthernet2/0": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/14": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/8": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/1": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/9": [],
+  "r1:GigabitEthernet3/0,r2:Ethernet0/0": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/13": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/7": [],
+  "r1:GigabitEthernet3/0,r3:Ethernet0/0": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/8": [],
+  "r1:GigabitEthernet3/0,r3:GigabitEthernet2/0": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/12": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/5": [],
+  "r1:GigabitEthernet3/0,sw1:Vlan1": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/2": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/6": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/4": [],
+  "r1:GigabitEthernet3/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/0": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/1": [],
+  "r1:GigabitEthernet3/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "r1:GigabitEthernet3/0,r1:GigabitEthernet2/0": [],
+  "r1:GigabitEthernet3/0,sw3:Vlan1": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/3": [],
+  "r1:GigabitEthernet3/0,r1:Ethernet0/0": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/9": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/4": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/15": [],
+  "r1:GigabitEthernet3/0,r1:GigabitEthernet0/0": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/2": [],
+  "r1:GigabitEthernet3/0,r3:GigabitEthernet3/0": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/2": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/3": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/12": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/7": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/14": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/10": [],
+  "r1:GigabitEthernet3/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/10": [],
+  "r1:GigabitEthernet3/0,isp:GigabitEthernet3/0": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/2": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/4": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/14": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/4": [],
+  "r1:GigabitEthernet3/0,sw2:Vlan1": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/11": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/14": [],
+  "r1:GigabitEthernet3/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r1:GigabitEthernet3/0,esw1:Vlan30": [
+    7
+  ],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/10": [],
+  "r1:GigabitEthernet3/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/7": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/5": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/11": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/15": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/1": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/13": [],
+  "r1:GigabitEthernet3/0,esw1:Vlan20": [
+    6
+  ],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/7": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/5": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/12": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/0": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/0": [],
+  "r1:GigabitEthernet3/0,sw2:FastEthernet1/9": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/13": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/1": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/11": [],
+  "r1:GigabitEthernet3/0,r3:GigabitEthernet1/0": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/8": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/13": [],
+  "r1:GigabitEthernet3/0,sw3:FastEthernet1/9": [],
+  "r1:GigabitEthernet3/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/15": [],
+  "r1:GigabitEthernet3/0,sw1:FastEthernet1/0": [],
+  "r1:GigabitEthernet3/0,isp:GigabitEthernet2/0": [],
+  "r1:GigabitEthernet3/0,r2:GigabitEthernet3/0": [],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "r1:GigabitEthernet3/0,esw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/6": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/15": [],
+  "sw2:FastEthernet1/6,r2:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/8": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/1": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/6,r2:Ethernet0/0": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/13": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/6,r3:Ethernet0/0": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/8": [],
+  "sw2:FastEthernet1/6,r3:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/12": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/6,sw1:Vlan1": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/6,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/6,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/6,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/6,sw3:Vlan1": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/6,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/6,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/6,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/6,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/6,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/6,sw2:Vlan1": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/6,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/6,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/6,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/6,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/6,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/6,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/6,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/6,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/6,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/6,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/6,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/6,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/15": [],
+  "sw1:FastEthernet1/6,r2:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/8": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/1": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/6,r2:Ethernet0/0": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/13": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/6,r3:Ethernet0/0": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/8": [],
+  "sw1:FastEthernet1/6,r3:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/12": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/5": [],
+  "sw1:FastEthernet1/6,sw1:Vlan1": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/6,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/6,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/6,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/6,sw3:Vlan1": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/6,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/6,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/6,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/6,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/6,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/6,sw2:Vlan1": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/6,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/6,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/6,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/6,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/6,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/6,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/6,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/6,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/6,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/6,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/6,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/6,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/15": [],
+  "sw1:FastEthernet1/10,r2:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/8": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/1": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/10,r2:Ethernet0/0": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/13": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/10,r3:Ethernet0/0": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/8": [],
+  "sw1:FastEthernet1/10,r3:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/12": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/5": [],
+  "sw1:FastEthernet1/10,sw1:Vlan1": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/10,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/10,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/10,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/10,sw3:Vlan1": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/10,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/10,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/10,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/10,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/10,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/10,sw2:Vlan1": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/10,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/10,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/10,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/10,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/10,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/10,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/10,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/10,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/10,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/10,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/10,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/10,esw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/15": [],
+  "sw2:FastEthernet1/15,r2:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/8": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/1": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/15,r2:Ethernet0/0": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/13": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/15,r3:Ethernet0/0": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/8": [],
+  "sw2:FastEthernet1/15,r3:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/12": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/15,sw1:Vlan1": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/15,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/15,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/15,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/15,sw3:Vlan1": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/15,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/15,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/15,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/15,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/15,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/15,sw2:Vlan1": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/15,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/15,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/15,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/15,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/15,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/15,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/15,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/15,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/15,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/15,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/15,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/15,esw1:FastEthernet1/5": [],
+  "r2:GigabitEthernet2/0": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/14": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/8": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/1": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/9": [],
+  "r2:GigabitEthernet2/0,r2:Ethernet0/0": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/13": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/7": [],
+  "r2:GigabitEthernet2/0,r3:Ethernet0/0": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/8": [],
+  "r2:GigabitEthernet2/0,r3:GigabitEthernet2/0": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/12": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/5": [],
+  "r2:GigabitEthernet2/0,sw1:Vlan1": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/2": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/6": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/4": [],
+  "r2:GigabitEthernet2/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/0": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/1": [],
+  "r2:GigabitEthernet2/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "r2:GigabitEthernet2/0,r1:GigabitEthernet2/0": [],
+  "r2:GigabitEthernet2/0,sw3:Vlan1": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/3": [],
+  "r2:GigabitEthernet2/0,r1:Ethernet0/0": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/9": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/4": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/15": [],
+  "r2:GigabitEthernet2/0,r1:GigabitEthernet0/0": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/2": [],
+  "r2:GigabitEthernet2/0,r3:GigabitEthernet3/0": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/2": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/3": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/12": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/7": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/14": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/10": [],
+  "r2:GigabitEthernet2/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/10": [],
+  "r2:GigabitEthernet2/0,isp:GigabitEthernet3/0": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/2": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/4": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/14": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/4": [],
+  "r2:GigabitEthernet2/0,sw2:Vlan1": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/11": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/14": [],
+  "r2:GigabitEthernet2/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r2:GigabitEthernet2/0,esw1:Vlan30": [
+    7
+  ],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/10": [],
+  "r2:GigabitEthernet2/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/7": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/5": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/11": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/15": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/1": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/13": [],
+  "r2:GigabitEthernet2/0,esw1:Vlan20": [
+    6
+  ],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/7": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/5": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/12": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/0": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/0": [],
+  "r2:GigabitEthernet2/0,sw2:FastEthernet1/9": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/13": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/1": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/11": [],
+  "r2:GigabitEthernet2/0,r3:GigabitEthernet1/0": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/8": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/13": [],
+  "r2:GigabitEthernet2/0,sw3:FastEthernet1/9": [],
+  "r2:GigabitEthernet2/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/15": [],
+  "r2:GigabitEthernet2/0,sw1:FastEthernet1/0": [],
+  "r2:GigabitEthernet2/0,isp:GigabitEthernet2/0": [],
+  "r2:GigabitEthernet2/0,r2:GigabitEthernet3/0": [],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "r2:GigabitEthernet2/0,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/8": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/1": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/14,r2:Ethernet0/0": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/13": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/14,r3:Ethernet0/0": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/8": [],
+  "sw1:FastEthernet1/14,r3:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/12": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/5": [],
+  "sw1:FastEthernet1/14,sw1:Vlan1": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/14,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/14,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/14,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/14,sw3:Vlan1": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/14,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/14,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/14,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/14,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/14,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/14,sw2:Vlan1": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/14,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/14,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/14,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/14,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/14,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/14,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/14,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/14,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/14,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/14,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/14,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/14,esw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/8": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/1": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/8,r2:Ethernet0/0": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/13": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/8,r3:Ethernet0/0": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/8": [],
+  "sw2:FastEthernet1/8,r3:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/12": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/8,sw1:Vlan1": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/8,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/8,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/8,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/8,sw3:Vlan1": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/8,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/8,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/8,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/8,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/8,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/8,sw2:Vlan1": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/8,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/8,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/8,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/8,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/8,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/8,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/8,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/8,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/8,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/8,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/8,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/8,esw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/1": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/1,r2:Ethernet0/0": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/13": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/1,r3:Ethernet0/0": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/8": [],
+  "sw3:FastEthernet1/1,r3:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/12": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/5": [],
+  "sw3:FastEthernet1/1,sw1:Vlan1": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/6": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/1,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/0": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/1": [],
+  "sw3:FastEthernet1/1,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw3:FastEthernet1/1,r1:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/1,sw3:Vlan1": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/3": [],
+  "sw3:FastEthernet1/1,r1:Ethernet0/0": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/15": [],
+  "sw3:FastEthernet1/1,r1:GigabitEthernet0/0": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/1,r3:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/2": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/3": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/12": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/7": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/14": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/10": [],
+  "sw3:FastEthernet1/1,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/10": [],
+  "sw3:FastEthernet1/1,isp:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/2": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/4": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/14": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/4": [],
+  "sw3:FastEthernet1/1,sw2:Vlan1": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/14": [],
+  "sw3:FastEthernet1/1,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/1,esw1:Vlan30": [
+    7
+  ],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/10": [],
+  "sw3:FastEthernet1/1,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/7": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/11": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/13": [],
+  "sw3:FastEthernet1/1,esw1:Vlan20": [
+    6
+  ],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/5": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/12": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/0": [],
+  "sw3:FastEthernet1/1,sw2:FastEthernet1/9": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/1,r3:GigabitEthernet1/0": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/8": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/1,sw3:FastEthernet1/9": [],
+  "sw3:FastEthernet1/1,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/1,sw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/1,isp:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/1,r2:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw3:FastEthernet1/1,esw1:FastEthernet1/5": [],
+  "esw1:FastEthernet1/9": [],
+  "esw1:FastEthernet1/9,r2:Ethernet0/0": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/13": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/7": [],
+  "esw1:FastEthernet1/9,r3:Ethernet0/0": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/8": [],
+  "esw1:FastEthernet1/9,r3:GigabitEthernet2/0": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/12": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/5": [],
+  "esw1:FastEthernet1/9,sw1:Vlan1": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/2": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/6": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/4": [],
+  "esw1:FastEthernet1/9,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/0": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/1": [],
+  "esw1:FastEthernet1/9,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "esw1:FastEthernet1/9,r1:GigabitEthernet2/0": [],
+  "esw1:FastEthernet1/9,sw3:Vlan1": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/3": [],
+  "esw1:FastEthernet1/9,r1:Ethernet0/0": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/9": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/4": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/15": [],
+  "esw1:FastEthernet1/9,r1:GigabitEthernet0/0": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/2": [],
+  "esw1:FastEthernet1/9,r3:GigabitEthernet3/0": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/2": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/3": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/12": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/7": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/14": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/10": [],
+  "esw1:FastEthernet1/9,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/10": [],
+  "esw1:FastEthernet1/9,isp:GigabitEthernet3/0": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/2": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/4": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/14": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/4": [],
+  "esw1:FastEthernet1/9,sw2:Vlan1": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/11": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/14": [],
+  "esw1:FastEthernet1/9,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:FastEthernet1/9,esw1:Vlan30": [
+    7
+  ],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/10": [],
+  "esw1:FastEthernet1/9,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/7": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/5": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/11": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/15": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/1": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/13": [],
+  "esw1:FastEthernet1/9,esw1:Vlan20": [
+    6
+  ],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/7": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/5": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/12": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/0": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/0": [],
+  "esw1:FastEthernet1/9,sw2:FastEthernet1/9": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/13": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/1": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/11": [],
+  "esw1:FastEthernet1/9,r3:GigabitEthernet1/0": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/8": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/13": [],
+  "esw1:FastEthernet1/9,sw3:FastEthernet1/9": [],
+  "esw1:FastEthernet1/9,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/15": [],
+  "esw1:FastEthernet1/9,sw1:FastEthernet1/0": [],
+  "esw1:FastEthernet1/9,isp:GigabitEthernet2/0": [],
+  "esw1:FastEthernet1/9,r2:GigabitEthernet3/0": [],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "esw1:FastEthernet1/9,esw1:FastEthernet1/5": [],
+  "r2:Ethernet0/0": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/13": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/7": [],
+  "r2:Ethernet0/0,r3:Ethernet0/0": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/8": [],
+  "r2:Ethernet0/0,r3:GigabitEthernet2/0": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/12": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/5": [],
+  "r2:Ethernet0/0,sw1:Vlan1": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/2": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/6": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/4": [],
+  "r2:Ethernet0/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:Ethernet0/0,sw3:FastEthernet1/0": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/1": [],
+  "r2:Ethernet0/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "r2:Ethernet0/0,r1:GigabitEthernet2/0": [],
+  "r2:Ethernet0/0,sw3:Vlan1": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/3": [],
+  "r2:Ethernet0/0,r1:Ethernet0/0": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/9": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/4": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/15": [],
+  "r2:Ethernet0/0,r1:GigabitEthernet0/0": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/2": [],
+  "r2:Ethernet0/0,r3:GigabitEthernet3/0": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/2": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/3": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/12": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/7": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/14": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/10": [],
+  "r2:Ethernet0/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r2:Ethernet0/0,sw3:FastEthernet1/10": [],
+  "r2:Ethernet0/0,isp:GigabitEthernet3/0": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/2": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/4": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/14": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/4": [],
+  "r2:Ethernet0/0,sw2:Vlan1": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/11": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/14": [],
+  "r2:Ethernet0/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r2:Ethernet0/0,esw1:Vlan30": [
+    7
+  ],
+  "r2:Ethernet0/0,esw1:FastEthernet1/10": [],
+  "r2:Ethernet0/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r2:Ethernet0/0,sw3:FastEthernet1/7": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/5": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/11": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/15": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/1": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/13": [],
+  "r2:Ethernet0/0,esw1:Vlan20": [
+    6
+  ],
+  "r2:Ethernet0/0,esw1:FastEthernet1/7": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/5": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/12": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/0": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/0": [],
+  "r2:Ethernet0/0,sw2:FastEthernet1/9": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/13": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/1": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/11": [],
+  "r2:Ethernet0/0,r3:GigabitEthernet1/0": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/8": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/13": [],
+  "r2:Ethernet0/0,sw3:FastEthernet1/9": [],
+  "r2:Ethernet0/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r2:Ethernet0/0,sw1:FastEthernet1/15": [],
+  "r2:Ethernet0/0,sw1:FastEthernet1/0": [],
+  "r2:Ethernet0/0,isp:GigabitEthernet2/0": [],
+  "r2:Ethernet0/0,r2:GigabitEthernet3/0": [],
+  "r2:Ethernet0/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "r2:Ethernet0/0,esw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/13": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/13,r3:Ethernet0/0": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/8": [],
+  "sw2:FastEthernet1/13,r3:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/12": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/13,sw1:Vlan1": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/13,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/13,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/13,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/13,sw3:Vlan1": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/13,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/13,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/13,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/13,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/13,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/13,sw2:Vlan1": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/13,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/13,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/13,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/13,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/13,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/13,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/13,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/13,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/13,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/13,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/13,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/13,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/7,r3:Ethernet0/0": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/8": [],
+  "sw1:FastEthernet1/7,r3:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/12": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/5": [],
+  "sw1:FastEthernet1/7,sw1:Vlan1": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/7,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/7,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/7,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/7,sw3:Vlan1": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/7,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/7,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/7,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/7,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/7,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/7,sw2:Vlan1": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/7,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/7,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/7,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/7,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/7,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/7,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/7,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/7,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/7,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/7,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/7,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/7,esw1:FastEthernet1/5": [],
+  "r3:Ethernet0/0": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/8": [],
+  "r3:Ethernet0/0,r3:GigabitEthernet2/0": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/12": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/5": [],
+  "r3:Ethernet0/0,sw1:Vlan1": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/2": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/6": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/4": [],
+  "r3:Ethernet0/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r3:Ethernet0/0,sw3:FastEthernet1/0": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/1": [],
+  "r3:Ethernet0/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "r3:Ethernet0/0,r1:GigabitEthernet2/0": [],
+  "r3:Ethernet0/0,sw3:Vlan1": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/3": [],
+  "r3:Ethernet0/0,r1:Ethernet0/0": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/9": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/4": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/15": [],
+  "r3:Ethernet0/0,r1:GigabitEthernet0/0": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/2": [],
+  "r3:Ethernet0/0,r3:GigabitEthernet3/0": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/2": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/3": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/12": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/7": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/14": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/10": [],
+  "r3:Ethernet0/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r3:Ethernet0/0,sw3:FastEthernet1/10": [],
+  "r3:Ethernet0/0,isp:GigabitEthernet3/0": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/2": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/4": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/14": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/4": [],
+  "r3:Ethernet0/0,sw2:Vlan1": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/11": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/14": [],
+  "r3:Ethernet0/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r3:Ethernet0/0,esw1:Vlan30": [
+    7
+  ],
+  "r3:Ethernet0/0,esw1:FastEthernet1/10": [],
+  "r3:Ethernet0/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r3:Ethernet0/0,sw3:FastEthernet1/7": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/5": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/11": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/15": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/1": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/13": [],
+  "r3:Ethernet0/0,esw1:Vlan20": [
+    6
+  ],
+  "r3:Ethernet0/0,esw1:FastEthernet1/7": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/5": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/12": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/0": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/0": [],
+  "r3:Ethernet0/0,sw2:FastEthernet1/9": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/13": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/1": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/11": [],
+  "r3:Ethernet0/0,r3:GigabitEthernet1/0": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/8": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/13": [],
+  "r3:Ethernet0/0,sw3:FastEthernet1/9": [],
+  "r3:Ethernet0/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r3:Ethernet0/0,sw1:FastEthernet1/15": [],
+  "r3:Ethernet0/0,sw1:FastEthernet1/0": [],
+  "r3:Ethernet0/0,isp:GigabitEthernet2/0": [],
+  "r3:Ethernet0/0,r2:GigabitEthernet3/0": [],
+  "r3:Ethernet0/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "r3:Ethernet0/0,esw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/8": [],
+  "sw3:FastEthernet1/8,r3:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/12": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/5": [],
+  "sw3:FastEthernet1/8,sw1:Vlan1": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/6": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/8,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/0": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/1": [],
+  "sw3:FastEthernet1/8,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw3:FastEthernet1/8,r1:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/8,sw3:Vlan1": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/3": [],
+  "sw3:FastEthernet1/8,r1:Ethernet0/0": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/15": [],
+  "sw3:FastEthernet1/8,r1:GigabitEthernet0/0": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/8,r3:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/2": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/3": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/12": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/7": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/14": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/10": [],
+  "sw3:FastEthernet1/8,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/10": [],
+  "sw3:FastEthernet1/8,isp:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/2": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/4": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/14": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/4": [],
+  "sw3:FastEthernet1/8,sw2:Vlan1": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/14": [],
+  "sw3:FastEthernet1/8,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/8,esw1:Vlan30": [
+    7
+  ],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/10": [],
+  "sw3:FastEthernet1/8,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/7": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/11": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/13": [],
+  "sw3:FastEthernet1/8,esw1:Vlan20": [
+    6
+  ],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/5": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/12": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/0": [],
+  "sw3:FastEthernet1/8,sw2:FastEthernet1/9": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/8,r3:GigabitEthernet1/0": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/8": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/8,sw3:FastEthernet1/9": [],
+  "sw3:FastEthernet1/8,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/8,sw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/8,isp:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/8,r2:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw3:FastEthernet1/8,esw1:FastEthernet1/5": [],
+  "r3:GigabitEthernet2/0": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/12": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/5": [],
+  "r3:GigabitEthernet2/0,sw1:Vlan1": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/2": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/6": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/4": [],
+  "r3:GigabitEthernet2/0,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/0": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/1": [],
+  "r3:GigabitEthernet2/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "r3:GigabitEthernet2/0,r1:GigabitEthernet2/0": [],
+  "r3:GigabitEthernet2/0,sw3:Vlan1": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/3": [],
+  "r3:GigabitEthernet2/0,r1:Ethernet0/0": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/9": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/4": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/15": [],
+  "r3:GigabitEthernet2/0,r1:GigabitEthernet0/0": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/2": [],
+  "r3:GigabitEthernet2/0,r3:GigabitEthernet3/0": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/2": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/3": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/12": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/7": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/14": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/10": [],
+  "r3:GigabitEthernet2/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/10": [],
+  "r3:GigabitEthernet2/0,isp:GigabitEthernet3/0": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/2": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/4": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/14": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/4": [],
+  "r3:GigabitEthernet2/0,sw2:Vlan1": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/11": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/14": [],
+  "r3:GigabitEthernet2/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r3:GigabitEthernet2/0,esw1:Vlan30": [
+    7
+  ],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/10": [],
+  "r3:GigabitEthernet2/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/7": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/5": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/11": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/15": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/1": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/13": [],
+  "r3:GigabitEthernet2/0,esw1:Vlan20": [
+    6
+  ],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/7": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/5": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/12": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/0": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/0": [],
+  "r3:GigabitEthernet2/0,sw2:FastEthernet1/9": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/13": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/1": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/11": [],
+  "r3:GigabitEthernet2/0,r3:GigabitEthernet1/0": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/8": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/13": [],
+  "r3:GigabitEthernet2/0,sw3:FastEthernet1/9": [],
+  "r3:GigabitEthernet2/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/15": [],
+  "r3:GigabitEthernet2/0,sw1:FastEthernet1/0": [],
+  "r3:GigabitEthernet2/0,isp:GigabitEthernet2/0": [],
+  "r3:GigabitEthernet2/0,r2:GigabitEthernet3/0": [],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "r3:GigabitEthernet2/0,esw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/12": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/5": [],
+  "sw3:FastEthernet1/12,sw1:Vlan1": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/6": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/12,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/0": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/1": [],
+  "sw3:FastEthernet1/12,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw3:FastEthernet1/12,r1:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/12,sw3:Vlan1": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/3": [],
+  "sw3:FastEthernet1/12,r1:Ethernet0/0": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/15": [],
+  "sw3:FastEthernet1/12,r1:GigabitEthernet0/0": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/12,r3:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/2": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/3": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/12": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/7": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/14": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/10": [],
+  "sw3:FastEthernet1/12,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/10": [],
+  "sw3:FastEthernet1/12,isp:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/2": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/4": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/14": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/4": [],
+  "sw3:FastEthernet1/12,sw2:Vlan1": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/14": [],
+  "sw3:FastEthernet1/12,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/12,esw1:Vlan30": [
+    7
+  ],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/10": [],
+  "sw3:FastEthernet1/12,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/7": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/11": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/13": [],
+  "sw3:FastEthernet1/12,esw1:Vlan20": [
+    6
+  ],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/5": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/12": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/0": [],
+  "sw3:FastEthernet1/12,sw2:FastEthernet1/9": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/12,r3:GigabitEthernet1/0": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/8": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/13": [],
+  "sw3:FastEthernet1/12,sw3:FastEthernet1/9": [],
+  "sw3:FastEthernet1/12,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/12,sw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/12,isp:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/12,r2:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw3:FastEthernet1/12,esw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/5": [],
+  "sw2:FastEthernet1/5,sw1:Vlan1": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/6": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/5,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/0": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/1": [],
+  "sw2:FastEthernet1/5,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw2:FastEthernet1/5,r1:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/5,sw3:Vlan1": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/3": [],
+  "sw2:FastEthernet1/5,r1:Ethernet0/0": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/9": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/4": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/15": [],
+  "sw2:FastEthernet1/5,r1:GigabitEthernet0/0": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/2": [],
+  "sw2:FastEthernet1/5,r3:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/2": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/3": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/12": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/7": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/14": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/10": [],
+  "sw2:FastEthernet1/5,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/10": [],
+  "sw2:FastEthernet1/5,isp:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/2": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/4": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/14": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/4": [],
+  "sw2:FastEthernet1/5,sw2:Vlan1": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/14": [],
+  "sw2:FastEthernet1/5,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/5,esw1:Vlan30": [
+    7
+  ],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/10": [],
+  "sw2:FastEthernet1/5,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/7": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/5": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/11": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/13": [],
+  "sw2:FastEthernet1/5,esw1:Vlan20": [
+    6
+  ],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/7": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/5": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/12": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/0": [],
+  "sw2:FastEthernet1/5,sw2:FastEthernet1/9": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/1": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/11": [],
+  "sw2:FastEthernet1/5,r3:GigabitEthernet1/0": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/8": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/13": [],
+  "sw2:FastEthernet1/5,sw3:FastEthernet1/9": [],
+  "sw2:FastEthernet1/5,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/15": [],
+  "sw2:FastEthernet1/5,sw1:FastEthernet1/0": [],
+  "sw2:FastEthernet1/5,isp:GigabitEthernet2/0": [],
+  "sw2:FastEthernet1/5,r2:GigabitEthernet3/0": [],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw2:FastEthernet1/5,esw1:FastEthernet1/5": [],
+  "sw1:Vlan1": [],
+  "sw1:Vlan1,sw1:FastEthernet1/2": [],
+  "sw1:Vlan1,esw1:FastEthernet1/6": [],
+  "sw1:Vlan1,sw1:FastEthernet1/4": [],
+  "sw1:Vlan1,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:Vlan1,sw3:FastEthernet1/0": [],
+  "sw1:Vlan1,sw2:FastEthernet1/1": [],
+  "sw1:Vlan1,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:Vlan1,r1:GigabitEthernet2/0": [],
+  "sw1:Vlan1,sw3:Vlan1": [],
+  "sw1:Vlan1,sw3:FastEthernet1/3": [],
+  "sw1:Vlan1,r1:Ethernet0/0": [],
+  "sw1:Vlan1,sw1:FastEthernet1/9": [],
+  "sw1:Vlan1,esw1:FastEthernet1/4": [],
+  "sw1:Vlan1,sw3:FastEthernet1/15": [],
+  "sw1:Vlan1,r1:GigabitEthernet0/0": [],
+  "sw1:Vlan1,esw1:FastEthernet1/2": [],
+  "sw1:Vlan1,r3:GigabitEthernet3/0": [],
+  "sw1:Vlan1,sw3:FastEthernet1/2": [],
+  "sw1:Vlan1,sw1:FastEthernet1/3": [],
+  "sw1:Vlan1,sw2:FastEthernet1/12": [],
+  "sw1:Vlan1,sw2:FastEthernet1/7": [],
+  "sw1:Vlan1,esw1:FastEthernet1/14": [],
+  "sw1:Vlan1,sw2:FastEthernet1/10": [],
+  "sw1:Vlan1,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:Vlan1,sw3:FastEthernet1/10": [],
+  "sw1:Vlan1,isp:GigabitEthernet3/0": [],
+  "sw1:Vlan1,sw2:FastEthernet1/2": [],
+  "sw1:Vlan1,sw3:FastEthernet1/4": [],
+  "sw1:Vlan1,sw3:FastEthernet1/14": [],
+  "sw1:Vlan1,sw2:FastEthernet1/4": [],
+  "sw1:Vlan1,sw2:Vlan1": [],
+  "sw1:Vlan1,esw1:FastEthernet1/11": [],
+  "sw1:Vlan1,sw2:FastEthernet1/14": [],
+  "sw1:Vlan1,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:Vlan1,esw1:Vlan30": [
+    7
+  ],
+  "sw1:Vlan1,esw1:FastEthernet1/10": [],
+  "sw1:Vlan1,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:Vlan1,sw3:FastEthernet1/7": [],
+  "sw1:Vlan1,sw1:FastEthernet1/5": [],
+  "sw1:Vlan1,sw3:FastEthernet1/11": [],
+  "sw1:Vlan1,esw1:FastEthernet1/15": [],
+  "sw1:Vlan1,sw1:FastEthernet1/1": [],
+  "sw1:Vlan1,sw3:FastEthernet1/13": [],
+  "sw1:Vlan1,esw1:Vlan20": [
+    6
+  ],
+  "sw1:Vlan1,esw1:FastEthernet1/7": [],
+  "sw1:Vlan1,sw3:FastEthernet1/5": [],
+  "sw1:Vlan1,esw1:FastEthernet1/12": [],
+  "sw1:Vlan1,esw1:FastEthernet1/0": [],
+  "sw1:Vlan1,sw2:FastEthernet1/0": [],
+  "sw1:Vlan1,sw2:FastEthernet1/9": [],
+  "sw1:Vlan1,esw1:FastEthernet1/13": [],
+  "sw1:Vlan1,esw1:FastEthernet1/1": [],
+  "sw1:Vlan1,sw1:FastEthernet1/11": [],
+  "sw1:Vlan1,r3:GigabitEthernet1/0": [],
+  "sw1:Vlan1,esw1:FastEthernet1/8": [],
+  "sw1:Vlan1,sw1:FastEthernet1/13": [],
+  "sw1:Vlan1,sw3:FastEthernet1/9": [],
+  "sw1:Vlan1,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:Vlan1,sw1:FastEthernet1/15": [],
+  "sw1:Vlan1,sw1:FastEthernet1/0": [],
+  "sw1:Vlan1,isp:GigabitEthernet2/0": [],
+  "sw1:Vlan1,r2:GigabitEthernet3/0": [],
+  "sw1:Vlan1,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:Vlan1,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/6": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/2,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/2,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/2,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/2,sw3:Vlan1": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/2,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/2,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/2,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/2,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/2,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/2,sw2:Vlan1": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/2,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/2,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/2,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/2,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/2,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/2,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/2,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/2,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/2,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/2,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/2,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/2,esw1:FastEthernet1/5": [],
+  "esw1:FastEthernet1/6": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/4": [],
+  "esw1:FastEthernet1/6,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/0": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/1": [],
+  "esw1:FastEthernet1/6,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "esw1:FastEthernet1/6,r1:GigabitEthernet2/0": [],
+  "esw1:FastEthernet1/6,sw3:Vlan1": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/3": [],
+  "esw1:FastEthernet1/6,r1:Ethernet0/0": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/9": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/4": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/15": [],
+  "esw1:FastEthernet1/6,r1:GigabitEthernet0/0": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/2": [],
+  "esw1:FastEthernet1/6,r3:GigabitEthernet3/0": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/2": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/3": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/12": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/7": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/14": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/10": [],
+  "esw1:FastEthernet1/6,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/10": [],
+  "esw1:FastEthernet1/6,isp:GigabitEthernet3/0": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/2": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/4": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/14": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/4": [],
+  "esw1:FastEthernet1/6,sw2:Vlan1": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/11": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/14": [],
+  "esw1:FastEthernet1/6,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:FastEthernet1/6,esw1:Vlan30": [
+    7
+  ],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/10": [],
+  "esw1:FastEthernet1/6,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/7": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/5": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/11": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/15": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/1": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/13": [],
+  "esw1:FastEthernet1/6,esw1:Vlan20": [
+    6
+  ],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/7": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/5": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/12": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/0": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/0": [],
+  "esw1:FastEthernet1/6,sw2:FastEthernet1/9": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/13": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/1": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/11": [],
+  "esw1:FastEthernet1/6,r3:GigabitEthernet1/0": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/8": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/13": [],
+  "esw1:FastEthernet1/6,sw3:FastEthernet1/9": [],
+  "esw1:FastEthernet1/6,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/15": [],
+  "esw1:FastEthernet1/6,sw1:FastEthernet1/0": [],
+  "esw1:FastEthernet1/6,isp:GigabitEthernet2/0": [],
+  "esw1:FastEthernet1/6,r2:GigabitEthernet3/0": [],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "esw1:FastEthernet1/6,esw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/4,r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/0": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/1": [],
+  "sw1:FastEthernet1/4,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw1:FastEthernet1/4,r1:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/4,sw3:Vlan1": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/3": [],
+  "sw1:FastEthernet1/4,r1:Ethernet0/0": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/9": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/4": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/15": [],
+  "sw1:FastEthernet1/4,r1:GigabitEthernet0/0": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/2": [],
+  "sw1:FastEthernet1/4,r3:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/2": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/3": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/12": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/7": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/14": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/10": [],
+  "sw1:FastEthernet1/4,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/10": [],
+  "sw1:FastEthernet1/4,isp:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/2": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/4": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/14": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/4": [],
+  "sw1:FastEthernet1/4,sw2:Vlan1": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/14": [],
+  "sw1:FastEthernet1/4,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/4,esw1:Vlan30": [
+    7
+  ],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/10": [],
+  "sw1:FastEthernet1/4,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/7": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/5": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/11": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/13": [],
+  "sw1:FastEthernet1/4,esw1:Vlan20": [
+    6
+  ],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/7": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/5": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/12": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/0": [],
+  "sw1:FastEthernet1/4,sw2:FastEthernet1/9": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/1": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/11": [],
+  "sw1:FastEthernet1/4,r3:GigabitEthernet1/0": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/8": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/13": [],
+  "sw1:FastEthernet1/4,sw3:FastEthernet1/9": [],
+  "sw1:FastEthernet1/4,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/15": [],
+  "sw1:FastEthernet1/4,sw1:FastEthernet1/0": [],
+  "sw1:FastEthernet1/4,isp:GigabitEthernet2/0": [],
+  "sw1:FastEthernet1/4,r2:GigabitEthernet3/0": [],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8
+  ],
+  "sw1:FastEthernet1/4,esw1:FastEthernet1/5": [],
+  "r2:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/1": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:Vlan1": [
+    5,
+    8,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r1:GigabitEthernet2/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:Vlan1": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/3": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r1:Ethernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/9": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/4": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/15": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r1:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/2": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r3:GigabitEthernet3/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/2": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/3": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/12": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/7": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/14": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/10": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/10": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,isp:GigabitEthernet3/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/2": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/4": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/14": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/4": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:Vlan1": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/11": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/14": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:Vlan30": [
+    7,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/10": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r3:GigabitEthernet0/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/7": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/5": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/11": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/15": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/1": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/13": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:Vlan20": [
+    6,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/7": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/5": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/12": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw2:FastEthernet1/9": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/13": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/1": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/11": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r3:GigabitEthernet1/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/8": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/13": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw3:FastEthernet1/9": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,isp:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/15": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,sw1:FastEthernet1/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,isp:GigabitEthernet2/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,r2:GigabitEthernet3/0": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/3": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    10,
+    11,
+    12,
+    13
+  ],
+  "r2:GigabitEthernet0/0,esw1:FastEthernet1/5": [
+    10,
+    11,
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/0": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/1": [],
+  "sw3:FastEthernet1/0,esw1:Vlan1": [
+    8,
+    5
+  ],
+  "sw3:FastEthernet1/0,r1:GigabitEthernet2/0": [],
+  "sw3:FastEthernet1/0,sw3:Vlan1": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/3": [],
+  "sw3:FastEthernet1/0,r1:Ethernet0/0": [],
+  "sw3:FastEthernet1/0,sw1:FastEthernet1/9": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/4": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/15": [],
+  "sw3:FastEthernet1/0,r1:GigabitEthernet0/0": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/2": [],
+  "sw3:FastEthernet1/0,r3:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/2": [],
+  "sw3:FastEthernet1/0,sw1:FastEthernet1/3": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/12": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/7": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/14": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/10": [],
+  "sw3:FastEthernet1/0,isp:GigabitEthernet0/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/10": [],
+  "sw3:FastEthernet1/0,isp:GigabitEthernet3/0": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/2": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/4": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/14": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/4": [],
+  "sw3:FastEthernet1/0,sw2:Vlan1": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/11": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/14": [],
+  "sw3:FastEthernet1/0,r1:GigabitEthernet1/0": [
+    0,
+    1,
+    2,
+    3,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sw3:FastEthernet1/0,esw1:Vlan30": [
+    7
+  ],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/10": [],
+  "sw3:FastEthernet1/0,r3:GigabitEthernet0/0": [
+    12,
+    13
+  ],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/7": [],
+  "sw3:FastEthernet1/0,sw1:FastEthernet1/5": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/11": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/15": [],
+  "sw3:FastEthernet1/0,sw1:FastEthernet1/1": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/13": [],
+  "sw3:FastEthernet1/0,esw1:Vlan20": [
+    6
+  ],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/7": [],
+  "sw3:FastEthernet1/0,sw3:FastEthernet1/5": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/12": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/0": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/0": [],
+  "sw3:FastEthernet1/0,sw2:FastEthernet1/9": [],
+  "sw3:FastEthernet1/0,esw1:FastEthernet1/13": []
+}

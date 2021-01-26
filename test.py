@@ -14,12 +14,12 @@ import sys
 load_questions()
 
 # process_json("configs/multihosts")
-convert_csv("configs/multihosts/raw.csv")
+# convert_csv("configs/multihosts/raw.csv")
 # merge_two_files("out-complete-list-affected-nodes.json", "out-2-random-selected-nodes.json")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
-# build_reachability("/home/leo/repos/sdn-verifier/configs/complete-issue")
+# build_reachability("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
 # print(check_invalid_policies("configs/complete-issue/policies.csv", "configs/complete-issue"))
-sys.exit(0)
+# sys.exit(0)
 
 # load_questions()
 # generate_hosts("/home/leo/repos/sdn-verifier/configs/multihosts")
@@ -28,9 +28,8 @@ sys.exit(0)
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/default", "t1")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
-# v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts", "out-complete-list-affected-nodes.json",
-#                     "/home/leo/repos/sdn-verifier/configs/multihosts/policies.csv")
-# v.run()
+v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+v.run()
 
 
 
@@ -104,7 +103,7 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-h = Harness("/home/leo/repos/sdn-verifier/configs/reduced-links")
+h = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
 h.run()
 
 

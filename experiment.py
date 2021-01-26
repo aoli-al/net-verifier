@@ -149,7 +149,7 @@ class Harness(object):
     def get_affected_node(self, node: str, snapshot: str, generator: Callable[[List[str]], List[str]]) -> Set[str]:
         affected_node = set()
         self.name_idx += 1
-        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/host[0-9]+/")) \
+        results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
             .answer(snapshot=snapshot, reference_snapshot="exp").frame()
         for idx, result in results.iterrows():
             if result.Flow.ingressNode is not None and result.Flow.ingressNode != node:
@@ -160,7 +160,7 @@ class Harness(object):
         for interface_name in self.interfaces:
             for gname, generator in self.generation_types.items():
                 [node, _] = interface_name.split(":")
-                if "host" in interface_name:
+                if "host" in interface_name or "pc" in interface_name:
                     continue
                 dir = tempfile.TemporaryDirectory()
                 shutil.copytree(self.base, dir.name+"/", dirs_exist_ok=True)
@@ -202,17 +202,16 @@ class Harness(object):
 
 class VerifyInvariant(object):
 
-    def __init__(self, base: str, in_file: str, policies: str):
+    def __init__(self, base: str):
         self.base = base
-        # policies = build_policies_from_csv(policies)
+        self.policies = build_policies_from_csv(os.path.join(base, "policies.csv"))
         bf_init_snapshot(self.base, "base_verify")
         # self.policies = []
-        self.policies = load_policies_from_json("policies.json")
+        # self.policies = load_policies_from_json("policies.json")
         # for policy in policies:
         #     if policy.eval("", "base_verify"):
         #         self.policies.append(policy)
         # json.dump([str(p) for p in self.policies], open("policies.json", "w"))
-        self.in_file = in_file
         self.name_idx = 0
 
     def new_snapshot_name(self, config_path: str):
@@ -238,24 +237,24 @@ class VerifyInvariant(object):
         return violated_policies
 
     def run(self):
-        output_policy_map = json.load(open("out-policy-map.json"))
+        output_policy_map = json.load(open(os.path.join(self.base, "out-policy-map.json")))
         interfaces = list(interfaces_from_snapshot("base_verify"))
         for i in range(len(interfaces)):
             i1 = interfaces[i]
-            if "host" in i1:
+            if "host" in i1 or "pc" in i1:
                 continue
             reset()
             if interfaces[i] not in output_policy_map:
                 output_policy_map[interfaces[i]] = self.check_interfaces([interfaces[i]])
             for j in range(i, len(interfaces)):
                 i2 = interfaces[j]
-                if "host" in i2:
+                if "host" in i2 or "pc" in i2:
                     continue
                 if i1 == i2:
                     continue
                 if f"{i1},{i2}" not in output_policy_map and f"{i2},{i1}" not in output_policy_map:
                     output_policy_map[f"{i1},{i2}"] = self.check_interfaces([i1, i2])
-                json.dump(output_policy_map, open("out-policy-map.json", "w"), indent=2)
+                json.dump(output_policy_map, open(os.path.join(self.base, "out-policy-map.json"), "w"), indent=2)
         # sanity_check = self.get_violated_policies("base_verify")
         # assert len(sanity_check) == 0
         # interface_map = {}

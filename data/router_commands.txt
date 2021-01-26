@@ -1,5 +1,3 @@
-Router:
-
 aaa                         Authentication, Authorization and Accounting.
   aal2-profile                Configure AAL2 profile
   access-list                 Add an access list entry
@@ -15,7 +13,6 @@ aaa                         Authentication, Authorization and Accounting.
   banner                      Define a login banner
   bba-group                   Configure BBA Group
   beep                        Configure BEEP (Blocks Extensible Exchange
-                              Protocol)
   bfd                         BFD configuration commands
   boot                        Modify system boot parameters
   bridge                      Bridge Group.
@@ -25,11 +22,8 @@ aaa                         Authentication, Authorization and Accounting.
   call-history-mib            Define call history mib parameters
   call-home                   Enter call-home configuration mode
   call-manager-fallback       SRST for Cisco Call Manager fallback. For Cisco
-                              Unified Communications Manager Express
-                              configuration use the 'telephony-service' command
   call-router                 Call route parameter
   carrier-id                  Name of the carrier associated with this trunk
-                              group
   cdp                         Global CDP configuration subcommands
   cef                         Cisco Express Forwarding
   chat-script                 Define a modem chat script
@@ -53,7 +47,6 @@ aaa                         Authentication, Authorization and Accounting.
   dnsix-nat                   Provide DNSIX service for audit trails
   do                          To run exec commands in config mode
   downward-compatible-config  Generate a configuration compatible with older
-                              software
   dspfarm                     Enable the dspfarm service
   dspint                      Select a dspfarm to configure
   enable                      Modify enable password parameters
@@ -181,7 +174,6 @@ aaa                         Authentication, Authorization and Accounting.
   tacacs-server               Modify TACACS query parameters
   tarp                        Global TARP configuration subcommands
   telephony-service           Configure Cisco Unified Communications Manager
-                              Express
   terminal-queue              Terminal queue commands
   tftp-server                 Provide TFTP service for netload requests
   tgrep                       Enable TGREP
@@ -199,10 +191,8 @@ aaa                         Authentication, Authorization and Accounting.
   virtual-template            Virtual Template configuration
   vlan                        VLAN commands
   vm-integration              enable in-band DTMF integration with voicemail
-                              systems
   voice                       Global voice configuration
   voice-gateway system        Configure Analog Voice Gateway of type
-                              202/204/224
   voip-incoming               Global incoming VoIP configuration
   vpdn                        Virtual Private Dialup Network
   vpdn-group                  VPDN group configuration
@@ -210,7 +200,6 @@ aaa                         Authentication, Authorization and Accounting.
   vrf                         VRF commands
   vty-async                   Enable virtual async line configuration
   warm-reboot                 Warm reboot allows quick reload in case of a
-                              crash or by request
   webvpn                      SSL VPN Commands
   wsma                        Configure Web Services Management Agents
   x25                         X.25 Level 3
