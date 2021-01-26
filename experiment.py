@@ -456,7 +456,7 @@ def convert_csv(path: str):
 
 
 def build_reachability(snapshot: str):
-    bf_init_snapshot(snapshot, "reachability")
+    bf_init_snapshot(snapshot, "reachability", overwrite=True)
     out = open(os.path.join(snapshot, "policies.csv"), "w")
     results = bfq.reachability().answer().frame()
     out.write("type,subnet,specifics,source,Destinations,Environments,Status,Sources\n")
@@ -493,6 +493,8 @@ def compute_issue_reachable_nodes(s1: str, s2: str):
     nodes = nodes_from_snapshot(s1)
     out = open(os.path.join(s2, "reach.json"), "w")
     reachable = get_reachable_nodes("s2", affected_node).union(affected_node)
+    print(reachable)
+    print(nodes.difference(reachable))
     json.dump({
         "reachable": list(reachable),
         "protected": list(nodes.difference(reachable))

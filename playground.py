@@ -16,7 +16,9 @@ import sys
 load_questions()
 # compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/ospf")
 # compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/reconfiguration")
-compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/vlan")
+# compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/vlan")
+# compute_issue_reachable_nodes("configs/multihosts", "configs/issues/multihosts/as2border1")
+compute_issue_reachable_nodes("configs/multihosts", "configs/issues/multihosts/multihosts")
 
 
 

@@ -1,0 +1,83 @@
+# Router:as2dist1
+102:permit ip host 2.128.0.0 host 255.255.0.0
+102:permit ip host 2.128.0.101 host 255.255.0.0
+102:permit ip host 2.128.0.101 host 2.23.21.101
+105:permit ip host 1.0.1.0 host 255.255.255.0
+105:permit ip host 1.0.2.0 host 255.255.255.0
+105:permit ip host 3.0.1.0 host 255.255.255.0
+105:permit ip host 3.0.2.0 host 255.255.255.0
+# Router:as2border2
+101:permit ip host 1.0.1.0 host 255.255.255.0
+101:permit ip host 1.0.2.0 host 255.255.255.0
+103:permit ip host 3.0.1.0 host 255.255.255.0
+103:permit ip host 3.0.2.0 host 255.255.255.0
+INSIDE_TO_AS3:permit ip 2.0.0.0 0.255.255.255 3.0.0.0 0.255.255.255
+INSIDE_TO_AS3:permit ip 10.23.21.2 0.0.0.0 10.23.21.3 0.0.0.0
+INSIDE_TO_AS3:deny   ip any any
+OUTSIDE_TO_INSIDE:deny   ip 2.0.0.0 0.255.255.255 any
+OUTSIDE_TO_INSIDE:permit ip any any
+# Router:as2core1
+blocktelnet:deny   tcp any any eq telnet
+blocktelnet:permit ip any any
+# Router:as3border2
+101:permit ip host 1.0.1.0 host 255.255.255.0
+101:permit ip host 1.0.2.0 host 255.255.255.0
+102:permit ip host 2.0.0.0 host 255.0.0.0
+102:permit ip host 2.128.0.0 host 255.255.0.0
+103:permit ip host 3.0.1.0 host 255.255.255.0
+103:permit ip host 3.0.2.0 host 255.255.255.0
+# Router:as1border2
+101:permit ip host 1.0.1.0 host 255.255.255.0
+101:permit ip host 1.0.2.0 host 255.255.255.0
+102:permit ip host 2.0.0.0 host 255.0.0.0
+102:permit ip host 2.128.0.0 host 255.255.0.0
+103:permit ip host 3.0.1.0 host 255.255.255.0
+# Router:as3border1
+101:permit ip host 1.0.1.0 host 255.255.255.0
+101:permit ip host 1.0.2.0 host 255.255.255.0
+102:permit ip host 2.0.0.0 host 255.0.0.0
+102:permit ip host 2.128.0.0 host 255.255.0.0
+103:permit ip host 3.0.1.0 host 255.255.255.0
+103:permit ip host 3.0.2.0 host 255.255.255.0
+# Router:as2core2
+# Router:as2border1
+101:permit ip host 1.0.1.0 host 255.255.255.0
+101:permit ip host 1.0.2.0 host 255.255.255.0
+103:permit ip host 3.0.1.0 host 255.255.255.0
+103:permit ip host 3.0.2.0 host 255.255.255.0
+INSIDE_TO_AS1:permit ip 2.0.0.0 0.255.255.255 1.0.0.0 0.255.255.255
+INSIDE_TO_AS1:permit ip 10.12.11.2 0.0.0.0 10.12.11.1 0.0.0.0
+INSIDE_TO_AS1:deny   ip any any
+OUTSIDE_TO_INSIDE:deny   ip 2.0.0.0 0.255.255.255 any
+OUTSIDE_TO_INSIDE:deny   ip any host 2.128.1.101
+OUTSIDE_TO_INSIDE:permit ip any any
+# Router:as1border1
+101:permit ip host 1.0.1.0 host 255.255.255.0
+101:permit ip host 1.0.2.0 host 255.255.255.0
+102:permit ip host 2.0.0.0 host 255.0.0.0
+102:permit ip host 2.128.0.0 host 255.255.0.0
+103:permit ip host 3.0.1.0 host 255.255.255.0
+103:permit ip host 3.0.2.0 host 255.255.255.0
+# Router:as2dept1
+102:permit ip host 2.128.0.0 host 255.255.255.0
+102:permit ip host 2.128.1.0 host 255.255.255.0
+102:permit ip host 2.128.0.101 host 255.255.255.0
+102:permit ip host 2.128.1.101 host 255.255.255.0
+105:permit ip host 1.0.1.0 host 255.255.255.0
+105:permit ip host 1.0.2.0 host 255.255.255.0
+105:permit ip host 3.0.1.0 host 255.255.255.0
+105:permit ip host 3.0.2.0 host 255.255.255.0
+RESTRICT_HOST_TRAFFIC_IN:permit ip 2.128.0.0 0.0.255.255 any
+RESTRICT_HOST_TRAFFIC_IN:deny   ip any any
+RESTRICT_HOST_TRAFFIC_IN:permit icmp any any
+RESTRICT_HOST_TRAFFIC_OUT:permit ip any 2.128.0.0 0.0.255.255
+RESTRICT_HOST_TRAFFIC_OUT:deny   ip 1.128.0.0 0.0.255.255 2.128.0.0 0.0.255.255
+RESTRICT_HOST_TRAFFIC_OUT:deny   ip any any
+# Router:as2dist2
+102:permit ip host 2.128.0.0 host 255.255.0.0
+105:permit ip host 1.0.1.0 host 255.255.255.0
+105:permit ip host 1.0.2.0 host 255.255.255.0
+105:permit ip host 3.0.1.0 host 255.255.255.0
+105:permit ip host 3.0.2.0 host 255.255.255.0
+# Router:as1core1
+# Router:as3core1
