@@ -296,18 +296,20 @@ def process_json(snapshot: str):
     bf_init_snapshot(snapshot, "process_json")
     in_file = os.path.join(snapshot, "raw.json")
     out = open(in_file.split(".")[0] + ".csv", 'w')
-    output_policy_map = json.load(open("out-policy-map.json"))
+    output_policy_map = json.load(open(os.path.join(snapshot, "out-policy-map.json")))
     out.write("interface removed, generator,"
               "# affected nodes, solution, # reachable nodes, interface included, "
-              "# interface exposed, # violated policies, # nodes exposed\n")
+              "# interface exposed, # violated policies, # nodes exposed, # host exposed\n")
     result = json.load(open(in_file))
     for (i1, generators) in result.items():
         for (gname, case) in generators.items():
             for (solution_name, solution) in case['solutions'].items():
                 exposed_interfaces = set()
                 exposed_node = set()
+                exposed_host = set()
                 for node in solution:
                     if "host" in node:
+                        exposed_host.add(node)
                         continue
                     if "None" in node:
                         continue
@@ -324,6 +326,8 @@ def process_json(snapshot: str):
                 ori_violated_policies = set(output_policy_map[i1])
                 for name_and_interface in exposed_interfaces:
                     i2 = name_and_interface
+                    if "host" in i2:
+                        continue
                     if i1 == i2:
                         continue
                     if f"{i1},{i2}" in output_policy_map:
@@ -335,8 +339,8 @@ def process_json(snapshot: str):
                           f"{len(list(filter(lambda x: 'host' not in x, solution)))}, "
                           f"{1 if i1.split(':')[0] in solution else 0}, "
                           f"{len(exposed_interfaces)}, {len(violated_policies.difference(ori_violated_policies))},"
-                          f"{len(exposed_node)}\n")
-        reset()
+                          f"{len(exposed_node)}, {len(exposed_host)}\n")
+        # reset()
 
 
 def remove_links(path: str):

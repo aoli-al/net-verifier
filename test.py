@@ -13,7 +13,8 @@ import sys
 
 load_questions()
 
-# process_json("configs/multihosts")
+process_json("configs/multihosts")
+process_json("configs/Working_Enterprise")
 # convert_csv("configs/multihosts/raw.csv")
 # merge_two_files("out-complete-list-affected-nodes.json", "out-2-random-selected-nodes.json")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/multihosts", "multihosts")
@@ -32,10 +33,10 @@ load_questions()
 
 # v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
 # v.run()
-v = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
-v.run()
-v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts")
-v.run()
+# v = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+# v.run()
+# v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts")
+# v.run()
 
 
 
