@@ -1,0 +1,7 @@
+{
+  "base": "/home/leo/repos/sdn-verifier/configs/issues/multihosts/as2border1",
+  "affected_nodes": ["/host1[3-5]/"],
+  "sensitive_nodes": [],
+  "allowed_command": ["NodeCommand(\".*core.*\", \"\", {\"down\"})"],
+  "invariants": "Reachability(\"as1border1\", \"2.128.1.0/24\")"
+}
