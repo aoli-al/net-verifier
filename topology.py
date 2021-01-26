@@ -50,7 +50,13 @@ def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:
 
 def get_reachable_interfaces_endnodes(snapshot: str, switches: Set[str]) -> Set[str]:
     nodes = get_reachable_nodes(snapshot, switches)
-    [interface for node in nodes for interface in interface]
+    caches = {}
+    results = bfq.interfaceProperties().answer(snapshot=snapshot).frame()
+    for _, result in results.iterrows():
+        if result.Interface.hostname not in caches:
+            caches[result.Interface.hostname] = []
+        caches[result.Interface.hostname].append(interface_to_str(result.Interface))
+    return set([interface for node in nodes for interface in caches[node]])
 
 
 def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:
@@ -78,7 +84,7 @@ def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:
 
 
 def build_topology(base: str, reachable_nodes: Set[str], sensitive_nodes: Set[str]) -> Topology:
-    reachable_interfaces = get_reachable_interfaces(base, reachable_nodes)
+    reachable_interfaces = get_reachable_interfaces_endnodes(base, reachable_nodes)
     interfaces = set()
     results = bfq.interfaceProperties().answer().frame()
     for _, result in results.iterrows():
