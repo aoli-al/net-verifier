@@ -18275,5 +18275,9 @@
   "sw1:FastEthernet1/1,r3:GigabitEthernet0/0": [
     19,
     20
+  ],
+  "r3:GigabitEthernet0/0": [
+    19,
+    20
   ]
 }

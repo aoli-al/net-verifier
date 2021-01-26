@@ -242,9 +242,11 @@ class VerifyInvariant(object):
             i1 = interfaces[i]
             # if "host" in i1 or "pc" in i1:
             #     continue
-            reset()
+            # reset()
             if interfaces[i] not in output_policy_map:
                 output_policy_map[interfaces[i]] = self.check_interfaces([interfaces[i]])
+                json.dump(output_policy_map, open(os.path.join(self.base, "out-policy-map.json"), "w"), indent=2)
+                # reset()
             for j in range(i, len(interfaces)):
                 i2 = interfaces[j]
                 # if "host" in i2 or "pc" in i2:
@@ -293,7 +295,6 @@ class VerifyInvariant(object):
 
 
 def process_json(snapshot: str):
-    bf_init_snapshot(snapshot, "process_json")
     in_file = os.path.join(snapshot, "raw.json")
     out = open(in_file.split(".")[0] + ".csv", 'w')
     output_policy_map = json.load(open(os.path.join(snapshot, "out-policy-map.json")))
@@ -302,13 +303,14 @@ def process_json(snapshot: str):
               "# interface exposed, # violated policies, # nodes exposed, # host exposed\n")
     result = json.load(open(in_file))
     for (i1, generators) in result.items():
+        print(i1)
         for (gname, case) in generators.items():
             for (solution_name, solution) in case['solutions'].items():
                 exposed_interfaces = set()
                 exposed_node = set()
-                exposed_host = set()
+                exposed_host = set(case['affected_nodes'])
                 for node in solution:
-                    if "host" in node:
+                    if "host" in node or "pc" in node:
                         exposed_host.add(node)
                         continue
                     if "None" in node:
