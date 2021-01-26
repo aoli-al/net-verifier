@@ -1,0 +1,10 @@
+{
+	"hostname" : "pc6",
+	"hostInterfaces" : {
+		"eth0" : {
+			"name": "eth0",
+      "prefix" : "192.168.10.3/24",
+      "gateway": "192.168.10.1"
+		}
+	}
+}

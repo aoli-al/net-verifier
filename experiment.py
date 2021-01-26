@@ -128,11 +128,11 @@ class Harness(object):
         (Base, "base"),
         (Empty, "empty"),
         (Neighbor, "neighbor"),
-        (CrystalNet, "crystal-net"),
-        (Heimdall, "heimdall"),
-        (HeimdallInterface, "heimdall_interface"),
+        # (CrystalNet, "crystal-net"),
+        # (Heimdall, "heimdall"),
+        # (HeimdallInterface, "heimdall_interface"),
         (HeimdallEndNodes, "heimdall_end_nodes"),
-        (HeimdallNodeIntersect, "heimdall_intersect4")
+        # (HeimdallNodeIntersect, "heimdall_intersect4")
     ]
 
     generation_types = {
@@ -472,3 +472,16 @@ def merge_two_files(snapshot1: str, snapshot2: str):
             "random-2": r[interface]
         }
     json.dump(result, open("raw.json", "w"))
+
+
+def get_reachable_nodes(s1: str, s2: str):
+    bf_init_snapshot(s1, "s1")
+    bf_init_snapshot(s2, "s2")
+    results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
+        .answer(snapshot="s1", reference_snapshot="s2").frame()
+    affected_node = set()
+    for idx, result in results.iterrows():
+        if result.Flow.ingressNode:
+            affected_node.add(result.Flow.ingressNode)
+        pass
+    reset()
