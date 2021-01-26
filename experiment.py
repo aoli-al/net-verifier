@@ -210,7 +210,7 @@ class VerifyInvariant(object):
         # for policy in policies:
         #     if policy.eval("", "base_verify"):
         #         self.policies.append(policy)
-        json.dump([str(p) for p in self.policies], open("policies.json", "w"))
+        # json.dump([str(p) for p in self.policies], open("policies.json", "w"))
         self.name_idx = 0
 
     def new_snapshot_name(self, config_path: str):

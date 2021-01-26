@@ -29,12 +29,10 @@ load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
 
-build_reachability("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
-
-v = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
-v.run()
 
 v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+v.run()
+v = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
 v.run()
 v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts")
 v.run()

@@ -1,1 +1,672 @@
-{}
+{
+  "r3:GigabitEthernet0/0": {
+    "complete": {
+      "affected_nodes": [
+        "pc2",
+        "pc1",
+        "pc3",
+        "pc8",
+        "pc9"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc1",
+          "pc8",
+          "esw2"
+        ],
+        "heimdall": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    },
+    "random-2": {
+      "affected_nodes": [
+        "pc2",
+        "pc1"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc8"
+        ],
+        "heimdall": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    }
+  },
+  "r1:GigabitEthernet0/0": {
+    "complete": {
+      "affected_nodes": [
+        "pc2",
+        "pc1",
+        "pc3",
+        "pc8",
+        "pc9"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc1",
+          "pc8",
+          "esw2"
+        ],
+        "heimdall": [
+          "r3",
+          "isp",
+          "pc2",
+          "esw1",
+          "pc1",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "pc8",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    },
+    "random-2": {
+      "affected_nodes": [
+        "pc2",
+        "pc1"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc8"
+        ],
+        "heimdall": [
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "esw1"
+        ],
+        "heimdall_end_nodes": [
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "esw1"
+        ]
+      }
+    }
+  },
+  "esw1:Vlan10": {
+    "complete": {
+      "affected_nodes": [
+        "pc2",
+        "pc1",
+        "pc3",
+        "pc8",
+        "pc9"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc1",
+          "pc8",
+          "esw2"
+        ],
+        "heimdall": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    },
+    "random-2": {
+      "affected_nodes": [
+        "pc2",
+        "pc1"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "pc8",
+          "esw1"
+        ],
+        "heimdall": [
+          "isp",
+          "r3",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    }
+  },
+  "r3:GigabitEthernet1/0": {
+    "complete": {
+      "affected_nodes": [
+        "pc2",
+        "pc1",
+        "pc3",
+        "pc8",
+        "pc9"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc1",
+          "pc8",
+          "esw2"
+        ],
+        "heimdall": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "isp",
+          "r3",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    },
+    "random-2": {
+      "affected_nodes": [
+        "pc2",
+        "pc1"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc8"
+        ],
+        "heimdall": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "isp",
+          "r3",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    }
+  },
+  "r2:GigabitEthernet1/0": {
+    "complete": {
+      "affected_nodes": [
+        "pc2",
+        "pc1",
+        "pc3",
+        "pc8",
+        "pc9"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc1",
+          "pc8",
+          "esw2"
+        ],
+        "heimdall": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    },
+    "random-2": {
+      "affected_nodes": [
+        "pc2",
+        "pc1"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc8"
+        ],
+        "heimdall": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    }
+  },
+  "esw1:Vlan30": {
+    "complete": {
+      "affected_nodes": [
+        "pc2",
+        "pc1",
+        "pc3",
+        "pc8",
+        "pc9"
+      ],
+      "solutions": {
+        "base": [
+          "r3",
+          "isp",
+          "pc9",
+          "pc2",
+          "pc4",
+          "sw3",
+          "sw2",
+          "pc7",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "pc5",
+          "pc6",
+          "r2",
+          "esw2",
+          "esw1",
+          "sw1"
+        ],
+        "empty": [],
+        "neighbor": [
+          "esw1",
+          "pc1",
+          "pc8",
+          "esw2"
+        ],
+        "heimdall": [
+          "r3",
+          "isp",
+          "pc2",
+          "esw1",
+          "pc1",
+          "r1",
+          "r2",
+          "esw2",
+          "pc8",
+          "pc9"
+        ],
+        "heimdall_end_nodes": [
+          "r3",
+          "isp",
+          "pc2",
+          "pc1",
+          "pc8",
+          "pc3",
+          "r1",
+          "r2",
+          "esw2",
+          "esw1",
+          "pc9"
+        ]
+      }
+    }
+  }
+}

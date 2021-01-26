@@ -66,10 +66,13 @@ class Reachability(Connector):
         self.dst = dst
 
     def eval(self, ori_snapshot: str, new_snapshot: str) -> bool:
-        result = bfq.reachability(headers=HeaderConstraints(dstIps=self.dst),
+        answer = bfq.reachability(headers=HeaderConstraints(dstIps=self.dst),
                                   pathConstraints=PathConstraints(startLocation=self.src)) \
-            .answer(snapshot=new_snapshot).frame()
-        return result.size > 0
+            .answer(snapshot=new_snapshot)
+        if hasattr(answer, "frame"):
+            return answer.frame().size > 0
+        else:
+            return False
 
     def __str__(self):
         return f"Reachability(\"{self.src}\", \"{self.dst}\")"
