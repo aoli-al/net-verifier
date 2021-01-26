@@ -1,6 +1,6 @@
 from typing import List, Set, Tuple, Generator, Dict, Any, Callable
 from pybatfish.question import bfq, load_questions
-from utils import interface_to_str, interfaces_from_snapshot, remove_interface_in_config
+from utils import interface_to_str, interfaces_from_snapshot, remove_interface_in_config, nodes_from_snapshot
 from pybatfish.client.commands import bf_init_snapshot, bf_delete_snapshot
 from topology import *
 from pybatfish.datamodel.flow import HeaderConstraints, PathConstraints
@@ -477,14 +477,24 @@ def merge_two_files(snapshot1: str, snapshot2: str):
     json.dump(result, open("raw.json", "w"))
 
 
-def compute_issue_results(s1: str, s2: str):
-    bf_init_snapshot(s1, "s1")
-    bf_init_snapshot(s2, "s2")
-    results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
+def compute_issue_reachable_nodes(s1: str, s2: str):
+    bf_init_snapshot(s1, "s1", overwrite=True)
+    bf_init_snapshot(s2, "s2", overwrite=True)
+    # results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
+    #     .answer(snapshot="s1", reference_snapshot="s2").frame()
+
+    # results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
+    results = bfq.differentialReachability() \
         .answer(snapshot="s1", reference_snapshot="s2").frame()
     affected_node = set()
     for idx, result in results.iterrows():
         if result.Flow.ingressNode:
             affected_node.add(result.Flow.ingressNode)
-    get_reachable_nodes("s2", affected_node)
+    nodes = nodes_from_snapshot(s1)
+    out = open(os.path.join(s2, "reach.json"), "w")
+    reachable = get_reachable_nodes("s2", affected_node).union(affected_node)
+    json.dump({
+        "reachable": list(reachable),
+        "protected": list(nodes.difference(reachable))
+    }, out, indent=2)
     reset()

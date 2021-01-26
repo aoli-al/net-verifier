@@ -1,0 +1,24 @@
+{
+  "reachable": [
+    "pc8",
+    "esw2",
+    "pc1",
+    "r3",
+    "isp",
+    "r1",
+    "esw1",
+    "pc3",
+    "pc9",
+    "pc2",
+    "r2"
+  ],
+  "protected": [
+    "sw1",
+    "sw3",
+    "pc6",
+    "pc7",
+    "pc5",
+    "pc4",
+    "sw2"
+  ]
+}

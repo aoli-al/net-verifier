@@ -13,22 +13,26 @@ from utils import *
 import json
 import sys
 
+load_questions()
+# compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/ospf")
+# compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/reconfiguration")
+compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/vlan")
 
 
 
 
-def batfish_client(path, snapshot):
-    return check_invalid_policies("", "")
-
-print(check_invalid_policies("configs/multihosts/policies.csv", "configs/multihosts"))
-sys.exit(0)
-
-
-bf_init_snapshot("/home/leo/tests/CompleteIssue", "reduced-links")
-# bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/reduced-links", "reduced-links")
-bf_upload_diagnostics(dry_run=True, contact_info='<optional email address>')
-b = bfq.reachability().answer().frame()
-print(b)
+# def batfish_client(path, snapshot):
+#     return check_invalid_policies("", "")
+#
+# print(check_invalid_policies("configs/multihosts/policies.csv", "configs/multihosts"))
+# sys.exit(0)
+#
+#
+# bf_init_snapshot("/home/leo/tests/CompleteIssue", "reduced-links")
+# # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/reduced-links", "reduced-links")
+# bf_upload_diagnostics(dry_run=True, contact_info='<optional email address>')
+# b = bfq.reachability().answer().frame()
+# print(b)
 
 
 # process_json("reduced-links", "configs/reduced-links/raw.json")

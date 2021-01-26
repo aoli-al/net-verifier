@@ -27,6 +27,11 @@ def interface_map(snapshot: str) -> Dict[str, Set[str]]:
         pass
 
 
+def nodes_from_snapshot(snapshot: str) -> Set[str]:
+    interfaces = interfaces_from_snapshot(snapshot)
+    return set([i.split(":")[0] for i in interfaces])
+
+
 def interfaces_from_snapshot(snapshot: str, nodes: str = None) -> Set[str]:
     cache_path = os.path.join(snapshot, "interface_from_snapshot.json")
     found = False
