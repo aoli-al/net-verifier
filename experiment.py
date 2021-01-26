@@ -129,7 +129,7 @@ class Harness(object):
         (Empty, "empty"),
         (Neighbor, "neighbor"),
         # (CrystalNet, "crystal-net"),
-        # (Heimdall, "heimdall"),
+        (Heimdall, "heimdall"),
         # (HeimdallInterface, "heimdall_interface"),
         (HeimdallEndNodes, "heimdall_end_nodes"),
         # (HeimdallNodeIntersect, "heimdall_intersect4")
