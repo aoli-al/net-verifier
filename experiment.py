@@ -20,10 +20,10 @@ def reset():
 
 
 class Base(object):
-    def __init__(self, snapshot: str, affected_nodes: List[str]):
+    def __init__(self, snapshot: str, config_dir: str, affected_nodes: List[str]):
         self.snapshot = snapshot
         self.affected_nodes = affected_nodes
-        self.interfaces = interfaces_from_snapshot(snapshot)
+        self.interfaces = interfaces_from_snapshot(config_dir)
 
     def get_internal_interfaces(self) -> Set[str]:
         return self.interfaces
@@ -143,7 +143,7 @@ class Harness(object):
     def __init__(self, base: str):
         self.base = base
         bf_init_snapshot(base, "exp")
-        self.interfaces = interfaces_from_snapshot("exp")
+        self.interfaces = interfaces_from_snapshot(base)
         self.name_idx = 0
 
     def get_affected_node(self, node: str, snapshot: str, generator: Callable[[List[str]], List[str]]) -> Set[str]:
@@ -156,7 +156,7 @@ class Harness(object):
                 affected_node.add(result.Flow.ingressNode)
         return set(generator(list(affected_node)))
 
-    def generate_test_case(self, prev_data: Dict[str, Any]) -> Generator[Tuple[str, Set[str], str, str], None, None]:
+    def generate_test_case(self, prev_data: Dict[str, Any]) -> Generator[Tuple[str, Set[str], str, str, str], None, None]:
         for interface_name in self.interfaces:
             for gname, generator in self.generation_types.items():
                 [node, _] = interface_name.split(":")
@@ -172,13 +172,13 @@ class Harness(object):
                 else:
                     nodes = self.get_affected_node(node, snapshot, generator)
                 if len(nodes):
-                    yield interface_name, nodes, snapshot, gname
+                    yield interface_name, nodes, snapshot, gname, dir.name
 
     def run(self):
         output_path = os.path.join(self.base, "raw.json")
         results = json.load(open(output_path))
         idx = 0
-        for interface, affected_nodes, snapshot, selection_type in self.generate_test_case(results):
+        for interface, affected_nodes, snapshot, selection_type, config_path in self.generate_test_case(results):
             print(f"Interface {interface} is down.")
             if interface not in results:
                 results[interface] = {}
@@ -189,7 +189,7 @@ class Harness(object):
                 }
             for solution, name in self.solutions:
                 if name not in results[interface][selection_type]['solutions']:
-                    s = solution(snapshot, list(affected_nodes))
+                    s = solution(snapshot, config_path, list(affected_nodes))
                     internal_nodes = s.get_internal_nodes()
                     results[interface][selection_type]['solutions'][name] = list(internal_nodes)
             json.dump(results, open(output_path, "w"), indent=2)
@@ -207,11 +207,10 @@ class VerifyInvariant(object):
         self.policies = build_policies_from_csv(os.path.join(base, "policies.csv"))
         bf_init_snapshot(self.base, "base_verify")
         # self.policies = []
-        # self.policies = load_policies_from_json("policies.json")
         # for policy in policies:
         #     if policy.eval("", "base_verify"):
         #         self.policies.append(policy)
-        # json.dump([str(p) for p in self.policies], open("policies.json", "w"))
+        json.dump([str(p) for p in self.policies], open("policies.json", "w"))
         self.name_idx = 0
 
     def new_snapshot_name(self, config_path: str):
@@ -238,25 +237,23 @@ class VerifyInvariant(object):
 
     def run(self):
         output_policy_map = json.load(open(os.path.join(self.base, "out-policy-map.json")))
-        interfaces = list(interfaces_from_snapshot("base_verify"))
+        interfaces = list(interfaces_from_snapshot(self.base))
         for i in range(len(interfaces)):
             i1 = interfaces[i]
-            if "host" in i1 or "pc" in i1:
-                continue
+            # if "host" in i1 or "pc" in i1:
+            #     continue
             reset()
             if interfaces[i] not in output_policy_map:
                 output_policy_map[interfaces[i]] = self.check_interfaces([interfaces[i]])
             for j in range(i, len(interfaces)):
                 i2 = interfaces[j]
-                if "host" in i2 or "pc" in i2:
-                    continue
+                # if "host" in i2 or "pc" in i2:
+                #     continue
                 if i1 == i2:
                     continue
                 if f"{i1},{i2}" not in output_policy_map and f"{i2},{i1}" not in output_policy_map:
                     output_policy_map[f"{i1},{i2}"] = self.check_interfaces([i1, i2])
                 json.dump(output_policy_map, open(os.path.join(self.base, "out-policy-map.json"), "w"), indent=2)
-        # sanity_check = self.get_violated_policies("base_verify")
-        # assert len(sanity_check) == 0
         # interface_map = {}
         # for node_and_interface in interfaces:
         #     [node, _] = node_and_interface.split(":")
@@ -318,7 +315,7 @@ def process_json(snapshot: str):
                     if solution_name == "heimdall_interface":
                         exposed_interfaces.add(node)
                     else:
-                        exposed_interfaces.update(interfaces_from_snapshot("process_json", node))
+                        exposed_interfaces.update(interfaces_from_snapshot(snapshot, node))
                 if "heimdall_interface" == solution_name:
                     s1 = exposed_interfaces
                 elif "heimdall" == solution_name:
@@ -474,7 +471,7 @@ def merge_two_files(snapshot1: str, snapshot2: str):
     json.dump(result, open("raw.json", "w"))
 
 
-def get_reachable_nodes(s1: str, s2: str):
+def compute_issue_results(s1: str, s2: str):
     bf_init_snapshot(s1, "s1")
     bf_init_snapshot(s2, "s2")
     results = bfq.differentialReachability(pathConstraints=PathConstraints(startLocation="/(host[0-9]+|pc[0-9]+)/")) \
@@ -483,5 +480,5 @@ def get_reachable_nodes(s1: str, s2: str):
     for idx, result in results.iterrows():
         if result.Flow.ingressNode:
             affected_node.add(result.Flow.ingressNode)
-        pass
+    get_reachable_nodes("s2", affected_node)
     reset()

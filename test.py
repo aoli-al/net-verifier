@@ -29,12 +29,14 @@ load_questions()
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/example", "example")
 # bf_init_snapshot("/home/leo/repos/sdn-verifier/configs/alternate-routes", "t2")
 
-v = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+# v = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+# v.run()
+
+v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/multihosts")
 v.run()
 
-v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
-v.run()
-
+# v = VerifyInvariant("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+# v.run()
 
 
 # result = {}
@@ -107,8 +109,8 @@ def get_traces(nodes: List[str], snapshot: str):
 #     result = (set1 - set2).union(set2 - set1)
 #     print(result)
 
-h = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
-h.run()
+# h = Harness("/home/leo/repos/sdn-verifier/configs/Working_Enterprise")
+# h.run()
 
 
 # print(Commands([NodeCommand("/as1.*/", "", {"aaa"}),
