@@ -35,19 +35,21 @@ def get_reachable_nodes_intersect(snapshot: str, switches: Set[str]) -> Set[str]
 def get_reachable_nodes(snapshot: str, config_path: str, switches: Set[str]) -> Set[str]:
     nodes = nodes_from_snapshot(config_path)
     reachable = set()
-    for switch in switches:
-        for node in nodes:
-            results = bfq.reachability(
-                pathConstraints=PathConstraints(startLocation=switch, endLocation=node)) \
-                .answer(snapshot=snapshot)
-            results = results.frame()
-            if results.size > 0:
-                reachable.add(node)
+    switch_constraint = f"/{'|'.join(switches)}/"
+    for node in nodes:
+        if node in switches:
+            reachable.add(node)
+            continue
+        results = bfq.reachability(
+            pathConstraints=PathConstraints(startLocation=switch_constraint, endLocation=node)) \
+            .answer(snapshot=snapshot)
+        results = results.frame()
+        if results.size > 0:
+            reachable.add(node)
     return reachable
 
 def get_reachable_interfaces_endnodes(snapshot: str, config_path: str, switches: Set[str]) -> Set[str]:
     nodes = get_reachable_nodes(snapshot, config_path, switches)
-    caches = {}
     return set([interface for node in nodes for interface in interfaces_from_snapshot(config_path, node)])
 
 

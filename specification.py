@@ -11,6 +11,7 @@ from action import *
 from resource import *
 import jsonpickle
 import json
+import time
 
 
 class Specification(object):
@@ -76,8 +77,10 @@ data = {
 }
 
 load_questions()
+t = time.time()
 specification = build_specification_from_dict(json.load(open("configs/issues/working-enterprise/ospf/issue.json")))
-print(jsonpickle.encode(specification, indent=2))
+print(time.time() - t)
+# print(jsonpickle.encode(specification, indent=2))
 
 # Link
 # if all interface are accessible -> accessible link
