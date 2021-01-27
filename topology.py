@@ -2,7 +2,7 @@ from pathlib import Path
 from pybatfish.question import bfq
 from pybatfish.datamodel.flow import PathConstraints
 from pybatfish.client.commands import bf_init_snapshot
-from utils import interface_to_str, interfaces_from_snapshot
+from utils import *
 from typing import Set, List, Tuple
 
 
@@ -32,11 +32,8 @@ def get_reachable_nodes_intersect(snapshot: str, switches: Set[str]) -> Set[str]
     return set(map(lambda it: it[0], filter(lambda elem: elem[1] >= len(switches) // 3, reachable.items())))
 
 
-def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:
-    nodes = []
-    results = bfq.nodeProperties().answer().frame()
-    for _, result in results.iterrows():
-        nodes.append(result.Node)
+def get_reachable_nodes(snapshot: str, config_path: str, switches: Set[str]) -> Set[str]:
+    nodes = nodes_from_snapshot(config_path)
     reachable = set()
     for switch in switches:
         for node in nodes:
@@ -48,15 +45,10 @@ def get_reachable_nodes(snapshot: str, switches: Set[str]) -> Set[str]:
                 reachable.add(node)
     return reachable
 
-def get_reachable_interfaces_endnodes(snapshot: str, switches: Set[str]) -> Set[str]:
-    nodes = get_reachable_nodes(snapshot, switches)
+def get_reachable_interfaces_endnodes(snapshot: str, config_path: str, switches: Set[str]) -> Set[str]:
+    nodes = get_reachable_nodes(snapshot, config_path, switches)
     caches = {}
-    results = bfq.interfaceProperties().answer(snapshot=snapshot).frame()
-    for _, result in results.iterrows():
-        if result.Interface.hostname not in caches:
-            caches[result.Interface.hostname] = []
-        caches[result.Interface.hostname].append(interface_to_str(result.Interface))
-    return set([interface for node in nodes for interface in caches[node]])
+    return set([interface for node in nodes for interface in interfaces_from_snapshot(config_path, node)])
 
 
 def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:
@@ -83,8 +75,8 @@ def get_reachable_interfaces(snapshot: str, switches: Set[str]) -> Set[str]:
     return reachable
 
 
-def build_topology(base: str, reachable_nodes: Set[str], sensitive_nodes: Set[str]) -> Topology:
-    reachable_interfaces = get_reachable_interfaces_endnodes(base, reachable_nodes)
+def build_topology(base: str, config_path: str, reachable_nodes: Set[str], sensitive_nodes: Set[str]) -> Topology:
+    reachable_interfaces = get_reachable_interfaces_endnodes(base, config_path, reachable_nodes)
     interfaces = set()
     results = bfq.interfaceProperties().answer().frame()
     for _, result in results.iterrows():

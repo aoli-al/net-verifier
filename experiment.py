@@ -23,6 +23,7 @@ class Base(object):
     def __init__(self, snapshot: str, config_dir: str, affected_nodes: List[str]):
         self.snapshot = snapshot
         self.affected_nodes = affected_nodes
+        self.config_dir = config_dir
         self.interfaces = interfaces_from_snapshot(config_dir)
 
     def get_internal_interfaces(self) -> Set[str]:
