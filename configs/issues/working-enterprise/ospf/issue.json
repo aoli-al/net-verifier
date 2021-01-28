@@ -1,7 +1,15 @@
 {
-  "base": "/home/leo/repos/sdn-verifier/configs/issues/working-enterprise/ospf",
+  "base": "/path/to/enterprise/network/config",
   "affected_nodes": ["/pc[1-3,8-9]/"],
   "sensitive_nodes": [],
-  "allowed_command": ["NodeCommand(\"esw.*\", \"\", {\"up\"})"],
-  "invariants": "Reachability(\"esw1\", \"11.1.1.0\")"
+  "msp_privilege": {
+    "esw.*": ["up"]
+  },
+  "net_policy": {
+    "reachability": [
+      ["esw1", "*", "11.1.1.0", "*", "*"]
+    ],
+    "waypoint": []
+  }
 }
+

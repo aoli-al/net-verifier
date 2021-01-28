@@ -14,6 +14,12 @@ import json
 import sys
 
 load_questions()
+bf_init_snapshot("configs/multihosts")
+result = bfq.layer3Edges().answer().frame()
+
+bf_init_snapshot("configs/Working_Enterprise")
+result = bfq.layer3Edges().answer().frame()
+
 # compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/issues/working-enterprise/ospf")
 # compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/issues/working-enterprise/reconfiguration")
 # compute_issue_reachable_nodes("configs/Working_Enterprise", "configs/working-enterprise/vlan")
